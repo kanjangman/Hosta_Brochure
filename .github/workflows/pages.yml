@@ -1,8 +1,8 @@
 name: Deploy brochure to GitHub Pages
 
 on:
-  push:
-    branches: ["claude/hosta-brochure-research-tp5nrd"]
+  # 자동화 토큰으로는 Pages 최초 활성화가 불가. 저장소 Settings→Pages에서
+  # Source를 "GitHub Actions"로 한 번 켠 뒤, Actions 탭에서 수동 실행하세요.
   workflow_dispatch:
 
 # Pages 배포에 필요한 권한
@@ -39,10 +39,8 @@ jobs:
           cp index.html _site/
           cp -r template assets data _site/
 
-      - name: Configure Pages (auto-enable if plan allows)
+      - name: Configure Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
