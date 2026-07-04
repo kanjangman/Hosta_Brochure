@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="농원 사진 예정 / Farm photo pending">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef4ea"/>
+      <stop offset="1" stop-color="#dbe7d3"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8fb07a"/>
+      <stop offset="1" stop-color="#5f8a52"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <g transform="translate(0,-6)">
+    <path d="M200,252 C122,244 96,150 200,68 C304,150 278,244 200,252 Z" fill="url(#leaf)" opacity="0.9"/>
+    <path d="M200,244 L200,84" stroke="#eef4ea" stroke-width="3" fill="none" opacity="0.8"/>
+    <path d="M200,120 C170,120 150,132 132,150 M200,150 C166,150 142,166 122,186 M200,180 C170,180 150,196 138,214
+             M200,120 C230,120 250,132 268,150 M200,150 C234,150 258,166 278,186 M200,180 C230,180 250,196 262,214"
+          stroke="#eef4ea" stroke-width="2" fill="none" opacity="0.65"/>
+  </g>
+  <text x="200" y="280" text-anchor="middle" font-family="system-ui,'Malgun Gothic',sans-serif" font-size="15" fill="#5f7050" font-weight="600">농원 사진 예정 · Farm photo</text>
+</svg>

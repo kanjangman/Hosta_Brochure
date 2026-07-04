@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>목향농원 호스타 도감 · Mokhyang Nursery Hosta Collection</title>
+  <meta name="description" content="용인 남사 목향농원이 도매하는 호스타 품종 브로셔. 한/영 이중언어 카드.">
+  <link rel="icon" href="assets/placeholder.svg">
+  <link rel="stylesheet" href="template/styles.css">
+</head>
+<body data-lang="both">
+  <header class="site-header">
+    <div class="wrap">
+      <h1>목향농원 호스타 도감</h1>
+      <p class="sub">Mokhyang Nursery Hosta Collection · 용인 남사 · 도매</p>
+    </div>
+    <div class="controls">
+      <div class="langswitch" role="group" aria-label="언어 / Language">
+        <button data-lang="ko">한국어</button>
+        <button data-lang="en">EN</button>
+        <button data-lang="both">한 + 영</button>
+      </div>
+      <span class="count" id="count"></span>
+    </div>
+  </header>
+
+  <nav class="filters" id="filters" aria-label="태그 필터 / Tag filter"></nav>
+
+  <main class="grid" id="grid" aria-live="polite">
+    <div class="empty">불러오는 중… / Loading…</div>
+  </main>
+
+  <footer class="site-footer">
+    <p class="ko">각 카드의 “레퍼런스”에 사실의 출처를 표기했습니다. 이미지는 저작권 안전 출처(위키미디어 공용 등 CC) 또는 농원 자체 촬영만 사용합니다. 데이터 정본: <code>data/hostas.json</code>.</p>
+    <p class="en">Each card lists its factual sources under “References.” Images are used only from copyright-safe sources (e.g. Wikimedia Commons, CC) or the nursery’s own photography. Canonical data: <code>data/hostas.json</code>.</p>
+  </footer>
+
+  <!-- 데이터: file:// 로도 열리도록 미러 우선 로드, 없으면 render.js가 data/hostas.json 을 fetch -->
+  <script src="data/hostas.data.js"></script>
+  <script src="template/render.js"></script>
+</body>
+</html>

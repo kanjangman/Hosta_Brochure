@@ -1,0 +1,195 @@
+[
+  {
+    "id": "june",
+    "name_ko": "준",
+    "name_en": "June",
+    "cultivar": "Hosta 'June'",
+    "aliases_ko": ["호스타 준", "비비추 준", "무늬비비추 준"],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "Neo Plants Ltd (UK)",
+      "year_registered": 1991,
+      "year_discovered": null,
+      "parentage": "Hosta 'Halcyon'의 아조변이(sport); 'Halcyon'은 Tardiana Group 교배종(H. 'Tardiflora' × H. sieboldiana var. elegans)",
+      "registry_url": "https://myhostas.be/db/hostas/June"
+    },
+    "size": {
+      "class": "medium",
+      "height_cm": [30, 38],
+      "spread_cm": [50, 76],
+      "registered_size_note": "myHostas 등 등록 성격 데이터베이스에서는 소형(Small)으로 분류되나, 성숙 시 잎무리 높이 약 30~38cm·폭 50~76cm(자료별 상이, 노주는 약 90cm까지)로 중형에 가까움. 꽃대 포함 높이는 약 50~60cm."
+    },
+    "leaf": {
+      "color_ko": "청록색(블루그린) 가장자리 안쪽으로 황금빛 연노랑 중앙무늬",
+      "color_en": "gold to chartreuse center with an irregular blue-green margin",
+      "variegation": "medio(중앙무늬): 중앙 황금색·가장자리 청록색; 봄엔 연둣빛이다 햇빛을 받으면 크림·황금빛으로 진해짐",
+      "substance": "thick"
+    },
+    "flower": {
+      "color_ko": "연보라(라벤더)",
+      "color_en": "pale lavender",
+      "bloom_season": "mid",
+      "fragrant": false
+    },
+    "culture": {
+      "light_ko": "반그늘~그늘. 하루 3~4시간의 볕은 견디며, 볕을 받을수록 중앙무늬가 더 선명한 황금빛이 됨",
+      "light_en": "part shade to full shade; tolerates ~3-4 hours of sun, which intensifies the gold center",
+      "growth_rate": "medium",
+      "hardiness": "USDA 3-9",
+      "slug_resistance": "high"
+    },
+    "awards": ["AHGA 올해의 호스타 2001 (Hosta of the Year 2001)", "영국왕립원예협회 정원공로상 (RHS Award of Garden Merit)"],
+    "description_ko": "호스타 '준'은 청록색 잎 가장자리 안쪽으로 황금빛 중앙무늬가 선명하게 빛나는 세계적 인기 품종으로, 2001년 미국호스타재배자협회(AHGA) '올해의 호스타'에 선정되었습니다. 잎 실질이 두꺼워 민달팽이 피해에 강하며, 하루 3~4시간의 햇빛을 견디고 볕을 받을수록 중앙무늬가 더욱 황금빛으로 물들어 반그늘은 물론 밝은 자리에도 잘 어울립니다. 컴팩트한 수형과 뛰어난 관상성으로 도매·조경 수요가 꾸준한 스테디셀러입니다.",
+    "description_en": "Hosta 'June' is a world-favorite cultivar prized for its glowing gold center framed by an irregular blue-green margin, and it was named the 2001 AHGA Hosta of the Year. Its thick, heavy-substance leaves give strong slug resistance, and it tolerates 3-4 hours of sun that deepens the gold center, making it equally at home in part shade or brighter spots. Compact, dependable, and highly ornamental, it remains a steady best-seller for wholesale and landscape demand.",
+    "tags": ["중형", "황금무늬", "반음지", "민달팽이저항", "올해의호스타", "RHS-AGM"],
+    "images": {
+      "farm_photo": { "src": null, "placeholder": "assets/placeholder.svg", "credit": "목향농원" },
+      "reference_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Hosta_June_02.JPG",
+        "credit": "Dominicus Johannes Bergsma (Famberhorst) / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "source_bucket": "wikimedia"
+      }
+    },
+    "references": [
+      { "field": "identity", "source": "plusgarden", "url": "https://www.plusgarden.com/plant/964" },
+      { "field": "provenance", "source": "myhostas", "url": "https://myhostas.be/db/hostas/June" },
+      { "field": "provenance", "source": "ballyrobert", "url": "https://www.ballyrobertgardens.com/products/hosta-tardiana-group-june-v" },
+      { "field": "size", "source": "walters", "url": "https://www.waltersgardens.com/variety.php?ID=HSJUN" },
+      { "field": "size", "source": "mbg", "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=p490" },
+      { "field": "leaf", "source": "walters", "url": "https://www.waltersgardens.com/variety.php?ID=HSJUN" },
+      { "field": "flower", "source": "mbg", "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=p490" },
+      { "field": "culture", "source": "walters", "url": "https://www.waltersgardens.com/variety.php?ID=HSJUN" },
+      { "field": "culture", "source": "greatgardenplants", "url": "https://blog.greatgardenplants.com/7-slug-resistant-hostas-for-your-shade-garden/" },
+      { "field": "awards", "source": "hostalists(HOTY)", "url": "https://www.hostalists.org/hosta_list_hoty.php" },
+      { "field": "image", "source": "wikimedia", "url": "https://commons.wikimedia.org/wiki/File:Hosta_June_02.JPG" }
+    ],
+    "research_status": "verified"
+  },
+  {
+    "id": "blue-angel",
+    "name_ko": "블루 엔젤",
+    "name_en": "Blue Angel",
+    "cultivar": "Hosta 'Blue Angel'",
+    "aliases_ko": ["블루엔젤", "호스타 블루엔젤", "블루엔젤 옥잠화"],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "Florence Shaw (F. Shaw) 발견 — Paul Aden 대행 등록",
+      "year_registered": 1986,
+      "year_discovered": null,
+      "parentage": "미상 실생 × 미상 실생 (교배기록 소실; H. sieboldiana 계통에 H. montana 영향 추정)",
+      "registry_url": "https://hostaregistrar.org/search?search=Blue+Angel"
+    },
+    "size": {
+      "class": "giant",
+      "height_cm": [75, 90],
+      "spread_cm": [120, 150],
+      "registered_size_note": "크기 편차 큼(대형~초대형 청색종): 포기 높이 75~90cm(30~36in), 폭 120~150cm(48~60in), 잎 길이 약 40cm(16in), 꽃대 잎 위 약 120cm(48in). 성숙까지 3~5년."
+    },
+    "leaf": {
+      "color_ko": "청록색~청회색(블루그린/블루그레이), 두껍고 골이 진 하트형 대형 잎; 늦여름 이후 짙은 녹색으로 변함",
+      "color_en": "thick, corrugated blue-green to blue-gray heart-shaped leaves; fading to dark green late season",
+      "variegation": "none",
+      "substance": "thick"
+    },
+    "flower": {
+      "color_ko": "유백색~연보라 (거의 흰색), 나팔형",
+      "color_en": "near-white to pale lavender, funnel-shaped",
+      "bloom_season": "mid",
+      "fragrant": false
+    },
+    "culture": {
+      "light_ko": "반음지~음지; 청색은 밝은 반그늘에서 가장 선명하며 아침 햇빛 정도는 견딤",
+      "light_en": "part shade to full shade; best blue color in light shade, tolerates some morning sun",
+      "growth_rate": "medium",
+      "hardiness": "USDA 3-8",
+      "slug_resistance": "high"
+    },
+    "awards": ["RHS Award of Garden Merit (AGM, 1993)", "AHS 인기 투표(Popularity Poll) 상위 10위권 — 대표적 대형 청색 호스타"],
+    "description_ko": "'블루 엔젤'은 두껍고 골이 깊은 청록색 대형 잎이 웅장한 돔형 수형을 이루는 대표적 초대형 청색 호스타로, 정원의 강렬한 포컬포인트로 손색이 없습니다. 왁스질의 두꺼운 잎은 민달팽이 피해에 강해 관리가 쉽고, 한여름 유백색~연보라 꽃대가 잎 위로 시원하게 솟습니다. 반음지에서 청색이 가장 선명하게 발현되며 노지월동이 가능한 강건한 다년초입니다.",
+    "description_en": "Among the largest and most celebrated blue hostas, 'Blue Angel' forms a majestic dome of thick, deeply corrugated blue-green leaves that anchors a shade garden as a bold focal point. Its heavy, waxy substance gives excellent slug resistance, and tall scapes of near-white to pale lavender flowers rise well above the foliage in midsummer. A vigorous, cold-hardy perennial that shows its best blue color in light to part shade.",
+    "tags": ["초대형", "청색", "반음지", "민달팽이저항", "포컬포인트", "RHS-AGM"],
+    "images": {
+      "farm_photo": { "src": null, "placeholder": "assets/placeholder.svg", "credit": "목향농원" },
+      "reference_image": { "url": null, "credit": null, "license": null, "source_bucket": null }
+    },
+    "references": [
+      { "field": "provenance", "source": "ahs_registry", "url": "https://hostaregistrar.org/search?search=Blue+Angel" },
+      { "field": "provenance", "source": "myhostas", "url": "https://myhostas.be/db/hostas/Blue+Angel" },
+      { "field": "provenance", "source": "ballyrobert", "url": "https://www.ballyrobertgardens.com/products/hosta-blue-angel-sieboldiana" },
+      { "field": "size", "source": "mbg", "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=248612&isprofile=0" },
+      { "field": "size", "source": "walters", "url": "https://www.waltersgardens.com/variety.php?ID=HSBLA" },
+      { "field": "leaf", "source": "gardenia", "url": "https://www.gardenia.net/plant/hosta-blue-angel-plantain-lily" },
+      { "field": "flower", "source": "mbg", "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=248612&isprofile=0" },
+      { "field": "culture", "source": "gardenia", "url": "https://www.gardenia.net/plant/hosta-blue-angel-plantain-lily" },
+      { "field": "culture", "source": "nhhostas", "url": "https://nhhostas.com/products/blue-angel-hosta" },
+      { "field": "awards", "source": "gardenia", "url": "https://www.gardenia.net/plant/hosta-blue-angel-plantain-lily" },
+      { "field": "identity", "source": "dailimseed", "url": "https://www.dailimseed.co.kr/shop/1516843767" },
+      { "field": "genus_ko", "source": "treeinfo", "url": "https://www.treeinfo.net/plant/view.php?ti_no=2795" }
+    ],
+    "research_status": "verified"
+  },
+  {
+    "id": "frances-williams",
+    "name_ko": "프란시스 윌리엄스",
+    "name_en": "Frances Williams",
+    "cultivar": "Hosta 'Frances Williams'",
+    "aliases_ko": ["프란시스 윌리엄스", "프랜시스 윌리엄스", "프란시스 윌리암스", "프랜시스 윌리암스", "프란세스 윌리엄스", "무늬비비추 프란시스 윌리엄스"],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "Frances Ropes Williams 발견·명명 — 1986년 Connie Williams(딸) 등록",
+      "year_registered": 1986,
+      "year_discovered": 1936,
+      "parentage": "Hosta sieboldiana 'Elegans'의 아조변이(sport) — 1936년 코네티컷 Bristol Nurseries의 H. sieboldiana 밭에서 발견",
+      "registry_url": "https://www.hostaregistrar.org/"
+    },
+    "size": {
+      "class": "large",
+      "height_cm": [60, 80],
+      "spread_cm": [120, 150],
+      "registered_size_note": "AHS 등록 기준 약 26인치(약 66cm) 이상 대형종. 소스별 편차 큼: 잎 마운드 약 60cm, 꽃대 포함 76~81cm, 폭 122~152cm(일부 130cm)로 표기."
+    },
+    "leaf": {
+      "color_ko": "청록색 바탕에 넓은 황색(황록색)~크림색 가장자리 무늬",
+      "color_en": "blue-green with wide greenish-yellow to creamy margins",
+      "variegation": "marginal(가장자리무늬)",
+      "substance": "thick"
+    },
+    "flower": {
+      "color_ko": "연한 라일락색(연보라~흰색)",
+      "color_en": "pale lilac (near white)",
+      "bloom_season": "early-mid",
+      "fragrant": false
+    },
+    "culture": {
+      "light_ko": "반그늘~그늘(부분 차광)",
+      "light_en": "part shade to full shade",
+      "growth_rate": "slow",
+      "hardiness": "USDA 3-9",
+      "slug_resistance": "high"
+    },
+    "awards": ["RHS Award of Garden Merit (AGM)", "Alex J. Summers Distinguished Merit Hosta Award (1986)"],
+    "description_ko": "1936년 미국에서 발견되어 오늘날까지 꾸준히 사랑받는 고전 명품 대형 호스타입니다. 두껍고 우글거리는 청록색 잎 가장자리에 넓은 황색~크림색 무늬가 선명하게 들어가 반그늘 정원에서 강렬한 존재감을 줍니다. 잎이 두꺼워 달팽이 피해에 비교적 강하며, RHS 정원공로상(AGM)을 받은 검증된 품종으로 도매 라인업의 대표 대형종으로 추천합니다.",
+    "description_en": "A classic, historically important large hosta discovered in the U.S. in 1936 and treasured ever since. Its thick, heavily puckered blue-green leaves are boldly edged with wide greenish-yellow to creamy margins, giving strong presence in the shade garden. The heavy leaf substance offers good slug resistance, and its RHS Award of Garden Merit makes it a proven, in-demand centerpiece for a wholesale large-hosta lineup.",
+    "tags": ["대형", "가장자리무늬", "반음지", "민달팽이저항", "고전품종", "RHS-AGM"],
+    "images": {
+      "farm_photo": { "src": null, "placeholder": "assets/placeholder.svg", "credit": "목향농원" },
+      "reference_image": { "url": null, "credit": null, "license": null, "source_bucket": null }
+    },
+    "references": [
+      { "field": "provenance", "source": "uaex(아칸소대 지도자료)", "url": "https://www.uaex.uada.edu/yard-garden/resource-library/plant-week/frances-williams-hosta.aspx" },
+      { "field": "provenance", "source": "mbg", "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=248945" },
+      { "field": "provenance", "source": "ballyrobert", "url": "https://www.ballyrobertgardens.com/products/hosta-frances-williams-sieboldiana-v" },
+      { "field": "provenance", "source": "ahs_registry", "url": "https://www.hostaregistrar.org/" },
+      { "field": "size", "source": "mbg", "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=248945" },
+      { "field": "size", "source": "gardenia", "url": "https://www.gardenia.net/plant/hosta-frances-williams-plantain-lily" },
+      { "field": "leaf", "source": "chicagobotanic", "url": "https://www.chicagobotanic.org/plant-information/plant-finder/hosta-sieboldiana-frances-williams-siebold-plantain-lily" },
+      { "field": "culture", "source": "gardenia", "url": "https://www.gardenia.net/plant/hosta-frances-williams-plantain-lily" },
+      { "field": "culture", "source": "nhhostas", "url": "https://www.nhhostas.com/frances-williams-hosta-4-5-inch-container/" },
+      { "field": "awards", "source": "rhs", "url": "https://www.rhs.org.uk/plants/90814/Hosta-Frances-Williams-(sieboldiana)-(v)/Details" },
+      { "field": "awards", "source": "uaex(Alex Summers 1986)", "url": "https://www.uaex.uada.edu/yard-garden/resource-library/plant-week/frances-williams-hosta.aspx" },
+      { "field": "genus_ko", "source": "kbr(국립생물자원관)", "url": "https://www.kbr.go.kr/man/home/rsc/rsc01003v.do" }
+    ],
+    "research_status": "verified"
+  }
+]
