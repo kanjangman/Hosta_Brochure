@@ -1,0 +1,247 @@
+{
+  "$comment": "목향농원 호스타 브로셔 표준 소스 레지스트리. 두 건의 실측 소스 조사(국문 지형 + 해외 권위 소스)에 근거. references[].source 는 아래 id 를 참조. updated 는 수동 관리.",
+  "updated": "2026-07-04",
+  "korean": [
+    {
+      "id": "plusgarden",
+      "name_ko": "플러스가든 식물DB",
+      "name_en": "Plusgarden Plant DB",
+      "url": "https://www.plusgarden.com",
+      "url_pattern": "https://www.plusgarden.com/plant/{id}",
+      "trust": "medium-high",
+      "unit": "cultivar",
+      "fields": ["name_ko", "name_en", "scientific_name", "size", "light", "hardiness", "leaf", "bloom", "care"],
+      "notes": "국문 자료 중 유일하게 품종 단위로 국문·영문·학명·크기·광량·내한성을 구조화. `비비추 'X' Hosta 'X'` 링크 구조로 조회 확장성 우수. 국문 리서치 1순위."
+    },
+    {
+      "id": "kpni",
+      "name_ko": "국가표준식물목록(KPNI) / 국립수목원",
+      "name_en": "Korea Plant Names Index (KPNI)",
+      "url": "https://www.nature.go.kr/kpni/index.do",
+      "url_pattern": null,
+      "trust": "high",
+      "unit": "species",
+      "fields": ["scientific_name", "synonyms", "origin"],
+      "notes": "공신력 최상. 단 종 단위만(비비추 Hosta longipes, 옥잠화 H. plantaginea 등), 원예 품종 미수록. WebFetch 403 주의."
+    },
+    {
+      "id": "encykorea",
+      "name_ko": "한국민족문화대백과사전",
+      "name_en": "Encyclopedia of Korean Culture",
+      "url": "https://encykorea.aks.ac.kr",
+      "url_pattern": null,
+      "trust": "high",
+      "unit": "species",
+      "fields": ["scientific_name", "family", "origin", "bloom"],
+      "notes": "종·문화 정보 공신력 높음. 품종 단위 없음."
+    },
+    {
+      "id": "treeinfo",
+      "name_ko": "트리인포 식물도감",
+      "name_en": "Treeinfo Plant Dictionary",
+      "url": "https://www.treeinfo.net",
+      "url_pattern": "https://www.treeinfo.net/plant/view.php?ti_no={id}",
+      "trust": "medium",
+      "unit": "species",
+      "fields": ["form", "culture", "propagation"],
+      "notes": "도감형. 종 중심."
+    },
+    {
+      "id": "shops_kr",
+      "name_ko": "국내 원예 쇼핑몰(심폴·엑스플랜트·씨들링 등)",
+      "name_en": "Korean horticulture shops (Simpol, Xplant, Seedling, etc.)",
+      "url": "https://xplant.co.kr",
+      "url_pattern": null,
+      "trust": "medium-low",
+      "unit": "trade",
+      "fields": ["trade_name", "pot_size", "price", "hardiness_qualitative", "light"],
+      "notes": "유통명·포트규격·가격·노지월동. 육종가/등록/교배/수상 없음. 포트 규격은 성체 치수 아님. 예: 심폴 simpol.co.kr, 엑스플랜트 xplant.co.kr, 씨들링 seedling.kr, 나무사랑원예 mytreelove.com."
+    },
+    {
+      "id": "cafe_bibichu",
+      "name_ko": "Daum 카페 '비비추를 사랑하는 사람들'",
+      "name_en": "Daum cafe 'Bibichu lovers'",
+      "url": "https://m.cafe.daum.net/bibichumania",
+      "url_pattern": null,
+      "trust": "medium",
+      "unit": "community",
+      "fields": ["identification", "naming", "grower_notes"],
+      "notes": "국내 최대 호스타 커뮤니티가 Naver가 아닌 Daum. 분류/명명 토론·실물 정보. search_cafearticle(네이버)로는 안 잡히므로 WebSearch로 cafe.daum.net 병행 필수."
+    },
+    {
+      "id": "blogs_kr",
+      "name_ko": "국문 원예 블로그(Botanical House·brunch 등)",
+      "name_en": "Korean gardening blogs",
+      "url": null,
+      "url_pattern": null,
+      "trust": "low",
+      "unit": "informal",
+      "fields": ["grower_experience", "real_leaf_color", "seasonal_variation"],
+      "notes": "실물 잎색 변이·재배 팁에 유용하나 정확도 편차 큼. 사실 확정은 상위 소스로 교차."
+    }
+  ],
+  "international": [
+    {
+      "id": "ahs_registry",
+      "name_ko": "AHS 호스타 등록부(ICRA)",
+      "name_en": "American Hosta Society Hosta Registry",
+      "url": "https://www.hostaregistrar.org",
+      "url_pattern": "https://www.hostaregistrar.org/detail.php?id={id}",
+      "search": "https://www.hostaregistrar.org/search",
+      "trust": "high",
+      "role": "provenance-anchor",
+      "fields": ["hybridizer", "year_registered", "parentage", "registered_morphology", "flower", "fragrance", "awards"],
+      "notes": "국제 품종 등록 권위(ICRA). provenance(이름·육종가·등록연도·교배·등록형태) 충돌 시 최종 판정. name 검색 → detail.php?id=NNN. 이미지는 기여자 소유(재사용 불가)."
+    },
+    {
+      "id": "walters",
+      "name_ko": "월터스 가든스(도매 육종사)",
+      "name_en": "Walters Gardens",
+      "url": "https://www.waltersgardens.com",
+      "url_pattern": "https://www.waltersgardens.com/variety.php?ID=HS***",
+      "trust": "high",
+      "role": "horticulture",
+      "fields": ["mature_size", "leaf", "flower", "bloom_season", "fragrance", "light", "growth_rate", "awards"],
+      "image": "with-agreement",
+      "notes": "성숙 크기·광량·개화·성장속도 등 원예 서술 풍부. ID=HS*** 는 이름-예측 불가(검색으로 ID 해석 단계 필요). 이미지: Usage Agreement 수락 + 크레딧 시 사용 가능(월터스 육종 품종)."
+    },
+    {
+      "id": "provenwinners",
+      "name_ko": "프루븐 위너스",
+      "name_en": "Proven Winners",
+      "url": "https://www.provenwinners.com",
+      "url_pattern": null,
+      "trust": "high",
+      "role": "horticulture-image",
+      "fields": ["size", "light", "bloom", "awards"],
+      "image": "brochure-pw-only",
+      "notes": "이미지 라이브러리 제공. 브로셔/POP/광고 사용 명시 허용하나 'Proven Winners 브랜드 품종' 한정. 로우해상도 개방, 고해상도는 무료 pro 계정."
+    },
+    {
+      "id": "nhhostas",
+      "name_ko": "뉴햄프셔 호스타스(소매상)",
+      "name_en": "New Hampshire Hostas",
+      "url": "https://nhhostas.com",
+      "url_pattern": "https://nhhostas.com/products/{name}-hosta",
+      "trust": "medium-high",
+      "role": "horticulture",
+      "fields": ["mature_size", "flower", "bloom_time", "light", "slug_resistance", "fragrance"],
+      "image": "prohibited",
+      "notes": "일관된 소매 규격 서술(성숙 T×W, 광량, 향·민달팽이 저항 플래그). 데이터는 참조 가능하나 자체 사진 재사용 금지."
+    },
+    {
+      "id": "myhostas",
+      "name_ko": "MyHostas 데이터베이스(벨기에)",
+      "name_en": "MyHostas DB",
+      "url": "https://myhostas.be",
+      "url_pattern": "https://myhostas.be/db/hostas/{Name}",
+      "trust": "medium",
+      "role": "cross-check",
+      "fields": ["originator", "parentage", "size", "leaf", "flower"],
+      "image": "reference-only",
+      "notes": "가장 깔끔한 이름-기반 URL. 등록 데이터 교차확인용 애그리게이터(권위원본 아님)."
+    },
+    {
+      "id": "ahga_hoty",
+      "name_ko": "AHGA/AHS '올해의 호스타' 리스트",
+      "name_en": "AHGA/AHS Hosta of the Year",
+      "url": "http://www.hostagrowers.org/Hosta_of_the_Year.html",
+      "url_pattern": null,
+      "trust": "high",
+      "role": "awards",
+      "fields": ["award_year"],
+      "notes": "HOTY 연도 확정. 1996~현재. 예: June=2001, Guacamole=2002, Stained Glass=2006. 보조: hostalists.org, AHS awards 페이지."
+    },
+    {
+      "id": "mbg",
+      "name_ko": "미주리식물원 Plant Finder",
+      "name_en": "Missouri Botanical Garden Plant Finder",
+      "url": "https://www.missouribotanicalgarden.org/PlantFinder",
+      "url_pattern": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid={id}",
+      "trust": "high",
+      "role": "horticulture-neutral",
+      "fields": ["zone", "mature_size", "bloom", "sun", "culture", "problems"],
+      "notes": "중립 기관 데이터. 성숙 크기/광량 교차확인에 유용."
+    },
+    {
+      "id": "rhs",
+      "name_ko": "영국왕립원예협회(RHS)",
+      "name_en": "Royal Horticultural Society",
+      "url": "https://www.rhs.org.uk",
+      "url_pattern": "https://www.rhs.org.uk/plants/{id}/",
+      "trust": "high",
+      "role": "awards-horticulture",
+      "fields": ["agm", "size", "culture"],
+      "notes": "UK 데이터 + Award of Garden Merit(AGM)."
+    },
+    {
+      "id": "ncstate",
+      "name_ko": "NC State Extension 식물 툴박스",
+      "name_en": "NC State Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu",
+      "url_pattern": "https://plants.ces.ncsu.edu/plants/hosta-{name}/",
+      "trust": "high",
+      "role": "horticulture-image",
+      "fields": ["height", "spread", "zone", "sun", "water", "problems"],
+      "image": "cc-per-file",
+      "notes": "이름-예측 URL. 사진은 파일별 CC(라이선스 미표기 시 all rights reserved). 다운로드 파일명에 출처 인코딩."
+    },
+    {
+      "id": "hostalibrary",
+      "name_ko": "The Hosta Library(사진 아카이브)",
+      "name_en": "The Hosta Library",
+      "url": "http://www.hostalibrary.org",
+      "url_pattern": "http://www.hostalibrary.org/{letter}/{name}.html",
+      "trust": "high",
+      "role": "visual-reference",
+      "fields": ["identity", "photos"],
+      "image": "prohibited",
+      "notes": "최대 사진 아카이브지만 전면 저작권('any public use is prohibited... may result in legal action'). 식별용 육안 참조로만, 임베드·핫링크 금지."
+    },
+    {
+      "id": "wikimedia",
+      "name_ko": "위키미디어 공용",
+      "name_en": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/Category:Hosta",
+      "url_pattern": null,
+      "trust": "medium",
+      "role": "open-image",
+      "fields": ["photos"],
+      "image": "cc-open",
+      "notes": "CC BY/BY-SA(파일별 표기). 상업 브로셔에 가장 안전한 법적 경로. 단 지정 품종 커버리지 제한적."
+    }
+  ],
+  "image_buckets": {
+    "safe": [
+      { "bucket": "wikimedia", "license": "CC BY / CC BY-SA (파일별)", "requirement": "파일별 저작자·라이선스 표기", "commercial": true },
+      { "bucket": "ncstate", "license": "파일별 CC (미표기=all rights reserved)", "requirement": "파일별 확인 후 출처표기", "commercial": true },
+      { "bucket": "provenwinners", "license": "PW 브로셔 라이선스", "requirement": "PW 브랜드 품종에 한정, 브로셔/POP/광고 용도", "commercial": true },
+      { "bucket": "walters", "license": "Walters Usage Agreement", "requirement": "약관 수락 + 사진 크레딧, 월터스 육종 품종", "commercial": true }
+    ],
+    "prohibited": [
+      { "source": "hostalibrary", "reason": "전면 저작권, 공개 사용 금지 명시" },
+      { "source": "nhhostas 및 소매상", "reason": "업체 자체 사진 all rights reserved" },
+      { "source": "ahs_registry", "reason": "레코드 사진은 기여자 소유" }
+    ],
+    "principle": "사실(fact: 육종가·연도·크기·개화 등)은 자유 사용, 사진(photo)만 라이선스 제한. 카드 본문은 사실로 구성하고, 이미지는 안전 버킷 또는 농원 자체 촬영으로만."
+  },
+  "conflict_rules": {
+    "provenance": "이름·육종가·등록연도·교배·등록형태 → AHS Registry 우선.",
+    "mature_performance": "성숙 H×W·광량·성장속도·개화 → Walters(육종가 도입치) 또는 MBG(중립) 우선.",
+    "size_dual": "등록 크기 vs 성숙 크기가 다르면 둘 다 기록(size.height_cm/spread_cm = 성숙, registered_size_note = 등록치).",
+    "year_dual": "발견 연도 vs 등록 연도가 다르면 둘 다 기록(provenance.year_discovered / year_registered).",
+    "tie_break": "핵심 사실은 2소스 교차, 불일치 시 AHS Registry 가 tie-break."
+  },
+  "tools": {
+    "korean": {
+      "primary": ["mcp__PlayMCP__NaverSearch-search_shop", "mcp__PlayMCP__NaverSearch-search_blog", "mcp__PlayMCP__NaverSearch-search_cafearticle", "mcp__PlayMCP__NaverSearch-search_encyc", "mcp__PlayMCP__NaverSearch-search_image"],
+      "supplement": ["WebSearch (cafe.daum.net 커뮤니티)"],
+      "note": "국문 사이트는 WebFetch가 403 광범위 → Naver MCP 스니펫에 의존. 실행 세션에서 MCP 승인 게이트 사전 해제 필요. 쿼리는 국문+영문 병기, '호스타/비비추' 한정어로 동명 노이즈 제거."
+    },
+    "international": {
+      "primary": ["WebSearch", "WebFetch"],
+      "fallback": ["브라우저(Playwright) — 상업 도메인 프록시 403 시"],
+      "note": "AHS Registry·Walters 는 name→id 해석 단계 필요. myhostas/ncstate/nhhostas/hostalibrary 는 이름-예측 URL로 배치 조회 가능."
+    }
+  }
+}

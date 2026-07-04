@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mokhyang.example/schema/hosta.schema.json",
+  "title": "Hosta cultivar (호스타 품종)",
+  "description": "목향농원 호스타 브로셔용 품종 데이터 스키마. 한/영 이중언어, 이미지 2슬롯(농원 사진 + 해외 참조 링크), 필드별 레퍼런스 추적. 품종 추가 = 이 스키마를 통과하는 객체 1건 append.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name_ko", "name_en", "cultivar"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "안정 식별자(slug). 영소문자·숫자·하이픈. 예: 'june', 'blue-angel'. 파일/카드 키로 사용."
+    },
+    "name_ko": { "type": "string", "minLength": 1, "description": "국문 유통명. 예: '준'" },
+    "name_en": { "type": "string", "minLength": 1, "description": "영문명. 예: 'June'" },
+    "cultivar": {
+      "type": "string",
+      "description": "원예 품종명(정규 표기). 예: \"Hosta 'June'\". 작은따옴표로 품종 epithet 감쌈."
+    },
+    "aliases_ko": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "국문 표기 변이(검색·매칭·동명 필터용). 예: ['프란시스 윌리엄스','프랜시스 윌리엄스','프란시스 윌리암스']"
+    },
+    "genus_ko": {
+      "type": "string",
+      "description": "국문 관용 속명. 통상 '비비추' 또는 '옥잠화'."
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "출처·이력. 충돌 시 AHS Registry(ICRA) 우선.",
+      "properties": {
+        "hybridizer": { "type": ["string", "null"], "description": "육종가/등록자. 예: 'Neo Plants Ltd (UK)'" },
+        "year_registered": { "type": ["integer", "null"], "minimum": 1850, "maximum": 2100, "description": "AHS 등록연도." },
+        "year_discovered": { "type": ["integer", "null"], "minimum": 1850, "maximum": 2100, "description": "발견/도입 연도(등록연도와 다를 때 병기)." },
+        "parentage": { "type": ["string", "null"], "description": "교배/기원. 예: \"'Halcyon' 아조변이 (Tardiana Group)\"" },
+        "registry_url": { "type": ["string", "null"], "format": "uri", "description": "AHS Registry 레코드 URL." }
+      }
+    },
+    "size": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "크기. 성숙 조경 성능은 Walters/MBG 우선. 등록치와 성숙치가 다르면 registered_size_note에 병기.",
+      "properties": {
+        "class": { "type": ["string", "null"], "enum": ["mini", "small", "medium", "large", "giant", null], "description": "크기 등급." },
+        "height_cm": {
+          "type": ["array", "null"],
+          "prefixItems": [{ "type": "number" }, { "type": "number" }],
+          "minItems": 2, "maxItems": 2,
+          "description": "성숙 초장 범위 [최소, 최대] cm."
+        },
+        "spread_cm": {
+          "type": ["array", "null"],
+          "prefixItems": [{ "type": "number" }, { "type": "number" }],
+          "minItems": 2, "maxItems": 2,
+          "description": "성숙 폭 범위 [최소, 최대] cm."
+        },
+        "registered_size_note": { "type": ["string", "null"], "description": "등록치 등 부가 크기 정보(성숙치와 다를 때)." }
+      }
+    },
+    "leaf": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "잎 특성.",
+      "properties": {
+        "color_ko": { "type": ["string", "null"] },
+        "color_en": { "type": ["string", "null"] },
+        "variegation": { "type": ["string", "null"], "description": "무늬 패턴. 예: 'none','medio(중앙무늬)','marginal(가장자리무늬)','streaked','misted','mottled'." },
+        "substance": { "type": ["string", "null"], "enum": ["thin", "medium", "thick", null], "description": "잎 실질(두께). 두꺼울수록 민달팽이 저항↑." }
+      }
+    },
+    "flower": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "꽃 특성.",
+      "properties": {
+        "color_ko": { "type": ["string", "null"] },
+        "color_en": { "type": ["string", "null"] },
+        "bloom_season": { "type": ["string", "null"], "enum": ["early", "early-mid", "mid", "mid-late", "late", null], "description": "개화기." },
+        "fragrant": { "type": ["boolean", "null"], "description": "향기 유무." }
+      }
+    },
+    "culture": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "재배 조건·성능.",
+      "properties": {
+        "light_ko": { "type": ["string", "null"], "description": "예: '반음지~양지'" },
+        "light_en": { "type": ["string", "null"], "description": "예: 'part shade to sun'" },
+        "growth_rate": { "type": ["string", "null"], "enum": ["slow", "medium", "fast", null] },
+        "hardiness": { "type": ["string", "null"], "description": "내한성. 예: 'USDA 3-9' 또는 국문 '노지월동 가능'." },
+        "slug_resistance": { "type": ["string", "null"], "enum": ["low", "medium", "high", null], "description": "민달팽이 저항(잎 실질과 연동)." }
+      }
+    },
+    "awards": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "수상 이력. 예: ['AHS Hosta of the Year 2001','RHS AGM']"
+    },
+    "description_ko": { "type": ["string", "null"], "description": "카드 본문(한국어)." },
+    "description_en": { "type": ["string", "null"], "description": "카드 본문(영어 병기)." },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "필터/분류 태그. 예: ['golden','medium','sun-tolerant','fragrant','popular']"
+    },
+    "images": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "이미지 2슬롯.",
+      "properties": {
+        "farm_photo": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "슬롯① 농원 보유 사진. 미확보 시 src=null, placeholder 노출.",
+          "properties": {
+            "src": { "type": ["string", "null"], "description": "자체 촬영 이미지 경로(상대/절대)." },
+            "placeholder": { "type": ["string", "null"], "description": "미확보 시 표시할 플레이스홀더 경로." },
+            "credit": { "type": ["string", "null"], "description": "크레딧. 예: '목향농원'." }
+          }
+        },
+        "reference_image": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "슬롯② 해외 자료 이미지 링크. 저작권 안전 버킷만 허용.",
+          "properties": {
+            "url": { "type": ["string", "null"], "format": "uri", "description": "이미지 URL." },
+            "credit": { "type": ["string", "null"], "description": "출처표기 문자열." },
+            "license": { "type": ["string", "null"], "description": "라이선스. 예: 'CC BY-SA 4.0','Walters Usage Agreement','PW brochure license'." },
+            "source_bucket": {
+              "type": ["string", "null"],
+              "enum": ["wikimedia", "ncstate", "provenwinners", "walters", "farm", "other", null],
+              "description": "라이선스 안전 버킷 태그. 'other'는 사용 전 개별 라이선스 확인 필요."
+            }
+          }
+        }
+      }
+    },
+    "references": {
+      "type": "array",
+      "description": "필드별 근거 추적. 각 핵심 필드군마다 최소 1개 권장.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["field", "source", "url"],
+        "properties": {
+          "field": { "type": "string", "description": "근거가 뒷받침하는 필드군. 예: 'provenance','size','culture','leaf','flower','awards','image'." },
+          "source": { "type": "string", "description": "소스명(sources.json의 id 또는 표시명)." },
+          "url": { "type": "string", "format": "uri", "description": "근거 URL." },
+          "note": { "type": "string", "description": "선택 메모." }
+        }
+      }
+    },
+    "research_status": {
+      "type": "string",
+      "enum": ["draft", "verified"],
+      "default": "draft",
+      "description": "리서치 상태. 'verified'는 핵심 사실 2소스 교차 완료."
+    }
+  }
+}
