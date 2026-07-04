@@ -67,24 +67,38 @@
   }
 
   // 소매·영업 버전 카피 블록 (retail_copy — 기준: docs §10, 검증 필드의 사실 재표현만)
-  function retailBlock(rc) {
-    var box = el("div", { class:"retail" });
-    if (rc.headline_ko) box.appendChild(el("div", { class:"retail-headline", text:rc.headline_ko }));
-    if (rc.body_ko) box.appendChild(el("p", { class:"retail-body", text:rc.body_ko }));
-    if (rc.selling_points_ko && rc.selling_points_ko.length) {
+  // 구매 동기별 3톤: warm(감성) / practical(안심) / premium(품격) — body[data-tone]으로 전환
+  var TONES = ["warm", "practical", "premium"];
+
+  function toneHasContent(t) { return !!(t && (t.headline_ko || t.body_ko)); }
+
+  function retailVariant(key, t) {
+    var box = el("div", { class:"retail-variant tone-" + key });
+    if (t.headline_ko) box.appendChild(el("div", { class:"retail-headline", text:t.headline_ko }));
+    if (t.body_ko) box.appendChild(el("p", { class:"retail-body", text:t.body_ko }));
+    if (t.selling_points_ko && t.selling_points_ko.length) {
       var ul = el("ul", { class:"retail-points" });
-      rc.selling_points_ko.forEach(function (p) { ul.appendChild(el("li", { text:p })); });
+      t.selling_points_ko.forEach(function (p) { ul.appendChild(el("li", { text:p })); });
       box.appendChild(ul);
     }
-    if (rc.recommend_for_ko) {
-      box.appendChild(el("p", { class:"retail-for", text:"🌿 이런 분께 — " + rc.recommend_for_ko }));
+    if (t.recommend_for_ko) {
+      box.appendChild(el("p", { class:"retail-for", text:"🌿 이런 분께 — " + t.recommend_for_ko }));
     }
+    return box;
+  }
+
+  function retailBlock(rc) {
+    var box = el("div", { class:"retail" });
+    TONES.forEach(function (key) {
+      if (toneHasContent(rc[key])) box.appendChild(retailVariant(key, rc[key]));
+    });
     return box;
   }
 
   function card(h) {
     var c = el("article", { class:"card" });
-    if (!h.retail_copy || (!h.retail_copy.headline_ko && !h.retail_copy.body_ko)) c.classList.add("no-retail");
+    var hasRetail = h.retail_copy && TONES.some(function (k) { return toneHasContent(h.retail_copy[k]); });
+    if (!hasRetail) c.classList.add("no-retail");
 
     // 이미지 2슬롯
     var imgs = el("div", { class:"images" });
@@ -123,8 +137,8 @@
     badges.appendChild(el("span", { class:"badge status-" + st }, [bi(st === "verified" ? "검증됨" : "초안", st === "verified" ? "verified" : "draft")]));
     body.appendChild(badges);
 
-    // 소매·영업 버전 카피 (pro 뷰에서는 CSS로 숨김)
-    if (h.retail_copy) body.appendChild(retailBlock(h.retail_copy));
+    // 소매·영업 버전 카피 (pro 뷰에서는 CSS로 숨김, 톤은 body[data-tone]으로 전환)
+    if (hasRetail) body.appendChild(retailBlock(h.retail_copy));
 
     // 스펙
     var specs = el("dl", { class:"specs" });
@@ -299,8 +313,9 @@
   }
 
   function init() {
-    wireSwitch(".langswitch:not(.viewswitch)", "data-lang", "hosta-lang");
+    wireSwitch(".langswitch:not(.viewswitch):not(.toneswitch)", "data-lang", "hosta-lang");
     wireSwitch(".viewswitch", "data-view", "hosta-view");
+    wireSwitch(".toneswitch", "data-tone", "hosta-tone");
     var detail = document.getElementById("detail");
     loadData().then(function (data) {
       ALL = Array.isArray(data) ? data : (data.hostas || []);

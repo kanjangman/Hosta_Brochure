@@ -6,6 +6,24 @@
   "type": "object",
   "additionalProperties": false,
   "required": ["id", "name_ko", "name_en", "cultivar"],
+  "$defs": {
+    "retailTone": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "headline_ko": { "type": ["string", "null"], "description": "한 줄 헤드라인(10~20자)." },
+        "body_ko": { "type": ["string", "null"], "description": "2~3문장(90~160자), 친근 존댓말. 소비자향 본문." },
+        "selling_points_ko": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "판매자향 '잘 팔리는 이유' 불릿 2~3개(근거 있는 사실만)."
+        },
+        "recommend_for_ko": { "type": ["string", "null"], "description": "'이런 분께' — 구체적 고객 한 줄." },
+        "headline_en": { "type": ["string", "null"], "description": "향후 수출용(선택)." },
+        "body_en": { "type": ["string", "null"], "description": "향후 수출용(선택)." }
+      }
+    }
+  },
   "properties": {
     "id": {
       "type": "string",
@@ -104,18 +122,11 @@
     "retail_copy": {
       "type": "object",
       "additionalProperties": false,
-      "description": "소매 판매자용 친근 버전(별도 버전, description을 대체하지 않음). 기준: docs/hosta-brochure-strategy.md §10. 모든 사실 주장은 references로 뒷받침되는 기존 필드의 재표현만 허용 — 새 주장 금지.",
+      "description": "소매 판매자용 친근 버전(별도 버전, description을 대체하지 않음). 구매 동기별 3톤: warm(포근·감성), practical(실용·안심), premium(품격·스토리). 기준: docs/hosta-brochure-strategy.md §10. 모든 톤에서 사실 주장은 references로 뒷받침되는 기존 필드의 재표현만 허용 — 새 주장 금지. retail_copy를 넣는 품종은 3톤을 모두 채우는 것을 원칙으로 함(화면 토글 빈칸 방지).",
       "properties": {
-        "headline_ko": { "type": ["string", "null"], "description": "한 줄 감성 헤드라인(10~20자). 예: '그늘을 금빛으로 밝히는 잎'" },
-        "body_ko": { "type": ["string", "null"], "description": "2~3문장(90~160자), 친근 존댓말. 소비자향 본문." },
-        "selling_points_ko": {
-          "type": "array",
-          "items": { "type": "string" },
-          "description": "판매자향 '잘 팔리는 이유' 불릿 2~3개(수상=신뢰, 관리 용이=클레임↓ 등, 근거 있는 사실만)."
-        },
-        "recommend_for_ko": { "type": ["string", "null"], "description": "'이런 분께' — 구체적 고객 한 줄." },
-        "headline_en": { "type": ["string", "null"], "description": "향후 수출용(선택)." },
-        "body_en": { "type": ["string", "null"], "description": "향후 수출용(선택)." }
+        "warm": { "$ref": "#/$defs/retailTone", "description": "포근·감성형 — 정원 가꾸는 즐거움을 찾는 손님. 빛·색·분위기의 그림." },
+        "practical": { "$ref": "#/$defs/retailTone", "description": "실용·안심형 — 원예 초보, 관리 걱정하는 손님. 키우기 쉬움·튼튼함 강조." },
+        "premium": { "$ref": "#/$defs/retailTone", "description": "품격·스토리형 — 선물·가치 중시 손님. 수상 이력·역사·계보 강조." }
       }
     },
     "tags": {

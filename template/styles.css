@@ -35,6 +35,13 @@ body[data-view="sales"] .badge.status-verified { display:none; }
 body[data-view="sales"] .card.no-retail .desc { display:block; }
 body[data-view="sales"] .card.no-retail .desc .en { display:none; }
 
+/* ---- 카피 톤(감성 warm / 안심 practical / 품격 premium) 전환 ---- */
+body[data-view="pro"] .toneswitch { display:none; }   /* 톤 토글은 소매 버전에서만 */
+.retail-variant { display:none; flex-direction:column; gap:10px; }
+body[data-tone="warm"] .retail-variant.tone-warm { display:flex; }
+body[data-tone="practical"] .retail-variant.tone-practical { display:flex; }
+body[data-tone="premium"] .retail-variant.tone-premium { display:flex; }
+
 /* ---- 헤더 ---- */
 .site-header {
   background:linear-gradient(135deg,var(--green-800),var(--green-600));
@@ -120,7 +127,7 @@ body[data-view="sales"] .card.no-retail .desc .en { display:none; }
 .retail {
   background:linear-gradient(150deg,#f7fbf3,#eef6e6);
   border:1px solid var(--green-300); border-radius:14px;
-  padding:16px 18px; display:flex; flex-direction:column; gap:10px;
+  padding:16px 18px;
 }
 .retail-headline {
   font-size:19px; font-weight:800; letter-spacing:-.02em; color:var(--green-800);
