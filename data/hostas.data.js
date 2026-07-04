@@ -2171,5 +2171,753 @@ window.HOSTA_DATA = [
       }
     ],
     "research_status": "verified"
+  },
+  {
+    "id": "coast-to-coast",
+    "name_ko": "코스트 투 코스트",
+    "name_en": "Coast to Coast",
+    "cultivar": "Hosta 'Coast to Coast'",
+    "aliases_ko": [
+      "코스트투코스트",
+      "호스타 코스트투코스트"
+    ],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "Olga Petryszyn (도입·상표 Walters Gardens / Proven Winners, Shadowland)",
+      "year_registered": 2014,
+      "year_discovered": null,
+      "parentage": "Hosta 'Manhattan' × Hosta 'Golden Gate'",
+      "registry_url": "http://www.hostaregistrar.org/detail.php?id=5259"
+    },
+    "size": {
+      "class": "giant",
+      "height_cm": [
+        61,
+        76
+      ],
+      "spread_cm": [
+        90,
+        180
+      ],
+      "registered_size_note": "월터스가든/프로븐위너스 표기 약 61~76cm 높이 × 90cm 이상 폭. 성숙 개체는 약 90cm 높이 × 210cm(3'×7') 폭까지 초대형으로 자란다."
+    },
+    "leaf": {
+      "color_ko": "황금색~샤르트뢰즈 (볕에서 선명한 황금색, 계절 내내 황금색 유지)",
+      "color_en": "gold to chartreuse (holds gold all season)",
+      "variegation": "무지(단색 황금, 무늬 없음)",
+      "substance": "thick"
+    },
+    "flower": {
+      "color_ko": "연보라색",
+      "color_en": "pale lavender",
+      "bloom_season": "mid",
+      "fragrant": false
+    },
+    "culture": {
+      "light_ko": "반그늘~그늘, 아침 볕 잘 견디며 볕을 받을수록 황금색이 선명해짐",
+      "light_en": "part shade to full shade; tolerates morning sun, color brightens with light",
+      "growth_rate": "fast",
+      "hardiness": "USDA 3-9",
+      "slug_resistance": "high"
+    },
+    "awards": [
+      "2020 프로븐 위너스 올해의 호스타 (Proven Winners National Hosta of the Year)"
+    ],
+    "description_ko": "'코스트 투 코스트'는 3'×7'(약 90×210cm)까지 자라는 초대형 무지 황금 호스타로, 그늘 정원의 압도적인 포컬 포인트가 된다. 잎은 크고 광택이 있으며 깊은 잎맥과 요철(퍼커)에 물결치는 가장자리를 지닌다. 봄에 황금빛으로 올라와 볕을 받을수록 선명한 황금색으로 물들며, 두꺼운 잎질과 곧게 서는 수형 덕에 민달팽이 피해에 강하다. 성장 속도가 빠르고 양지도 잘 견뎌 관리가 수월하며, 한여름에는 곧은 꽃대에 연보라색 꽃을 올린다.",
+    "description_en": "'Coast to Coast' is a giant, solid-gold hosta that can reach roughly 3' tall by 7' wide, making a commanding focal point in the shade garden. Its large, glossy leaves are deeply veined and puckered with wavy margins, emerging gold in spring and coloring to a vivid gold with more light. Thick substance and a rigidly upright habit give it strong slug resistance. It is fast-growing and notably sun-tolerant, and carries pale lavender flowers on upright scapes in summer.",
+    "retail_copy": {
+      "warm": {
+        "headline_ko": "그늘을 밝히는 황금빛 대장, 코스트 투 코스트",
+        "body_ko": "봄에 황금빛으로 깨어나 볕을 받을수록 더 환하게 물드는 초대형 호스타예요. 넉넉히 자라 정원 한켠을 황금빛으로 가득 채워 주고, 잎이 두툼해 민달팽이 걱정도 덜하답니다. 손이 많이 안 가서 초보 정원사도 편하게 키울 수 있어요.",
+        "selling_points_ko": [
+          "볕에서 더 선명해지는 무지 황금 잎",
+          "3'×7'까지 자라는 넉넉한 초대형 볼륨",
+          "두꺼운 잎질로 민달팽이에 강함",
+          "성장이 빨라 금세 자리를 잡음"
+        ],
+        "recommend_for_ko": "그늘진 정원을 환하게 밝히고 싶은 분, 손 덜 가는 대형 관엽을 찾는 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "practical": {
+        "headline_ko": "초대형 황금 무지 호스타, 내음·내양 겸비",
+        "body_ko": "성숙 시 약 90×210cm(3'×7')의 초대형 황금 호스타. USDA 3-9 내한성, 반그늘~그늘에 적합하며 아침 볕과 밝은 광에 강해 황금색이 선명해집니다. 두꺼운 잎질과 직립 수형으로 민달팽이 저항성이 높고 성장 속도가 빠릅니다. 한여름 연보라색 꽃이 핍니다.",
+        "selling_points_ko": [
+          "초대형: 약 61~76cm 높이, 폭 90cm 이상(성숙 시 210cm)",
+          "무지 황금/샤르트뢰즈, 계절 내내 황금색 유지",
+          "내한성 USDA 3-9, 양지 견딤",
+          "민달팽이 저항 높음, 성장 빠름"
+        ],
+        "recommend_for_ko": "넓은 그늘 화단·대형 지피, 관리 부담이 적은 도매·조경용 물량",
+        "headline_en": null,
+        "body_en": null
+      },
+      "premium": {
+        "headline_ko": "정원의 중심을 세우는 황금빛 거장",
+        "body_ko": "3'×7'에 이르는 위용과 두껍고 광택 나는 요철 잎, 그리고 볕 아래 타오르는 순금빛. 2020 프로븐 위너스 올해의 호스타로 선정된 이 초대형 황금 호스타는 어떤 그늘 정원에서도 시선을 사로잡는 단 하나의 포컬 포인트가 됩니다. 세월과 함께 더 웅장해지는 격조 있는 명품.",
+        "selling_points_ko": [
+          "2020 프로븐 위너스 올해의 호스타 선정",
+          "순금빛 무지 잎의 압도적 초대형 볼륨",
+          "깊은 잎맥과 요철이 만드는 조각적 질감",
+          "해가 갈수록 웅장해지는 장기 관상 가치"
+        ],
+        "recommend_for_ko": "정원의 상징목처럼 단독으로 세울 시그니처 대형 호스타를 찾는 분",
+        "headline_en": null,
+        "body_en": null
+      }
+    },
+    "tags": [
+      "초대형",
+      "양지견딤",
+      "황금무늬",
+      "민달팽이저항",
+      "포컬포인트"
+    ],
+    "images": {
+      "farm_photo": {
+        "src": null,
+        "placeholder": "assets/placeholder.svg",
+        "credit": "목향농원"
+      },
+      "reference_image": {
+        "url": null,
+        "credit": null,
+        "license": null,
+        "source_bucket": null
+      }
+    },
+    "references": [
+      {
+        "field": "identity",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSCTC"
+      },
+      {
+        "field": "provenance",
+        "source": "American Hosta Society Online Registry (id 5259)",
+        "url": "http://www.hostaregistrar.org/detail.php?id=5259"
+      },
+      {
+        "field": "provenance",
+        "source": "USPP26469P2 Google Patents (parentage Manhattan × Golden Gate)",
+        "url": "https://patents.google.com/patent/USPP26469"
+      },
+      {
+        "field": "size",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSCTC"
+      },
+      {
+        "field": "leaf",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSCTC"
+      },
+      {
+        "field": "culture",
+        "source": "NH Hostas",
+        "url": "https://nhhostas.com/products/coast-to-coast-hosta-pp26469"
+      },
+      {
+        "field": "awards",
+        "source": "Proven Winners / National Plant of the Year – 2020 Hosta of the Year",
+        "url": "https://nationalplantoftheyear.com/shadowland-coast-to-coast-hosta/"
+      }
+    ],
+    "research_status": "verified"
+  },
+  {
+    "id": "fire-and-ice",
+    "name_ko": "아이스 앤 파이어",
+    "name_en": "Fire and Ice",
+    "cultivar": "Hosta 'Fire and Ice'",
+    "aliases_ko": [
+      "파이어 앤 아이스",
+      "아이스앤파이어",
+      "호스타 아이스앤파이어"
+    ],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "Hans Hansen / Shady Oaks Nursery",
+      "year_registered": 1999,
+      "year_discovered": null,
+      "parentage": "Hosta 'Patriot'의 아조변이(sport) — 패트리어트의 반대 무늬",
+      "registry_url": "https://myhostas.be/db/hostas/Fire_and_Ice"
+    },
+    "size": {
+      "class": "medium",
+      "height_cm": [
+        30,
+        50
+      ],
+      "spread_cm": [
+        45,
+        75
+      ],
+      "registered_size_note": "중형(medium). 자료별 초장 약 20~50cm, 폭 40~80cm로 다소 직립형 둥근 포기를 이룸"
+    },
+    "leaf": {
+      "color_ko": "넓은 순백색 중앙에 짙은 녹색 가장자리",
+      "color_en": "wide pure white center with dark green margins",
+      "variegation": "중앙 흰무늬(medio-variegated) — 'Patriot'의 반전 무늬",
+      "substance": "medium"
+    },
+    "flower": {
+      "color_ko": "연보라색",
+      "color_en": "lavender",
+      "bloom_season": "mid",
+      "fragrant": false
+    },
+    "culture": {
+      "light_ko": "반음지에서 음지 (흰 중앙이 많아 강한 햇빛은 피하고 반음지 권장)",
+      "light_en": "partial shade to shade",
+      "growth_rate": "slow",
+      "hardiness": "USDA 3-9",
+      "slug_resistance": "low"
+    },
+    "awards": [
+      "RHS 정원공로상 (Award of Garden Merit, 2012)"
+    ],
+    "description_ko": "호스타 '아이스 앤 파이어'(정명 Fire and Ice)는 인기 품종 '패트리어트'의 아조변이로, 패트리어트와 반대되는 무늬가 특징입니다. 넓은 순백색 중앙과 짙은 녹색 가장자리가 강렬하게 대비되며, 다소 직립하는 중형 포기를 이룹니다. 여름에 연보라색 깔때기 모양 꽃이 피며, 흰 중앙 비율이 높아 성장은 다소 느린 편이라 반음지에서 잘 자랍니다.",
+    "description_en": "Hosta 'Fire and Ice' is a reverse-variegated sport of the popular 'Patriot', showing the inverse pattern of its parent. Wide pure white centers contrast sharply with dark green margins on a somewhat upright, medium mound. Lavender funnel-shaped flowers appear in summer. Because of the large white center it grows relatively slowly and prefers partial shade.",
+    "retail_copy": {
+      "warm": {
+        "headline_ko": "흰빛 중심에 번지는 초록 테두리, 정원의 서정",
+        "body_ko": "순백의 중앙에 짙은 녹색 테두리가 감싸듯 번지는 '아이스 앤 파이어'는 반그늘 정원에 은은한 빛을 더합니다. 여름이면 연보라 꽃대가 올라와 조용한 계절의 정취를 전합니다. 목향농원에서 건강하게 기른 포기로 만나보세요.",
+        "selling_points_ko": [
+          "순백 중앙과 짙은 녹색 테두리의 선명한 대비",
+          "여름에 피는 연보라색 꽃",
+          "다소 직립한 단정한 중형 포기"
+        ],
+        "recommend_for_ko": "반그늘 화단에 밝은 포인트를 두고 싶은 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "practical": {
+        "headline_ko": "패트리어트의 반전 무늬, 반음지용 중형 비비추",
+        "body_ko": "'패트리어트'의 아조변이로 흰 중앙+짙은 녹색 가장자리 무늬를 가진 중형 품종입니다. 흰 중앙 비율이 높아 강한 직사광은 피하고 반음지에서 재배하세요. 물빠짐 좋은 습윤한 토양을 유지하고 건조하지 않게 관리하면 좋습니다. 성장은 다소 느린 편이며 내한성이 강해 노지월동이 가능합니다.",
+        "selling_points_ko": [
+          "반음지 권장 — 흰 중앙 보호를 위해 직사광 회피",
+          "물빠짐 좋고 촉촉한 토양 유지, 건조 주의",
+          "내한성 우수(Zone 3-9), 노지월동 가능"
+        ],
+        "recommend_for_ko": "반음지 환경에서 관리 요령을 지켜 재배할 원예 애호가",
+        "headline_en": null,
+        "body_en": null
+      },
+      "premium": {
+        "headline_ko": "불과 얼음의 대비, 컬렉터를 위한 명품 비비추",
+        "body_ko": "명명가 Hans Hansen이 선보인 '아이스 앤 파이어'는 순백의 중앙과 짙은 녹색 테두리가 이루는 극적인 대비로 오랜 사랑을 받아온 품종입니다. 2012년 영국왕립원예협회 정원공로상(RHS AGM)을 수상하며 품질을 입증했습니다. 정갈한 중형 포기가 그늘 정원의 격을 높여줍니다.",
+        "selling_points_ko": [
+          "RHS 정원공로상(AGM) 수상 검증 품종",
+          "Hans Hansen의 '패트리어트' 반전 무늬 셀렉션",
+          "흰색과 녹색의 극적 대비로 컬렉션 가치 높음"
+        ],
+        "recommend_for_ko": "검증된 명품 품종을 찾는 호스타 컬렉터",
+        "headline_en": null,
+        "body_en": null
+      }
+    },
+    "tags": [
+      "중형",
+      "반음지",
+      "흰무늬",
+      "가장자리무늬",
+      "RHS-AGM"
+    ],
+    "images": {
+      "farm_photo": {
+        "src": null,
+        "placeholder": "assets/placeholder.svg",
+        "credit": "목향농원"
+      },
+      "reference_image": {
+        "url": null,
+        "credit": null,
+        "license": null,
+        "source_bucket": null
+      }
+    },
+    "references": [
+      {
+        "field": "identity",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSFIC"
+      },
+      {
+        "field": "provenance",
+        "source": "Home for the Harvest",
+        "url": "https://homefortheharvest.com/fire-and-ice-hosta/"
+      },
+      {
+        "field": "size",
+        "source": "Missouri Botanical Garden Plant Finder",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=274327"
+      },
+      {
+        "field": "leaf",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSFIC"
+      },
+      {
+        "field": "flower",
+        "source": "Missouri Botanical Garden Plant Finder",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=274327"
+      },
+      {
+        "field": "culture",
+        "source": "Missouri Botanical Garden Plant Finder",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=274327"
+      },
+      {
+        "field": "awards",
+        "source": "Ballyrobert Gardens (RHS AGM)",
+        "url": "https://www.ballyrobertgardens.com/products/hosta-fire-and-ice-v"
+      }
+    ],
+    "research_status": "verified"
+  },
+  {
+    "id": "first-frost",
+    "name_ko": "퍼스트 프로스트",
+    "name_en": "First Frost",
+    "cultivar": "Hosta 'First Frost'",
+    "aliases_ko": [
+      "퍼스트프로스트",
+      "호스타 퍼스트프로스트"
+    ],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "Diana Stone",
+      "year_registered": 2002,
+      "year_discovered": null,
+      "parentage": "'Halcyon'의 아조변이(sport)",
+      "registry_url": null
+    },
+    "size": {
+      "class": "medium",
+      "height_cm": [
+        35,
+        45
+      ],
+      "spread_cm": [
+        60,
+        90
+      ],
+      "registered_size_note": "소형에서 중형으로 자라는 무리형 품종"
+    },
+    "leaf": {
+      "color_ko": "청회색 바탕에 황금~크림~흰색으로 변하는 가장자리",
+      "color_en": "blue-green with a margin aging gold to cream to white",
+      "variegation": "잎 가장자리에 봄에는 황금빛 무늬가 들어오고 계절이 지나며 크림색에서 흰색으로 변함",
+      "substance": "thick"
+    },
+    "flower": {
+      "color_ko": "연보라색",
+      "color_en": "pale lavender",
+      "bloom_season": "mid-late",
+      "fragrant": false
+    },
+    "culture": {
+      "light_ko": "반음지에서 음지",
+      "light_en": "part shade to full shade",
+      "growth_rate": "medium",
+      "hardiness": "USDA 3-8",
+      "slug_resistance": "high"
+    },
+    "awards": [
+      "AHGA 올해의 호스타 2010 (Hosta of the Year 2010)"
+    ],
+    "description_ko": "'퍼스트 프로스트'는 명품 호스타 '할시온'에서 나온 아조변이 품종으로, 2010년 미국호스타재배자협회(AHGA) 올해의 호스타로 선정된 인기종입니다. 청회색 잎 가장자리에 봄에는 황금빛 테두리가 들어왔다가 계절이 흐르면서 크림색을 거쳐 흰색으로 변해, 마치 잎 가장자리에 서리가 내려앉은 듯한 정취를 냅니다. 잎이 두껍고 단단해 민달팽이 피해에 강하며, 소형에서 중형으로 무리 지어 자랍니다. 늦여름에는 연보라색 꽃이 올라옵니다.",
+    "description_en": "A sport of the classic 'Halcyon' and the American Hosta Growers Association Hosta of the Year 2010. Blue-green leaves emerge with a gold margin that changes through cream to pure white as the season progresses. The thick, substantial foliage gives it strong slug resistance, and it forms a small-to-medium mound. Pale lavender flowers appear in late summer.",
+    "retail_copy": {
+      "warm": {
+        "headline_ko": "잎 가장자리에 서리가 내려앉은 듯한 호스타",
+        "body_ko": "봄에는 황금빛 테두리로 시작해 여름을 지나며 크림빛, 흰빛으로 곱게 물들어 가는 아이예요. 청회색 잎과 어우러지는 그 변화를 지켜보는 재미가 있어 정원 초보자분들도 오래 예뻐하실 수 있습니다. 잎이 도톰해 민달팽이 걱정도 덜하답니다.",
+        "selling_points_ko": [
+          "계절 따라 금색에서 흰색으로 변하는 잎 테두리",
+          "서리 내린 듯 청량한 잎빛",
+          "두툼한 잎으로 민달팽이에 강함"
+        ],
+        "recommend_for_ko": "반음지 화단을 은은하게 밝히고 싶은 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "practical": {
+        "headline_ko": "올해의 호스타 2010, 검증된 인기 중형종",
+        "body_ko": "미국호스타재배자협회가 뽑은 2010년 올해의 호스타입니다. 키 35~45cm, 폭 60~90cm로 무리 지어 자라며 반음지에서 음지까지 잘 적응합니다. 잎이 두꺼워 민달팽이 저항성이 높고 관리가 수월해, 도매 물량으로도 안정적으로 권할 수 있는 품종입니다.",
+        "selling_points_ko": [
+          "AHGA 올해의 호스타 2010 수상",
+          "소~중형 무리형, 폭 60~90cm",
+          "민달팽이 저항성 높음"
+        ],
+        "recommend_for_ko": "관리 부담이 적은 검증된 품종을 찾는 조경·도매 수요",
+        "headline_en": null,
+        "body_en": null
+      },
+      "premium": {
+        "headline_ko": "명품 '할시온'의 혈통을 잇는 수상작",
+        "body_ko": "세계적으로 인정받는 '할시온'에서 태어난 아조변이 품종으로, 청회색 잎에 서리처럼 번지는 흰 테두리가 계절 내내 격조 있는 분위기를 연출합니다. AHGA 올해의 호스타로 선정된 이력이 그 가치를 뒷받침합니다. 두껍고 단단한 잎이 오랜 세월 정원의 품격을 지켜 줍니다.",
+        "selling_points_ko": [
+          "명품 '할시온'의 아조변이 혈통",
+          "올해의 호스타 2010 선정",
+          "서리처럼 번지는 흰 테두리의 계절 변화"
+        ],
+        "recommend_for_ko": "품격 있는 그늘정원을 완성하려는 안목 있는 애호가",
+        "headline_en": null,
+        "body_en": null
+      }
+    },
+    "tags": [
+      "중형",
+      "반음지",
+      "청색",
+      "가장자리무늬",
+      "황금무늬",
+      "민달팽이저항",
+      "올해의호스타"
+    ],
+    "images": {
+      "farm_photo": {
+        "src": null,
+        "placeholder": "assets/placeholder.svg",
+        "credit": "목향농원"
+      },
+      "reference_image": {
+        "url": null,
+        "credit": null,
+        "license": null,
+        "source_bucket": null
+      }
+    },
+    "references": [
+      {
+        "field": "identity",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSFIF"
+      },
+      {
+        "field": "provenance",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSFIF"
+      },
+      {
+        "field": "leaf",
+        "source": "Gardenia.net",
+        "url": "https://www.gardenia.net/plant/hosta-first-frost-plantain-lily"
+      },
+      {
+        "field": "size",
+        "source": "NH Hostas",
+        "url": "https://nhhostas.com/products/first-frost-hosta"
+      },
+      {
+        "field": "flower",
+        "source": "Gardenia.net",
+        "url": "https://www.gardenia.net/plant/hosta-first-frost-plantain-lily"
+      },
+      {
+        "field": "awards",
+        "source": "Gardenia.net",
+        "url": "https://www.gardenia.net/plant/hosta-first-frost-plantain-lily"
+      }
+    ],
+    "research_status": "verified"
+  },
+  {
+    "id": "great-expectations",
+    "name_ko": "그레이트 익스펙테이션",
+    "name_en": "Great Expectations",
+    "cultivar": "Hosta 'Great Expectations'",
+    "aliases_ko": [
+      "그레이트익스펙테이션",
+      "그레이트 익스펙테이션스"
+    ],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "J. Bond, P. Aden",
+      "year_registered": 1988,
+      "year_discovered": null,
+      "parentage": "Hosta sieboldiana var. elegans의 아조변이(sport)",
+      "registry_url": "https://www.myhostas.be/db/hostas/Great+Expectations"
+    },
+    "size": {
+      "class": "large",
+      "height_cm": [
+        55,
+        60
+      ],
+      "spread_cm": [
+        75,
+        85
+      ],
+      "registered_size_note": "잎 무더기 높이 약 55~60cm, 폭 약 75~85cm, 꽃대는 약 85cm까지 올라옴"
+    },
+    "leaf": {
+      "color_ko": "봄에 황금빛으로 돋아 크림빛 흰색으로 익는 중앙무늬에 넓고 불규칙한 청록색 가장자리",
+      "color_en": "creamy white to gold center emerging gold in spring, with wide irregular blue-green margins",
+      "variegation": "중앙무늬(medio-variegation): 크림~황금 중앙 + 넓은 청록 가장자리",
+      "substance": "thick"
+    },
+    "flower": {
+      "color_ko": "유백색에 가까운 흰색",
+      "color_en": "near-white",
+      "bloom_season": "early-mid",
+      "fragrant": false
+    },
+    "culture": {
+      "light_ko": "아침 햇살이 드는 밝은 반음지가 이상적이며, 진한 그늘보다 부드러운 광선에서 무늬가 잘 나옵니다",
+      "light_en": "morning sun to bright, open shade",
+      "growth_rate": "slow",
+      "hardiness": "USDA 3-8 (노지월동 가능)",
+      "slug_resistance": "medium"
+    },
+    "awards": [
+      "미국호스타협회(AHS) Best Variegated Leaf Award 1994"
+    ],
+    "description_ko": "1988년 등록된 대형 컬렉터 호스타로, H. sieboldiana 'Elegans'에서 나온 아조변이 품종입니다. 봄에 황금빛으로 돋는 크림~황금 중앙무늬를 넓고 불규칙한 청록색 가장자리가 감싸며, 잎은 두껍고 요철이 도드라집니다. 초여름 유백색 꽃이 잎 위로 솟은 꽃대에 피어납니다. 성장이 느리고 다소 까다로워 인내가 필요하지만, 자리를 잡으면 정원의 확실한 주인공이 됩니다. 1994년 미국호스타협회 최고 무늬잎상을 받았습니다.",
+    "description_en": "A large collector's hosta registered in 1988, a sport of Hosta sieboldiana var. elegans. Its creamy-white to gold center emerges gold in spring, framed by wide, irregular blue-green margins on thick, heavily puckered leaves. Near-white flowers rise above the mound in early summer. Slow-growing and somewhat demanding, it rewards patience as a striking garden focal point, and earned the American Hosta Society Best Variegated Leaf Award in 1994.",
+    "retail_copy": {
+      "warm": {
+        "headline_ko": "봄엔 황금, 여름엔 크림빛 — 마음을 사로잡는 대형 호스타",
+        "body_ko": "봄이면 황금빛으로 돋아나 여름엔 크림빛 흰색으로 익어가는 중앙무늬를, 넓고 시원한 청록색 가장자리가 포근히 감쌉니다. 두툼하고 요철진 큼직한 잎이 정원 한켠을 든든하게 채워줍니다. 초여름엔 유백색 꽃이 잎 위로 살포시 올라옵니다.",
+        "selling_points_ko": [
+          "봄 황금빛에서 여름 크림빛으로 물드는 중앙무늬",
+          "넓고 시원한 청록색 가장자리",
+          "두툼하고 요철진 대형 잎",
+          "초여름 유백색 꽃"
+        ],
+        "recommend_for_ko": "계절따라 잎 색이 변하는 대형 호스타로 정원에 포인트를 주고 싶은 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "practical": {
+        "headline_ko": "대형 컬렉터 품종 — 넉넉한 자리와 약간의 인내가 필요합니다",
+        "body_ko": "성장이 느리고 다소 까다로운 편이라, 처음엔 포기가 더디게 늘 수 있습니다. 깊게 심지 말고 얕게 심어 주시고, 아침 햇살이 드는 밝은 반음지에 넉넉한 공간을 확보해 주세요. 대신 잎이 두툼해 민달팽이 피해는 비교적 적은 편이고, USDA 3-8 기준 노지월동이 가능합니다. 자리를 잡으면 오래도록 정원의 구조를 잡아 줍니다.",
+        "selling_points_ko": [
+          "성장이 느림 — 넉넉한 자리와 인내가 필요",
+          "깊게 심지 말고 얕게 심기",
+          "아침 햇살 드는 밝은 반음지 권장",
+          "두툼한 잎으로 민달팽이 피해 비교적 적음"
+        ],
+        "recommend_for_ko": "천천히 자라는 특별한 품종을 느긋하게 키우실 수 있는 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "premium": {
+        "headline_ko": "1994 AHS 최고 무늬잎상 — 컬렉터의 대형 명품",
+        "body_ko": "1988년 등록된 이래 무늬 호스타의 기준이 되어 온 품종으로, 1994년 미국호스타협회 최고 무늬잎상을 받았습니다. H. sieboldiana 'Elegans'에서 나온 아조변이로, 두껍고 요철진 대형 잎에 황금~크림 중앙무늬와 청록 가장자리가 격조 있게 어우러집니다. 성장이 느린 만큼 귀하게 대접받는 컬렉터 품종입니다.",
+        "selling_points_ko": [
+          "1994년 AHS 최고 무늬잎상 수상",
+          "1988년 등록된 클래식 명품 품종",
+          "H. sieboldiana 'Elegans' 아조변이 혈통",
+          "두툼한 대형 잎의 정원 포컬포인트"
+        ],
+        "recommend_for_ko": "검증된 수상 이력의 대형 컬렉터 호스타를 찾는 분",
+        "headline_en": null,
+        "body_en": null
+      }
+    },
+    "tags": [
+      "대형",
+      "반음지",
+      "황금무늬",
+      "민달팽이저항",
+      "고전품종",
+      "포컬포인트"
+    ],
+    "images": {
+      "farm_photo": {
+        "src": null,
+        "placeholder": "assets/placeholder.svg",
+        "credit": "목향농원"
+      },
+      "reference_image": {
+        "url": null,
+        "credit": null,
+        "license": null,
+        "source_bucket": null
+      }
+    },
+    "references": [
+      {
+        "field": "identity",
+        "source": "Plant Delights Nursery",
+        "url": "https://www.plantdelights.com/products/hosta-great-expectations"
+      },
+      {
+        "field": "provenance",
+        "source": "MyHostas Database",
+        "url": "https://www.myhostas.be/db/hostas/Great+Expectations"
+      },
+      {
+        "field": "provenance",
+        "source": "Walters Gardens (sport of H. sieboldiana var. elegans, 1988)",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSGRE"
+      },
+      {
+        "field": "size",
+        "source": "Missouri Botanical Garden Plant Finder",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=248664"
+      },
+      {
+        "field": "leaf",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSGRE"
+      },
+      {
+        "field": "culture",
+        "source": "Missouri Botanical Garden Plant Finder",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=248664"
+      },
+      {
+        "field": "awards",
+        "source": "Walters Gardens (AHS Best Variegated Leaf Award 1994)",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSGRE"
+      }
+    ],
+    "research_status": "verified"
+  },
+  {
+    "id": "wolverine",
+    "name_ko": "울버린",
+    "name_en": "Wolverine",
+    "cultivar": "Hosta 'Wolverine'",
+    "aliases_ko": [
+      "호스타 울버린"
+    ],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "J. & J. Wilkins",
+      "year_registered": 1995,
+      "year_discovered": null,
+      "parentage": "'Yellow Splash' 계열 실생 × 'Dorset Blue'",
+      "registry_url": null
+    },
+    "size": {
+      "class": "medium",
+      "height_cm": [
+        30,
+        45
+      ],
+      "spread_cm": [
+        75,
+        90
+      ],
+      "registered_size_note": "중형, 흘러내리는 듯 넓게 퍼지는 수형"
+    },
+    "leaf": {
+      "color_ko": "청록색 창끝 잎에 황금(여름엔 크림빛)으로 물드는 가장자리",
+      "color_en": "blue-green spear-shaped leaves with a gold (creamy by summer) margin",
+      "variegation": "청록색 창끝~좁은 잎에 황금색(여름엔 크림빛)으로 물드는 가장자리 무늬",
+      "substance": "thick"
+    },
+    "flower": {
+      "color_ko": "연보라색",
+      "color_en": "lavender",
+      "bloom_season": "late",
+      "fragrant": false
+    },
+    "culture": {
+      "light_ko": "반음지에서 밝은 그늘",
+      "light_en": "partial to full shade",
+      "growth_rate": "fast",
+      "hardiness": "USDA 3-9",
+      "slug_resistance": "high"
+    },
+    "awards": [],
+    "description_ko": "청록색 바탕의 창끝처럼 길고 좁은 잎에 황금색 가장자리 무늬가 또렷한 중형 호스타다. 잎은 봄에 청록에 선명한 노란 테로 돋아 여름이면 가장자리가 크림빛으로 부드럽게 바뀌며, 잎맥을 따라 물결지는 광택 잎이 특징이다. 여름에 연보라 꽃이 피고, 잎 실질이 두툼해 민달팽이 피해에 강하며 생육이 빨라 무리 지어 자란다.",
+    "description_en": "A medium hosta with long, narrow, spear-tipped blue-green leaves boldly edged in gold. Foliage emerges blue-green with a bright yellow margin that softens to creamy white by summer, on shiny, wavy blades. Lavender flowers appear in late summer. Its thick leaf substance gives good slug resistance, and it grows quickly into a spreading mound.",
+    "retail_copy": {
+      "warm": {
+        "headline_ko": "청록 잎에 금빛 테를 두른, 정원의 다정한 대비",
+        "body_ko": "길고 뾰족한 청록색 잎마다 황금빛 가장자리가 곱게 둘러져, 반그늘 화단을 환하게 밝혀 줍니다. 봄엔 노란 테로, 여름엔 크림빛으로 색이 옮겨 가는 모습을 지켜보는 재미가 있어요. 여름날엔 연보라 꽃까지 살포시 올라옵니다.",
+        "selling_points_ko": [
+          "청록 바탕에 또렷한 황금 가장자리 무늬",
+          "봄~여름 잎색 변화를 즐기는 재미",
+          "여름 연보라 꽃"
+        ],
+        "recommend_for_ko": "반그늘 화단에 밝은 포인트를 더하고 싶은 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "practical": {
+        "headline_ko": "생육 빠르고 민달팽이에 강한 중형 실속종",
+        "body_ko": "잎 실질이 두툼해 민달팽이 피해에 강하고, 생육이 빨라 금세 넓게 퍼지며 자리를 잡습니다. 반음지에서 밝은 그늘까지 폭넓게 적응하고 USDA 3-9의 내한성으로 노지 월동이 안정적입니다. 폭 75~90cm 중형으로 관리 부담이 적습니다.",
+        "selling_points_ko": [
+          "두툼한 잎 실질로 높은 민달팽이 저항",
+          "빠른 생육·왕성한 번식",
+          "반음지~그늘 폭넓은 적응, 안정적 노지 월동"
+        ],
+        "recommend_for_ko": "손 덜 가고 잘 퍼지는 중형 호스타를 찾는 실속형 정원주",
+        "headline_en": null,
+        "body_en": null
+      },
+      "premium": {
+        "headline_ko": "창끝 잎에 새긴 청록과 황금의 정제된 대비",
+        "body_ko": "창끝처럼 길고 좁게 뻗은 청록 잎에 황금빛 가장자리가 선명한 윤곽을 그려, 물결지는 광택과 어우러진 격조 있는 자태를 완성합니다. 'Dorset Blue' 혈통의 청색 무늬 명종으로, 반그늘 정원에 절제된 우아함을 더합니다.",
+        "selling_points_ko": [
+          "'Dorset Blue' 혈통의 청색 무늬 명종",
+          "창끝형 잎과 청록·황금의 고대비 구성",
+          "물결지는 광택 잎의 격조 있는 질감"
+        ],
+        "recommend_for_ko": "수형과 잎색의 대비를 중시하는 감식안 있는 컬렉터",
+        "headline_en": null,
+        "body_en": null
+      }
+    },
+    "tags": [
+      "중형",
+      "반음지",
+      "청색",
+      "가장자리무늬",
+      "황금무늬",
+      "민달팽이저항"
+    ],
+    "images": {
+      "farm_photo": {
+        "src": null,
+        "placeholder": "assets/placeholder.svg",
+        "credit": "목향농원"
+      },
+      "reference_image": {
+        "url": null,
+        "credit": null,
+        "license": null,
+        "source_bucket": null
+      }
+    },
+    "references": [
+      {
+        "field": "identity",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSWOL"
+      },
+      {
+        "field": "provenance",
+        "source": "Plant Delights Nursery",
+        "url": "https://www.plantdelights.com/products/hosta-wolverine"
+      },
+      {
+        "field": "size",
+        "source": "Chicago Botanic Garden",
+        "url": "https://www.chicagobotanic.org/plant-information/plant-finder/hosta-wolverine-wolverine-hosta"
+      },
+      {
+        "field": "leaf",
+        "source": "Chicago Botanic Garden",
+        "url": "https://www.chicagobotanic.org/plant-information/plant-finder/hosta-wolverine-wolverine-hosta"
+      },
+      {
+        "field": "flower",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSWOL"
+      },
+      {
+        "field": "culture",
+        "source": "Missouri Botanical Garden",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=293408"
+      }
+    ],
+    "research_status": "verified"
   }
 ];
