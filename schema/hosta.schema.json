@@ -99,8 +99,25 @@
       "items": { "type": "string" },
       "description": "수상 이력. 예: ['AHS Hosta of the Year 2001','RHS AGM']"
     },
-    "description_ko": { "type": ["string", "null"], "description": "카드 본문(한국어)." },
+    "description_ko": { "type": ["string", "null"], "description": "카드 본문(한국어) — 도매 바이어용 전문 톤." },
     "description_en": { "type": ["string", "null"], "description": "카드 본문(영어 병기)." },
+    "retail_copy": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "소매 판매자용 친근 버전(별도 버전, description을 대체하지 않음). 기준: docs/hosta-brochure-strategy.md §10. 모든 사실 주장은 references로 뒷받침되는 기존 필드의 재표현만 허용 — 새 주장 금지.",
+      "properties": {
+        "headline_ko": { "type": ["string", "null"], "description": "한 줄 감성 헤드라인(10~20자). 예: '그늘을 금빛으로 밝히는 잎'" },
+        "body_ko": { "type": ["string", "null"], "description": "2~3문장(90~160자), 친근 존댓말. 소비자향 본문." },
+        "selling_points_ko": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "판매자향 '잘 팔리는 이유' 불릿 2~3개(수상=신뢰, 관리 용이=클레임↓ 등, 근거 있는 사실만)."
+        },
+        "recommend_for_ko": { "type": ["string", "null"], "description": "'이런 분께' — 구체적 고객 한 줄." },
+        "headline_en": { "type": ["string", "null"], "description": "향후 수출용(선택)." },
+        "body_en": { "type": ["string", "null"], "description": "향후 수출용(선택)." }
+      }
+    },
     "tags": {
       "type": "array",
       "items": { "type": "string" },

@@ -1,5 +1,6 @@
-/* 목향농원 호스타 브로셔 — 데이터(JSON) → 카드 렌더링
-   데이터 정본은 data/hostas.json. file:// 로도 열리도록 data/hostas.data.js(window.HOSTA_DATA) 미러를 우선 사용. */
+/* 목향농원 호스타 브로셔 — 데이터(JSON) → 좌측 목록 + 우측 상세 렌더링
+   데이터 정본은 data/hostas.json. file:// 로도 열리도록 data/hostas.data.js(window.HOSTA_DATA) 미러를 우선 사용.
+   버전: 도매·전문(pro) = 전문 설명·provenance·레퍼런스 / 소매·영업(sales) = 판매자용 친근 카피(내부 정보 숨김). */
 (function () {
   "use strict";
 
@@ -65,9 +66,25 @@
     return [dt, dd];
   }
 
+  // 소매·영업 버전 카피 블록 (retail_copy — 기준: docs §10, 검증 필드의 사실 재표현만)
+  function retailBlock(rc) {
+    var box = el("div", { class:"retail" });
+    if (rc.headline_ko) box.appendChild(el("div", { class:"retail-headline", text:rc.headline_ko }));
+    if (rc.body_ko) box.appendChild(el("p", { class:"retail-body", text:rc.body_ko }));
+    if (rc.selling_points_ko && rc.selling_points_ko.length) {
+      var ul = el("ul", { class:"retail-points" });
+      rc.selling_points_ko.forEach(function (p) { ul.appendChild(el("li", { text:p })); });
+      box.appendChild(ul);
+    }
+    if (rc.recommend_for_ko) {
+      box.appendChild(el("p", { class:"retail-for", text:"🌿 이런 분께 — " + rc.recommend_for_ko }));
+    }
+    return box;
+  }
+
   function card(h) {
     var c = el("article", { class:"card" });
-    c.dataset.tags = (h.tags || []).join(" ");
+    if (!h.retail_copy || (!h.retail_copy.headline_ko && !h.retail_copy.body_ko)) c.classList.add("no-retail");
 
     // 이미지 2슬롯
     var imgs = el("div", { class:"images" });
@@ -106,6 +123,9 @@
     badges.appendChild(el("span", { class:"badge status-" + st }, [bi(st === "verified" ? "검증됨" : "초안", st === "verified" ? "verified" : "draft")]));
     body.appendChild(badges);
 
+    // 소매·영업 버전 카피 (pro 뷰에서는 CSS로 숨김)
+    if (h.retail_copy) body.appendChild(retailBlock(h.retail_copy));
+
     // 스펙
     var specs = el("dl", { class:"specs" });
     function add(pair) { if (pair) { specs.appendChild(pair[0]); specs.appendChild(pair[1]); } }
@@ -121,9 +141,9 @@
       add(spec("잎", "Leaf", bi(leafKo, h.leaf.color_en)));
     }
     if (h.flower) {
-      var b = h.flower.bloom_season;
-      var fko = [h.flower.color_ko, b ? BLOOM_KO[b] + "개화" : null].filter(Boolean).join(" · ");
-      var fen = [h.flower.color_en, b ? BLOOM_EN[b] : null].filter(Boolean).join(", ");
+      var b2 = h.flower.bloom_season;
+      var fko = [h.flower.color_ko, b2 ? BLOOM_KO[b2] + "개화" : null].filter(Boolean).join(" · ");
+      var fen = [h.flower.color_en, b2 ? BLOOM_EN[b2] : null].filter(Boolean).join(", ");
       add(spec("꽃", "Flower", bi(fko, fen)));
     }
     if (h.culture && h.culture.hardiness) add(spec("내한성", "Hardiness", h.culture.hardiness));
@@ -131,7 +151,7 @@
     if (h.culture && h.culture.slug_resistance) add(spec("민달팽이 저항", "Slug resist.", bi(RESIST_KO[h.culture.slug_resistance], RESIST_EN[h.culture.slug_resistance])));
     if (specs.children.length) body.appendChild(specs);
 
-    // 설명
+    // 전문 설명 (sales 뷰에서는 CSS로 숨김; retail_copy 없는 품종은 폴백으로 표시 유지)
     if (h.description_ko || h.description_en) {
       var desc = el("p", { class:"desc" });
       if (h.description_ko) desc.appendChild(el("span", { class:"ko", text:h.description_ko }));
@@ -139,7 +159,7 @@
       body.appendChild(desc);
     }
 
-    // provenance
+    // provenance (내부용 — sales 뷰에서 숨김)
     if (h.provenance) {
       var p = h.provenance, parts = [];
       if (p.hybridizer) parts.push(p.hybridizer);
@@ -151,7 +171,7 @@
       if (parts.length) body.appendChild(el("div", { class:"prov", text:parts.join(" · ") }));
     }
 
-    // 레퍼런스
+    // 레퍼런스 (내부용 — sales 뷰에서 숨김)
     if (h.references && h.references.length) {
       var det = el("details", { class:"refs" });
       det.appendChild(el("summary", null, [bi("레퍼런스 " + h.references.length, "References " + h.references.length)]));
@@ -170,20 +190,66 @@
     return c;
   }
 
-  // ---- 필터/토글 상태 ----
-  var ALL = [], selected = new Set();
+  // ---- 목록 + 상세 (마스터-디테일) ----
+  var ALL = [], selected = new Set(), currentId = null;
 
-  function apply() {
-    var cards = document.querySelectorAll(".card");
+  function visible(h) {
+    if (selected.size === 0) return true;
+    return (h.tags || []).some(function (t) { return selected.has(t); });
+  }
+
+  function renderDetail(h) {
+    var detail = document.getElementById("detail");
+    detail.innerHTML = "";
+    detail.appendChild(card(h));
+    detail.scrollTop = 0;
+  }
+
+  function select(id, updateHash) {
+    var h = null;
+    for (var i = 0; i < ALL.length; i++) if (ALL[i].id === id) { h = ALL[i]; break; }
+    if (!h) return;
+    currentId = id;
+    renderDetail(h);
+    document.querySelectorAll(".plantlist button").forEach(function (b) {
+      b.setAttribute("aria-current", b.dataset.id === id ? "true" : "false");
+    });
+    if (updateHash !== false) {
+      try { history.replaceState(null, "", "#" + id); } catch (e) { location.hash = id; }
+    }
+  }
+
+  function buildList() {
+    var nav = document.getElementById("plantlist");
+    nav.innerHTML = "";
     var shown = 0;
-    cards.forEach(function (c) {
-      var tags = (c.dataset.tags || "").split(" ").filter(Boolean);
-      var ok = selected.size === 0 || tags.some(function (t) { return selected.has(t); });
-      c.style.display = ok ? "" : "none";
-      if (ok) shown++;
+    ALL.forEach(function (h) {
+      var btn = el("button", { "data-id":h.id, "aria-current":"false" });
+      btn.appendChild(el("span", { class:"li-ko", text:h.name_ko }));
+      btn.appendChild(el("span", { class:"li-en", text:h.name_en }));
+      if (h.size && h.size.class) btn.appendChild(el("span", { class:"li-size" }, [bi(SIZE_KO[h.size.class], SIZE_EN[h.size.class])]));
+      btn.onclick = function () { select(h.id); };
+      if (!visible(h)) btn.classList.add("hidden"); else shown++;
+      nav.appendChild(btn);
     });
     var cnt = document.getElementById("count");
-    if (cnt) { cnt.textContent = shown + "종 / " + shown + (shown === 1 ? " cultivar" : " cultivars"); }
+    if (cnt) cnt.textContent = shown + "종 / " + shown + (shown === 1 ? " cultivar" : " cultivars");
+    return shown;
+  }
+
+  function applyFilter() {
+    buildList();
+    // 현재 선택이 필터에서 사라졌으면 첫 표시 항목 선택
+    var cur = null;
+    for (var i = 0; i < ALL.length; i++) if (ALL[i].id === currentId) { cur = ALL[i]; break; }
+    if (!cur || !visible(cur)) {
+      var first = null;
+      for (var j = 0; j < ALL.length; j++) if (visible(ALL[j])) { first = ALL[j]; break; }
+      if (first) select(first.id);
+      else document.getElementById("detail").innerHTML = '<div class="empty">해당 태그의 품종이 없습니다 / No cultivars match.</div>';
+    } else {
+      select(currentId, false);
+    }
   }
 
   function buildFilters() {
@@ -192,7 +258,7 @@
     var tags = {};
     ALL.forEach(function (h) { (h.tags || []).forEach(function (t) { tags[t] = (tags[t] || 0) + 1; }); });
     var all = el("button", { class:"chip", "aria-pressed":"true", text:"전체 / All" });
-    all.onclick = function () { selected.clear(); box.querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", b === all ? "true" : "false"); }); apply(); };
+    all.onclick = function () { selected.clear(); box.querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", b === all ? "true" : "false"); }); applyFilter(); };
     box.appendChild(all);
     Object.keys(tags).sort().forEach(function (t) {
       var chip = el("button", { class:"chip", "aria-pressed":"false", text:t + " (" + tags[t] + ")" });
@@ -200,23 +266,25 @@
         if (selected.has(t)) selected.delete(t); else selected.add(t);
         chip.setAttribute("aria-pressed", selected.has(t) ? "true" : "false");
         all.setAttribute("aria-pressed", selected.size === 0 ? "true" : "false");
-        apply();
+        applyFilter();
       };
       box.appendChild(chip);
     });
   }
 
-  function wireLang() {
-    var sw = document.querySelector(".langswitch");
+  // 헤더 토글 공통 배선 (언어·버전 — 같은 패턴)
+  function wireSwitch(selector, attr, storageKey) {
+    var sw = document.querySelector(selector);
     if (!sw) return;
     var saved = null;
-    try { saved = localStorage.getItem("hosta-lang"); } catch (e) {}
-    if (saved) document.body.setAttribute("data-lang", saved);
+    try { saved = localStorage.getItem(storageKey); } catch (e) {}
+    if (saved) document.body.setAttribute(attr, saved);
     sw.querySelectorAll("button").forEach(function (b) {
-      b.setAttribute("aria-pressed", b.dataset.lang === document.body.getAttribute("data-lang") ? "true" : "false");
+      var val = b.dataset[attr.replace("data-", "")];
+      b.setAttribute("aria-pressed", val === document.body.getAttribute(attr) ? "true" : "false");
       b.onclick = function () {
-        document.body.setAttribute("data-lang", b.dataset.lang);
-        try { localStorage.setItem("hosta-lang", b.dataset.lang); } catch (e) {}
+        document.body.setAttribute(attr, val);
+        try { localStorage.setItem(storageKey, val); } catch (e) {}
         sw.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
       };
     });
@@ -231,17 +299,23 @@
   }
 
   function init() {
-    wireLang();
-    var grid = document.getElementById("grid");
+    wireSwitch(".langswitch:not(.viewswitch)", "data-lang", "hosta-lang");
+    wireSwitch(".viewswitch", "data-view", "hosta-view");
+    var detail = document.getElementById("detail");
     loadData().then(function (data) {
       ALL = Array.isArray(data) ? data : (data.hostas || []);
-      grid.innerHTML = "";
-      ALL.forEach(function (h) { grid.appendChild(card(h)); });
       buildFilters();
-      apply();
+      buildList();
+      var initial = (location.hash || "").replace("#", "");
+      var found = ALL.some(function (h) { return h.id === initial; });
+      select(found ? initial : (ALL[0] && ALL[0].id));
+      window.addEventListener("hashchange", function () {
+        var id = (location.hash || "").replace("#", "");
+        if (id && id !== currentId) select(id, false);
+      });
     }).catch(function (err) {
-      grid.innerHTML = "";
-      grid.appendChild(el("div", { class:"empty", html:
+      detail.innerHTML = "";
+      detail.appendChild(el("div", { class:"empty", html:
         "데이터를 불러오지 못했습니다 / Could not load data.<br><small>로컬 서버로 열거나(예: <code>python3 -m http.server</code>) " +
         "<code>data/hostas.data.js</code>가 있는지 확인하세요.<br>(" + err.message + ")</small>" }));
     });

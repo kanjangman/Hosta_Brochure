@@ -8,7 +8,7 @@
   <link rel="icon" href="assets/placeholder.svg">
   <link rel="stylesheet" href="template/styles.css">
 </head>
-<body data-lang="both">
+<body data-lang="both" data-view="pro">
   <header class="site-header">
     <div class="wrap">
       <h1>목향농원 호스타 도감</h1>
@@ -20,15 +20,24 @@
         <button data-lang="en">EN</button>
         <button data-lang="both">한 + 영</button>
       </div>
+      <div class="langswitch viewswitch" role="group" aria-label="버전 / Version">
+        <button data-view="pro">도매·전문</button>
+        <button data-view="sales">소매·영업</button>
+      </div>
       <span class="count" id="count"></span>
     </div>
   </header>
 
   <nav class="filters" id="filters" aria-label="태그 필터 / Tag filter"></nav>
 
-  <main class="grid" id="grid" aria-live="polite">
-    <div class="empty">불러오는 중… / Loading…</div>
-  </main>
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="plantlist" id="plantlist" aria-label="품종 목록 / Cultivar list"></nav>
+    </aside>
+    <main class="detail" id="detail" aria-live="polite">
+      <div class="empty">불러오는 중… / Loading…</div>
+    </main>
+  </div>
 
   <footer class="site-footer">
     <p class="ko">각 카드의 “레퍼런스”에 사실의 출처를 표기했습니다. 이미지는 저작권 안전 출처(위키미디어 공용 등 CC) 또는 농원 자체 촬영만 사용합니다. 데이터 정본: <code>data/hostas.json</code>.</p>

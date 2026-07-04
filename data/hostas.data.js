@@ -55,6 +55,18 @@ window.HOSTA_DATA = [
     ],
     "description_ko": "호스타 '준'은 청록색 잎 가장자리 안쪽으로 황금빛 중앙무늬가 선명하게 빛나는 세계적 인기 품종으로, 2001년 미국호스타재배자협회(AHGA) '올해의 호스타'에 선정되었습니다. 잎 실질이 두꺼워 민달팽이 피해에 강하며, 하루 3~4시간의 햇빛을 견디고 볕을 받을수록 중앙무늬가 더욱 황금빛으로 물들어 반그늘은 물론 밝은 자리에도 잘 어울립니다. 컴팩트한 수형과 뛰어난 관상성으로 도매·조경 수요가 꾸준한 스테디셀러입니다.",
     "description_en": "Hosta 'June' is a world-favorite cultivar prized for its glowing gold center framed by an irregular blue-green margin, and it was named the 2001 AHGA Hosta of the Year. Its thick, heavy-substance leaves give strong slug resistance, and it tolerates 3-4 hours of sun that deepens the gold center, making it equally at home in part shade or brighter spots. Compact, dependable, and highly ornamental, it remains a steady best-seller for wholesale and landscape demand.",
+    "retail_copy": {
+      "headline_ko": "그늘을 금빛으로 밝히는 잎",
+      "body_ko": "청록색 테두리 안쪽으로 금빛이 차오르는 잎이 매력이에요. 해가 서너 시간 살짝 드는 자리면 금빛이 한층 더 깊어집니다. 잎이 도톰해서 벌레 걱정이 적고 추위에도 강해, 한 번 심으면 해마다 다시 올라오는 든든한 식구가 됩니다.",
+      "selling_points_ko": [
+        "2001년 '올해의 호스타'·영국 RHS 정원공로상 수상 — 손님께 자신 있게 권할 수 있어요",
+        "도톰한 잎이라 민달팽이 피해가 적어 관리 문의·클레임 부담이 덜해요",
+        "높이 30cm대의 아담한 중형이라 화단 앞줄부터 화분까지 두루 제안하기 좋아요"
+      ],
+      "recommend_for_ko": "해가 잘 안 드는 화단이나 나무 아래를 환하게 만들고 싶은 분",
+      "headline_en": null,
+      "body_en": null
+    },
     "tags": [
       "중형",
       "황금무늬",
@@ -190,6 +202,18 @@ window.HOSTA_DATA = [
     ],
     "description_ko": "'블루 엔젤'은 두껍고 골이 깊은 청록색 대형 잎이 웅장한 돔형 수형을 이루는 대표적 초대형 청색 호스타로, 정원의 강렬한 포컬포인트로 손색이 없습니다. 왁스질의 두꺼운 잎은 민달팽이 피해에 강해 관리가 쉽고, 한여름 유백색~연보라 꽃대가 잎 위로 시원하게 솟습니다. 반음지에서 청색이 가장 선명하게 발현되며 노지월동이 가능한 강건한 다년초입니다.",
     "description_en": "Among the largest and most celebrated blue hostas, 'Blue Angel' forms a majestic dome of thick, deeply corrugated blue-green leaves that anchors a shade garden as a bold focal point. Its heavy, waxy substance gives excellent slug resistance, and tall scapes of near-white to pale lavender flowers rise well above the foliage in midsummer. A vigorous, cold-hardy perennial that shows its best blue color in light to part shade.",
+    "retail_copy": {
+      "headline_ko": "그늘 정원의 주인공, 파란 거인",
+      "body_ko": "어른 손바닥보다 큰 청회색 잎이 겹겹이 쌓여 폭 1m가 넘는 웅장한 돔을 이룹니다. 한여름이면 흰빛 도는 꽃대가 잎 위로 시원하게 솟아올라요. 잎이 도톰하고 왁스질이라 벌레 걱정이 적고, 추위에 강해 마당에 심어두면 해가 갈수록 더 근사해집니다.",
+      "selling_points_ko": [
+        "영국 RHS 정원공로상(1993) 수상, 미국 호스타협회 인기투표 상위권의 대표 청색종 — 이름값이 있어요",
+        "두껍고 왁스질인 잎이라 민달팽이 피해가 적어 관리가 수월해요",
+        "폭 1.2~1.5m의 초대형종 — 마당·조경 현장의 '포인트 한 그루' 수요에 딱 맞아요"
+      ],
+      "recommend_for_ko": "마당 그늘 자리에 눈길을 사로잡는 큰 포기 하나를 들이고 싶은 분",
+      "headline_en": null,
+      "body_en": null
+    },
     "tags": [
       "초대형",
       "청색",
@@ -333,6 +357,18 @@ window.HOSTA_DATA = [
     ],
     "description_ko": "1936년 미국에서 발견되어 오늘날까지 꾸준히 사랑받는 고전 명품 대형 호스타입니다. 두껍고 우글거리는 청록색 잎 가장자리에 넓은 황색~크림색 무늬가 선명하게 들어가 반그늘 정원에서 강렬한 존재감을 줍니다. 잎이 두꺼워 달팽이 피해에 비교적 강하며, RHS 정원공로상(AGM)을 받은 검증된 품종으로 도매 라인업의 대표 대형종으로 추천합니다.",
     "description_en": "A classic, historically important large hosta discovered in the U.S. in 1936 and treasured ever since. Its thick, heavily puckered blue-green leaves are boldly edged with wide greenish-yellow to creamy margins, giving strong presence in the shade garden. The heavy leaf substance offers good slug resistance, and its RHS Award of Garden Merit makes it a proven, in-demand centerpiece for a wholesale large-hosta lineup.",
+    "retail_copy": {
+      "headline_ko": "1936년부터 사랑받아온 클래식",
+      "body_ko": "청록색 잎 가장자리를 넓은 크림빛 금테가 둘러, 그늘진 자리에서도 화사한 존재감을 냅니다. 1936년 미국에서 발견된 이래 지금까지 세계 정원가들이 아껴온 명품이에요. 잎이 도톰해 벌레 걱정이 적고, 초여름이면 은은한 연보랏빛 꽃이 올라옵니다.",
+      "selling_points_ko": [
+        "영국 RHS 정원공로상을 받은 검증된 고전 품종 — 호스타가 처음인 손님께도 믿고 권해요",
+        "도톰한 잎이라 민달팽이 피해가 적어 관리 문의가 덜해요",
+        "폭 1.2m 이상 자라는 대형종 — 그늘 화단의 중심 자리 수요에 맞아요"
+      ],
+      "recommend_for_ko": "오래 두고 볼 든든한 클래식 품종을 찾는 분",
+      "headline_en": null,
+      "body_en": null
+    },
     "tags": [
       "대형",
       "가장자리무늬",
