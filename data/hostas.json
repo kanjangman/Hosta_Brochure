@@ -1382,5 +1382,793 @@
       }
     ],
     "research_status": "verified"
+  },
+  {
+    "id": "big-daddy",
+    "name_ko": "빅 대디",
+    "name_en": "Big Daddy",
+    "cultivar": "Hosta 'Big Daddy'",
+    "aliases_ko": [
+      "빅대디",
+      "호스타 빅대디"
+    ],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "Paul Aden",
+      "year_registered": 1978,
+      "year_discovered": null,
+      "parentage": "H. 'Robusta' 계열 변이 × 청색 실생 (Aden 등록 기록 기준, 이견 존재)",
+      "registry_url": "https://www.myhostas.be/db/hostas/Big_Daddy"
+    },
+    "size": {
+      "class": "large",
+      "height_cm": [
+        60,
+        75
+      ],
+      "spread_cm": [
+        90,
+        150
+      ],
+      "registered_size_note": "등록 높이 약 60cm, 성숙 시 지름 90~150cm의 대형 마운드로 자람"
+    },
+    "leaf": {
+      "color_ko": "청회색(블루그린)",
+      "color_en": "blue-green",
+      "variegation": "단색 (무늬 없음)",
+      "substance": "thick"
+    },
+    "flower": {
+      "color_ko": "유백색~연보라",
+      "color_en": "near-white to pale lavender",
+      "bloom_season": "mid-late",
+      "fragrant": false
+    },
+    "culture": {
+      "light_ko": "해가 살짝 드는 그늘(반음지)에서 청색이 잘 발현",
+      "light_en": "part shade",
+      "growth_rate": "slow",
+      "hardiness": "USDA 3-9",
+      "slug_resistance": "high"
+    },
+    "awards": [
+      "미국호스타협회(AHS) 베스트 블루 리프상 (1989)"
+    ],
+    "description_ko": "폴 에이든이 1978년 등록한 고전 대형 청색 호스타. 둥근 하트형의 두껍고 깊게 우글거리는(컵·요철) 청회색 잎이 특징이며, 여름에는 유백색~연보라의 종 모양 꽃이 핀다. 잎이 도톰해 민달팽이 피해에 강하고, 해가 살짝 드는 그늘에서 청색이 가장 잘 발현된다. 성장은 느리지만 자리를 잡으면 지름 90~150cm의 웅장한 마운드를 이루어 정원의 주인공이 된다.",
+    "description_en": "A classic large blue hosta registered by Paul Aden in 1978. It forms rounded, heart-shaped, thick, heavily corrugated (cupped and puckered) blue-green leaves, with near-white to pale lavender bell-shaped flowers in summer. The heavy leaf substance gives it strong slug resistance, and the blue coloration is best in part shade. Slow-growing but eventually building a commanding mound 90-150 cm across.",
+    "retail_copy": {
+      "warm": {
+        "headline_ko": "정원에 놓는 든든한 청색 주인공, 빅 대디",
+        "body_ko": "둥글고 도톰한 청회색 잎이 깊게 우글거리며 자라나, 보고 있으면 마음이 넉넉해지는 대형 호스타예요. 여름이면 유백색 종 모양 꽃이 살포시 올라옵니다. 해가 살짝 드는 그늘에 심어두면 해마다 더 웅장해져요.",
+        "selling_points_ko": [
+          "둥근 하트형의 도톰한 청회색 잎",
+          "여름에 피는 유백색 꽃",
+          "해가 살짝 드는 그늘에서 청색이 예쁘게 발현",
+          "잎이 도톰해 벌레 걱정이 적어요"
+        ],
+        "recommend_for_ko": "그늘진 정원 한켠을 든든하게 채우고 싶은 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "practical": {
+        "headline_ko": "관리 쉬운 대형 청색 호스타",
+        "body_ko": "1978년 등록된 고전 품종으로, 성숙하면 지름 90~150cm까지 커지는 대형종입니다. 잎이 도톰해 민달팽이 피해가 적고, 해가 살짝 드는 그늘(반음지)에서 청색이 가장 잘 나옵니다. 성장은 느린 편이니 넉넉한 자리를 잡아 심어주세요. 내한성이 좋아 노지 월동이 됩니다.",
+        "selling_points_ko": [
+          "성숙 시 지름 90~150cm 대형 마운드",
+          "도톰한 잎으로 민달팽이 저항 높음",
+          "반음지 적합, 청색 발현 우수",
+          "내한성 USDA 3-9로 노지 월동 가능"
+        ],
+        "recommend_for_ko": "손이 적게 가는 대형 그늘식물을 찾는 정원주",
+        "headline_en": null,
+        "body_en": null
+      },
+      "premium": {
+        "headline_ko": "1989년 AHS 수상, 컬렉터의 청색 명품",
+        "body_ko": "폴 에이든이 1978년 등록하고 1989년 미국호스타협회 베스트 블루 리프상을 받은 고전 명품입니다. 깊게 각인된 요철과 청회색 광택이 어우러진 잎은 그 자체로 조각 같은 존재감을 냅니다. 반음지에서 완성되는 웅장한 마운드로 정원의 주인공을 세워보세요.",
+        "selling_points_ko": [
+          "1989년 AHS 베스트 블루 리프상 수상",
+          "폴 에이든의 1978년 고전 품종",
+          "깊은 요철과 청회색의 조각 같은 잎",
+          "정원의 주인공이 되는 웅장한 대형 마운드"
+        ],
+        "recommend_for_ko": "수상 이력의 검증된 청색 명품을 원하는 컬렉터",
+        "headline_en": null,
+        "body_en": null
+      }
+    },
+    "tags": [
+      "대형",
+      "반음지",
+      "청색",
+      "민달팽이저항",
+      "포컬포인트",
+      "고전품종"
+    ],
+    "images": {
+      "farm_photo": {
+        "src": null,
+        "placeholder": "assets/placeholder.svg",
+        "credit": "목향농원"
+      },
+      "reference_image": {
+        "url": null,
+        "credit": null,
+        "license": null,
+        "source_bucket": null
+      }
+    },
+    "references": [
+      {
+        "field": "provenance",
+        "source": "Plant Delights - Paul Aden Hosta Introductions and Breeding",
+        "url": "https://www.plantdelights.com/blogs/articles/paul-aden-hosta-introductions-and-breeding"
+      },
+      {
+        "field": "identity",
+        "source": "myhostas.be Hosta database - Big Daddy",
+        "url": "https://www.myhostas.be/db/hostas/Big_Daddy"
+      },
+      {
+        "field": "size",
+        "source": "Walters Gardens - Hosta 'Big Daddy'",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSBID"
+      },
+      {
+        "field": "size",
+        "source": "Favorite Perennials - Big Daddy Hosta",
+        "url": "https://www.favoriteperennials.com/big-daddy-hosta/"
+      },
+      {
+        "field": "leaf",
+        "source": "Walters Gardens - Hosta 'Big Daddy'",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSBID"
+      },
+      {
+        "field": "leaf",
+        "source": "NH Hostas - Big Daddy Hosta",
+        "url": "https://nhhostas.com/products/big-daddy-hosta"
+      },
+      {
+        "field": "flower",
+        "source": "Walters Gardens - Hosta 'Big Daddy'",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSBID"
+      },
+      {
+        "field": "culture",
+        "source": "NH Hostas - Big Daddy Hosta",
+        "url": "https://nhhostas.com/products/big-daddy-hosta"
+      },
+      {
+        "field": "culture",
+        "source": "Gardenia.net - Hosta 'Big Daddy'",
+        "url": "https://www.gardenia.net/plant/hosta-big-daddy"
+      },
+      {
+        "field": "awards",
+        "source": "Plant Delights - Paul Aden Hosta Introductions and Breeding",
+        "url": "https://www.plantdelights.com/blogs/articles/paul-aden-hosta-introductions-and-breeding"
+      }
+    ],
+    "research_status": "verified"
+  },
+  {
+    "id": "francee",
+    "name_ko": "프랑시",
+    "name_en": "Francee",
+    "cultivar": "Hosta 'Francee'",
+    "aliases_ko": [
+      "프란시",
+      "프랑세",
+      "무늬비비추"
+    ],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "M. Klopping",
+      "year_registered": 1986,
+      "year_discovered": null,
+      "parentage": "Hosta 'Fortunei Albomarginata'의 아조변이(sport)",
+      "registry_url": "https://www.hostaregistrar.org/detail.php?id=1775"
+    },
+    "size": {
+      "class": "medium",
+      "height_cm": [
+        40,
+        55
+      ],
+      "spread_cm": [
+        75,
+        90
+      ],
+      "registered_size_note": "자료별 편차가 있어 성숙 시 초장 약 35~55cm, 폭 75~90cm 이상으로 보고되며, 잘 자란 포기는 대형에 가깝게 벌어지기도 함."
+    },
+    "leaf": {
+      "color_ko": "진한 녹색 바탕에 좁고 깨끗한 흰~크림색 가장자리",
+      "color_en": "dark green with narrow pure white to cream margins",
+      "variegation": "가장자리 흰색(크림) 무늬 (white/cream margin)",
+      "substance": "medium"
+    },
+    "flower": {
+      "color_ko": "연보라색",
+      "color_en": "pale lavender",
+      "bloom_season": "mid",
+      "fragrant": false
+    },
+    "culture": {
+      "light_ko": "해가 살짝 드는 그늘에서 그늘까지(반음지~음지)",
+      "light_en": "part shade to full shade",
+      "growth_rate": "fast",
+      "hardiness": "USDA 3-8, 노지월동 가능",
+      "slug_resistance": "medium"
+    },
+    "awards": [],
+    "description_ko": "호스타 '프랑시'는 진한 녹색 잎에 좁고 또렷한 흰 테두리가 들어간 무늬비비추 고전 품종입니다. 1986년 M. Klopping의 이름으로 미국호스타협회(AHS)에 등록되었으며, 'Fortunei Albomarginata'의 아조변이입니다. '패트리어트', '미니트맨' 등 수많은 흰테 호스타의 모품종으로 유명합니다. 중형으로 성장이 빠르고 강건하며, 한여름 연보라색 꽃대를 올립니다. 해가 살짝 드는 그늘부터 그늘까지 잘 견디는 대표적인 그늘정원 잎보기 식물입니다.",
+    "description_en": "Hosta 'Francee' is a classic white-margined hosta with dark green leaves edged by a narrow, clean white margin. A sport of 'Fortunei Albomarginata', it was registered with the AHS in 1986 under M. Klopping. It is the classic parent of many popular white-edged hostas such as 'Patriot' and 'Minuteman'. This vigorous, fast-growing midsize hosta produces pale lavender flowers in midsummer and thrives in part to full shade.",
+    "retail_copy": {
+      "warm": {
+        "headline_ko": "그늘진 마당을 환하게, 또렷한 흰 테두리",
+        "body_ko": "진한 초록 잎에 깨끗한 흰 테두리가 살짝 둘러진 프랑시는, 해가 잘 안 드는 구석도 화사하게 밝혀줍니다. 한여름이면 연보라 꽃대가 살포시 올라와 소박한 정취를 더해요. 손이 많이 가지 않아도 씩씩하게 자라는 고마운 아이랍니다.",
+        "selling_points_ko": [
+          "또렷한 흰 테두리로 그늘이 환해져요",
+          "여름에 연보라 꽃이 피어요",
+          "잘 자라서 금세 풍성해져요",
+          "해가 살짝 드는 그늘에 딱 좋아요"
+        ],
+        "recommend_for_ko": "그늘진 마당이나 나무 밑을 밝고 화사하게 꾸미고 싶은 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "practical": {
+        "headline_ko": "노지월동 되는 강건한 무늬비비추, 관리 부담 적어요",
+        "body_ko": "프랑시는 겨울 추위에도 노지에서 월동하는 튼튼한 숙근초입니다. 성장이 빨라 심어두면 해마다 포기가 풍성해지고, 해가 살짝 드는 그늘부터 그늘까지 폭넓게 적응합니다. 잎에 도톰한 힘이 있어 비교적 벌레 걱정도 덜한 편이라 초보자도 키우기 쉽습니다.",
+        "selling_points_ko": [
+          "노지월동 가능한 튼튼한 숙근초",
+          "성장이 빨라 매년 풍성해져요",
+          "반음지부터 그늘까지 두루 적응",
+          "도톰한 잎으로 벌레 걱정 적은 편"
+        ],
+        "recommend_for_ko": "손이 덜 가고 오래 두고 볼 수 있는 그늘식물을 찾는 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "premium": {
+        "headline_ko": "흰테 호스타의 원조, 고전 명품 프랑시",
+        "body_ko": "프랑시는 '패트리어트', '미니트맨' 등 수많은 명품 흰테 호스타를 낳은 원조 모품종입니다. 진녹색 잎을 따라 흐르는 좁고 정갈한 흰 테두리가 그늘정원에 품격 있는 포컬포인트를 완성합니다. 오래도록 사랑받아 온 검증된 고전이에요.",
+        "selling_points_ko": [
+          "'패트리어트'·'미니트맨' 등 수많은 흰테 품종의 원조 모품종",
+          "정갈한 흰 테두리의 고전 명품",
+          "그늘정원의 품격 있는 포컬포인트"
+        ],
+        "recommend_for_ko": "정원에 격을 더할 검증된 고전 명품을 원하는 분",
+        "headline_en": null,
+        "body_en": null
+      }
+    },
+    "tags": [
+      "중형",
+      "반음지",
+      "가장자리무늬",
+      "흰무늬",
+      "고전품종",
+      "포컬포인트"
+    ],
+    "images": {
+      "farm_photo": {
+        "src": null,
+        "placeholder": "assets/placeholder.svg",
+        "credit": "목향농원"
+      },
+      "reference_image": {
+        "url": null,
+        "credit": null,
+        "license": null,
+        "source_bucket": null
+      }
+    },
+    "references": [
+      {
+        "field": "identity",
+        "source": "American Hosta Society Online Registry",
+        "url": "https://www.hostaregistrar.org/detail.php?id=1775"
+      },
+      {
+        "field": "provenance",
+        "source": "American Hosta Society Online Registry (M. Klopping, reg. 1986, sport of 'Fortunei Albomarginata')",
+        "url": "https://www.hostaregistrar.org/detail.php?id=1775"
+      },
+      {
+        "field": "size",
+        "source": "Missouri Botanical Garden Plant Finder",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=248653"
+      },
+      {
+        "field": "leaf",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSFRA"
+      },
+      {
+        "field": "flower",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSFRA"
+      },
+      {
+        "field": "culture",
+        "source": "Missouri Botanical Garden Plant Finder",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=248653"
+      },
+      {
+        "field": "identity",
+        "source": "Naver Shopping (노지월동 무늬비비추, 중형종)",
+        "url": "https://smartstore.naver.com/main/products/12039905345"
+      }
+    ],
+    "research_status": "verified"
+  },
+  {
+    "id": "paradigm",
+    "name_ko": "패러다임",
+    "name_en": "Paradigm",
+    "cultivar": "Hosta 'Paradigm'",
+    "aliases_ko": [
+      "호스타 패러다임"
+    ],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "Walden West (C. Purtymun)",
+      "year_registered": 1999,
+      "year_discovered": null,
+      "parentage": "'Abiqua Recluse'의 아조변이(sport)",
+      "registry_url": "https://myhostas.be/db/view/Paradigm"
+    },
+    "size": {
+      "class": "large",
+      "height_cm": [
+        50,
+        56
+      ],
+      "spread_cm": [
+        110,
+        120
+      ],
+      "registered_size_note": "AHS 등록 대형(Large)종. 성숙 시 초장 약 50cm, 폭 약 110~120cm의 큰 포기를 이룸."
+    },
+    "leaf": {
+      "color_ko": "밝은 황금빛~연두 중앙에 청록색 가장자리(계절과 볕에 따라 중앙이 황금색으로 짙어짐)",
+      "color_en": "bright gold to chartreuse center with blue-green margins",
+      "variegation": "중앙 황금무늬(medio) + 청록색 가장자리무늬",
+      "substance": "thick"
+    },
+    "flower": {
+      "color_ko": "연보라",
+      "color_en": "light lavender",
+      "bloom_season": "mid",
+      "fragrant": false
+    },
+    "culture": {
+      "light_ko": "반음지, 아침 볕 등 일부 양지도 견딤(볕을 받으면 황금색이 더 선명)",
+      "light_en": "part shade to some sun (gold color intensifies with light)",
+      "growth_rate": "medium",
+      "hardiness": "USDA 3-9",
+      "slug_resistance": "high"
+    },
+    "awards": [
+      "미국호스타재배자협회(AHGA) 올해의 호스타 2007 (Hosta of the Year 2007)"
+    ],
+    "description_ko": "호스타 '패러다임'은 '아비쿠아 리클루스(Abiqua Recluse)'의 아조변이로, 1999년 Walden West(C. Purtymun)가 등록했다. 밝은 황금빛에서 연두색으로 물드는 중앙 무늬와 이를 감싸는 청록색 가장자리가 특징이며, 계절과 볕에 따라 중앙이 더 선명한 황금색으로 변한다. 잎이 두껍고 오글거림(seersucker)이 있어 민달팽이 피해에 강하다. 큰 포기를 이루는 대형종으로, 한여름 연보라색 꽃을 피운다. 2007년 미국호스타재배자협회 올해의 호스타로 선정되었다.",
+    "description_en": "Hosta 'Paradigm' is a sport of 'Abiqua Recluse', registered in 1999 by Walden West (C. Purtymun). It features a bright gold to chartreuse center that deepens with the season, framed by blue-green margins. Its thick, seersuckered leaves give it strong slug resistance. A large clump-forming hosta with light lavender flowers in midsummer, it was named the American Hosta Growers Association Hosta of the Year in 2007.",
+    "retail_copy": {
+      "warm": {
+        "headline_ko": "정원을 환하게 밝히는 황금빛 대형 호스타",
+        "body_ko": "밝은 황금빛 중앙에 청록색 테두리를 두른 잎이 그늘진 화단을 환하게 밝혀줍니다. 볕이 들면 중앙이 더 짙은 황금색으로 물들어 계절 내내 색의 변화를 즐길 수 있어요. 큰 포기로 자라 한여름엔 연보라색 꽃대까지 올려줍니다.",
+        "selling_points_ko": [
+          "황금빛 중앙 + 청록 테두리의 화사한 무늬",
+          "볕에 따라 색이 짙어지는 계절감",
+          "큰 포기를 이루는 대형종",
+          "한여름 연보라색 꽃"
+        ],
+        "recommend_for_ko": "그늘진 화단을 밝고 화사하게 꾸미고 싶은 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "practical": {
+        "headline_ko": "두꺼운 잎, 민달팽이에 강한 관리 편한 대형종",
+        "body_ko": "잎이 두껍고 표면이 오글거려 민달팽이 피해에 강한 편입니다. 반음지에서 잘 자라며 아침 볕 정도는 견뎌 심을 자리가 넉넉합니다. USDA 3-9로 내한성이 좋아 노지월동이 가능하고, 대형으로 자라 넓은 공간을 채우기에 좋습니다.",
+        "selling_points_ko": [
+          "두껍고 오글거리는 잎으로 민달팽이 저항 높음",
+          "반음지~일부 양지까지 적응",
+          "노지월동(USDA 3-9)",
+          "넓은 자리를 채우는 대형 포기"
+        ],
+        "recommend_for_ko": "관리 부담을 줄이고 넓은 공간을 채우고 싶은 정원주",
+        "headline_en": null,
+        "body_en": null
+      },
+      "premium": {
+        "headline_ko": "2007 올해의 호스타, 검증된 황금 명품종",
+        "body_ko": "'아비쿠아 리클루스'의 아조변이로 태어나 2007년 미국호스타재배자협회 올해의 호스타로 선정된 검증된 품종입니다. 밝은 황금 중앙과 청록 가장자리가 만드는 선명한 대비, 두툼한 잎의 무게감이 대형 포기에서 존재감을 발합니다.",
+        "selling_points_ko": [
+          "2007 올해의 호스타(HOTY) 수상",
+          "황금 중앙 × 청록 가장자리의 선명한 대비",
+          "두툼한 잎이 주는 고급스러운 질감",
+          "'아비쿠아 리클루스' 유래 명가 혈통"
+        ],
+        "recommend_for_ko": "검증된 수상 품종으로 정원의 격을 높이려는 분",
+        "headline_en": null,
+        "body_en": null
+      }
+    },
+    "tags": [
+      "대형",
+      "반음지",
+      "양지견딤",
+      "황금무늬",
+      "가장자리무늬",
+      "민달팽이저항",
+      "올해의호스타"
+    ],
+    "images": {
+      "farm_photo": {
+        "src": null,
+        "placeholder": "assets/placeholder.svg",
+        "credit": "목향농원"
+      },
+      "reference_image": {
+        "url": null,
+        "credit": null,
+        "license": null,
+        "source_bucket": null
+      }
+    },
+    "references": [
+      {
+        "field": "identity",
+        "source": "MyHostas Database",
+        "url": "https://myhostas.be/db/view/Paradigm"
+      },
+      {
+        "field": "provenance",
+        "source": "Plant Delights (Walden West '99)",
+        "url": "https://www.plantdelights.com/products/hosta-paradigm"
+      },
+      {
+        "field": "size",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSPAR"
+      },
+      {
+        "field": "leaf",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSPAR"
+      },
+      {
+        "field": "flower",
+        "source": "Perennial Resource",
+        "url": "http://www.perennialresource.com/variety.php?ID=HSPAR"
+      },
+      {
+        "field": "culture",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSPAR"
+      },
+      {
+        "field": "awards",
+        "source": "American Hosta Society - Hosta of the Year booklet",
+        "url": "https://americanhostasociety.org/wp-content/uploads/2025/11/Hosta-of-the-Year-booklet-3rd-Ed.pdf"
+      }
+    ],
+    "research_status": "verified"
+  },
+  {
+    "id": "royal-standard",
+    "name_ko": "로얄 스탠다드",
+    "name_en": "Royal Standard",
+    "cultivar": "Hosta 'Royal Standard'",
+    "aliases_ko": [
+      "로얄스탠다드",
+      "로열 스탠다드",
+      "호스타 로얄스탠다드"
+    ],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "Grullemans (Wayside Gardens)",
+      "year_registered": 1986,
+      "year_discovered": 1965,
+      "parentage": "H. plantaginea × H. sieboldiana",
+      "registry_url": "https://myhostas.be/db/view/Royal+Standard"
+    },
+    "size": {
+      "class": "large",
+      "height_cm": [
+        50,
+        65
+      ],
+      "spread_cm": [
+        90,
+        120
+      ],
+      "registered_size_note": "대형 마운드형. 잎 약 23×13cm, 개화 시 화경이 잎 위로 100~110cm까지 올라옴. 미국 최초 특허 호스타(PP2467, 1965)."
+    },
+    "leaf": {
+      "color_ko": "광택 나는 밝은 녹색",
+      "color_en": "glossy bright green",
+      "variegation": "none",
+      "substance": "medium"
+    },
+    "flower": {
+      "color_ko": "흰색",
+      "color_en": "white",
+      "bloom_season": "late",
+      "fragrant": true
+    },
+    "culture": {
+      "light_ko": "반음지에서 잘 자라며 양지도 잘 견딤(양지에서는 잎이 밝은 연두빛을 띰)",
+      "light_en": "part shade to sun; notably sun and drought tolerant",
+      "growth_rate": "fast",
+      "hardiness": "USDA 3-9",
+      "slug_resistance": "low"
+    },
+    "awards": [
+      "영국왕립원예협회 정원공로상(RHS AGM, 1993)"
+    ],
+    "description_ko": "'로얄 스탠다드'는 H. plantaginea 혈통을 이어받은 고전 명품종으로, 1965년 미국 최초로 특허를 받은 호스타이자 1986년 미국호스타협회에 정식 등록되었다. 광택이 도는 밝은 녹색 무지 잎이 대형 마운드를 이루며, 늦여름에서 초가을에 향기로운 흰색 꽃이 잎 위로 시원하게 솟아오른다. 성장이 빠르고 강건하며, 양지와 건조에 대한 내성이 다른 호스타보다 뛰어나 재배가 쉽다.",
+    "description_en": "A classic, time-tested cultivar of H. plantaginea heritage — the first hosta ever patented in the U.S. (PP2467, 1965) and registered with the AHS in 1986. It forms a large mound of glossy, bright green, unmarked leaves and produces fragrant white flowers on tall scapes in late summer to early fall. Fast-growing, vigorous, and unusually sun- and drought-tolerant for a hosta.",
+    "retail_copy": {
+      "warm": {
+        "headline_ko": "저녁이면 은은한 향기가 퍼지는 순백의 꽃",
+        "body_ko": "광택 도는 밝은 녹색 잎이 큼직한 마운드를 이루고, 늦여름이면 잎 위로 향기로운 흰 꽃이 피어올라요. 특히 해질녘 향이 진해져 정원에 서 있는 것만으로 마음이 편안해지는 고전 명품종입니다.",
+        "selling_points_ko": [
+          "향기 나는 순백색 꽃",
+          "광택 나는 밝은 녹색 무지 잎",
+          "시원하게 솟는 대형 마운드",
+          "반세기 넘게 사랑받은 고전종"
+        ],
+        "recommend_for_ko": "향기 있는 흰 꽃과 넉넉한 잎을 곁에 두고 싶은 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "practical": {
+        "headline_ko": "양지도 잘 견디는, 키우기 쉬운 대형 향기 호스타",
+        "body_ko": "H. plantaginea × H. sieboldiana 교배종으로 성장이 빠르고 강건합니다. 다른 호스타보다 양지와 건조에 강해 재배 조건을 크게 가리지 않으며, 폭 90~120cm까지 넉넉히 퍼져 그늘 화단을 빠르게 채워 줍니다. USDA 3-9로 노지 월동도 안정적입니다.",
+        "selling_points_ko": [
+          "양지·건조 내성이 뛰어남",
+          "성장 빠르고 강건함(폭 90~120cm)",
+          "늦여름 향기로운 흰 꽃",
+          "USDA 3-9 넓은 재배 적응성"
+        ],
+        "recommend_for_ko": "까다롭지 않고 빠르게 자리 잡는 대형종을 찾는 재배자",
+        "headline_en": null,
+        "body_en": null
+      },
+      "premium": {
+        "headline_ko": "미국 최초 특허 호스타, 반세기의 정통 명품",
+        "body_ko": "1965년 미국 최초로 특허받고 1986년 정식 등록된 정통 클래식이자, 1993년 영국왕립원예협회 정원공로상(RHS AGM)에 빛나는 검증된 품종입니다. 광택 나는 밝은 녹색 잎과 향기로운 순백의 꽃이 어우러진, 시간이 증명한 완성도를 정원에 담아 보세요.",
+        "selling_points_ko": [
+          "미국 최초 특허 호스타(1965)",
+          "RHS 정원공로상 수상(1993)",
+          "향기 있는 순백색 꽃",
+          "H. plantaginea 혈통의 정통 명품종"
+        ],
+        "recommend_for_ko": "검증된 명품 클래식으로 정원의 격을 높이려는 분",
+        "headline_en": null,
+        "body_en": null
+      }
+    },
+    "tags": [
+      "대형",
+      "양지견딤",
+      "향기",
+      "고전품종",
+      "RHS-AGM"
+    ],
+    "images": {
+      "farm_photo": {
+        "src": null,
+        "placeholder": "assets/placeholder.svg",
+        "credit": "목향농원"
+      },
+      "reference_image": {
+        "url": null,
+        "credit": null,
+        "license": null,
+        "source_bucket": null
+      }
+    },
+    "references": [
+      {
+        "field": "provenance",
+        "source": "MyHostas Database (AHS registry mirror)",
+        "url": "https://myhostas.be/db/view/Royal+Standard"
+      },
+      {
+        "field": "provenance",
+        "source": "Missouri Botanical Garden Plant Finder",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=247588"
+      },
+      {
+        "field": "identity",
+        "source": "Plant Delights (Wayside, AHS 1986)",
+        "url": "https://www.plantdelights.com/products/hosta-royal-standard"
+      },
+      {
+        "field": "size",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSROS"
+      },
+      {
+        "field": "leaf",
+        "source": "Missouri Botanical Garden Plant Finder",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=247588"
+      },
+      {
+        "field": "flower",
+        "source": "Walters Gardens",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSROS"
+      },
+      {
+        "field": "culture",
+        "source": "University of Arkansas Extension - Plant of the Week",
+        "url": "https://www.uaex.uada.edu/yard-garden/resource-library/plant-week/royal-standard-hosta.aspx"
+      },
+      {
+        "field": "awards",
+        "source": "Gardenia.net",
+        "url": "https://www.gardenia.net/plant/hosta-royal-standard-plantain-lily"
+      }
+    ],
+    "research_status": "verified"
+  },
+  {
+    "id": "so-sweet",
+    "name_ko": "쏘 스윗",
+    "name_en": "So Sweet",
+    "cultivar": "Hosta 'So Sweet'",
+    "aliases_ko": [
+      "소스위트",
+      "소 스위트",
+      "호스타 쏘스윗"
+    ],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "Paul Aden",
+      "year_registered": 1986,
+      "year_discovered": null,
+      "parentage": "'Fragrant Bouquet' × Aden seedling(등록 기준, 일부 자료에서 이견 있음)",
+      "registry_url": "https://www.myhostas.be/db/hostas/So_Sweet"
+    },
+    "size": {
+      "class": "medium",
+      "height_cm": [
+        30,
+        45
+      ],
+      "spread_cm": [
+        45,
+        100
+      ],
+      "registered_size_note": "잎 무더기 성숙 크기 약 높이 45~50cm x 폭 최대 약 100cm, 꽃대는 최대 약 90cm까지 올라옴"
+    },
+    "leaf": {
+      "color_ko": "광택 있는 짙은 녹색에 크림빛 연노랑 가장자리",
+      "color_en": "shiny dark green with creamy-yellow margins",
+      "variegation": "봄에는 노란빛 크림색이었다가 늦여름에 흰색으로 변하는 가장자리 무늬(marginal)",
+      "substance": "medium"
+    },
+    "flower": {
+      "color_ko": "연보라빛이 감도는 흰색",
+      "color_en": "near white to pale lavender",
+      "bloom_season": "late",
+      "fragrant": true
+    },
+    "culture": {
+      "light_ko": "반음지에서 음지까지 잘 자라며 어느 정도 양지도 견딤",
+      "light_en": "part sun to full shade, sun tolerant",
+      "growth_rate": "fast",
+      "hardiness": "USDA 3-9 (노지 월동 가능)",
+      "slug_resistance": "low"
+    },
+    "awards": [
+      "AHGA 올해의 호스타 1996 (Hosta of the Year 1996, 최초 수상작)"
+    ],
+    "description_ko": "폴 에이든이 1986년 등록한 향기 호스타로, 미국호스타재배자협회(AHGA)가 선정한 최초의 '올해의 호스타(1996)'입니다. 광택 있는 짙은 녹색 잎에 크림빛 연노랑 가장자리 무늬가 들어가며, 이 테두리는 늦여름으로 갈수록 맑은 흰색으로 변합니다. 늦여름에 연보라빛이 감도는 흰 꽃이 피며 은은한 달콤한 향기가 납니다. 성장이 빠른 소~중형 품종으로 반음지 정원의 기본 소재로 좋습니다.",
+    "description_en": "Registered by Paul Aden in 1986, 'So Sweet' was the very first American Hosta Growers Association Hosta of the Year (1996). Shiny dark green leaves carry creamy-yellow margins that fade to clear white by late summer, and the late-season near-white flowers are pleasantly fragrant. A fast-growing small-to-medium hosta that tolerates some sun.",
+    "retail_copy": {
+      "warm": {
+        "headline_ko": "향기까지 예쁜, 첫 번째 올해의 호스타",
+        "body_ko": "짙은 녹색 잎에 크림빛 테두리가 곱게 둘러진 호스타예요. 늦여름이면 테두리가 맑은 흰색으로 변하고, 은은하게 달콤한 향이 나는 흰 꽃까지 올라와 그늘진 마당을 화사하게 채워줍니다.",
+        "selling_points_ko": [
+          "달콤한 향이 나는 흰 꽃",
+          "크림빛에서 흰색으로 변하는 잎 테두리",
+          "1996년 최초의 올해의 호스타",
+          "잘 자라서 초보자도 키우기 쉬움"
+        ],
+        "recommend_for_ko": "향기 나는 꽃과 무늬 잎을 함께 즐기고 싶은 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "practical": {
+        "headline_ko": "반음지 정원의 기본기, 성장 빠른 무늬 호스타",
+        "body_ko": "반음지부터 음지까지 두루 잘 자라고 어느 정도 양지도 견딥니다. 성장 속도가 빨라 무더기가 금방 차오르며, 잎 가장자리의 크림빛 무늬가 늦여름 흰색으로 바뀝니다. 노지 월동이 가능한 소~중형종입니다.",
+        "selling_points_ko": [
+          "성장이 빠른 소~중형종",
+          "반음지~음지 적응, 양지도 어느 정도 견딤",
+          "노지 월동 가능(USDA 3-9)",
+          "휴케라·아스틸베와 조합하기 좋은 기본 소재"
+        ],
+        "recommend_for_ko": "그늘 정원의 바탕을 빠르게 채우려는 정원주",
+        "headline_en": null,
+        "body_en": null
+      },
+      "premium": {
+        "headline_ko": "최초의 올해의 호스타, 향기로 완성되는 품격",
+        "body_ko": "미국호스타재배자협회가 처음으로 선정한 1996 올해의 호스타입니다. 광택 있는 짙은 녹색 잎에 크림빛 테두리가 정갈하게 흐르고, 늦여름 은은한 향을 머금은 흰 꽃이 정원에 격을 더합니다. 검증된 명품 호스타를 찾는 분께 권합니다.",
+        "selling_points_ko": [
+          "1996년 최초의 올해의 호스타 수상작",
+          "향기를 지닌 흰 꽃의 품격",
+          "크림빛 테두리가 흰색으로 무르익는 변화미",
+          "오랜 세월 검증된 클래식 명품종"
+        ],
+        "recommend_for_ko": "향기와 이력을 갖춘 검증된 명품 호스타를 찾는 분",
+        "headline_en": null,
+        "body_en": null
+      }
+    },
+    "tags": [
+      "중형",
+      "양지견딤",
+      "가장자리무늬",
+      "향기",
+      "올해의호스타"
+    ],
+    "images": {
+      "farm_photo": {
+        "src": null,
+        "placeholder": "assets/placeholder.svg",
+        "credit": "목향농원"
+      },
+      "reference_image": {
+        "url": null,
+        "credit": null,
+        "license": null,
+        "source_bucket": null
+      }
+    },
+    "references": [
+      {
+        "field": "identity",
+        "source": "Plant Delights Nursery - Hosta 'So Sweet' (P. Aden 86)",
+        "url": "https://www.plantdelights.com/products/hosta-so-sweet"
+      },
+      {
+        "field": "provenance",
+        "source": "American Hosta Society - Origins of Paul Aden's Registrations",
+        "url": "https://www.americanhostasociety.org/AHSMembers/OnlineJournals/44/AdenOrigins.html"
+      },
+      {
+        "field": "size",
+        "source": "Missouri Botanical Garden Plant Finder - Hosta 'So Sweet'",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=248903"
+      },
+      {
+        "field": "leaf",
+        "source": "NH Hostas - So Sweet Hosta",
+        "url": "https://nhhostas.com/products/so-sweet-hosta"
+      },
+      {
+        "field": "flower",
+        "source": "Perennial Resource - Hosta 'So Sweet' (HSSOS)",
+        "url": "http://www.perennialresource.com/variety.php?ID=HSSOS"
+      },
+      {
+        "field": "awards",
+        "source": "American Hosta Growers Association - Hosta of the Year",
+        "url": "http://www.hostagrowers.org/Hosta_of_the_Year.html"
+      },
+      {
+        "field": "identity",
+        "source": "심폴 - 호스타 쏘 스윗 (국문 유통명 교차확인)",
+        "url": "https://www.simpol.co.kr/front/productdetail.php?productcode=005017000000072755"
+      }
+    ],
+    "research_status": "verified"
   }
 ]
