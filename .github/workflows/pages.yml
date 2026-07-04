@@ -1,8 +1,8 @@
 name: Deploy brochure to GitHub Pages
 
 on:
-  push:
-    branches: ["claude/hosta-brochure-research-tp5nrd"]
+  # 가장 쉬운 방법은 Settings→Pages→"Deploy from a branch"(이 워크플로 불필요).
+  # GitHub Actions 소스를 쓰려면 저장소에서 Pages를 켠 뒤 이 워크플로를 수동 실행하세요.
   workflow_dispatch:
 
 # Pages 배포에 필요한 권한
@@ -39,10 +39,8 @@ jobs:
           cp index.html _site/
           cp -r template assets data _site/
 
-      - name: Configure Pages (auto-enable now that repo is public)
+      - name: Configure Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
