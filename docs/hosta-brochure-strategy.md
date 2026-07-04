@@ -129,7 +129,7 @@
 | 14 | 빅 대디 | Big Daddy | Hosta 'Big Daddy' | big-daddy | 대형 청색 |
 | 15 | 스테인드 글라스 | Stained Glass | Hosta 'Stained Glass' | stained-glass | HOTY 2006, 'Guacamole' 아조변이, 향기종 |
 | 16 | 쏘 스윗 | So Sweet | Hosta 'So Sweet' | so-sweet | 향기종. 국문 표기 '소 스위트'도 |
-| 17 | 아이스 앤 파이어 | ICE and Fire | Hosta 'Fire and Ice' | fire-and-ice | ⚠ **표기 확인 필수**: 등록 품종은 **'Fire and Ice'**('Patriot' 아조변이). 실제 유통품종이 'Fire and Ice'인지 대조 |
+| 17 | 아이스 앤 파이어 | ICE and Fire → **Fire and Ice** | Hosta 'Fire and Ice' | fire-and-ice | ✅ **확정(사용자 확인 2026-07)**: Hosta 'Fire and Ice'('Patriot'의 아조변이 · 흰 중앙무늬·녹색 테). 원문 'ICE and Fire'는 표기 오류 |
 | 18 | 어스 엔젤 | Earth Angel | Hosta 'Earth Angel' | earth-angel | 대형, 'Blue Angel' 아조변이 |
 | 19 | 옐로 스플래쉬 림 | Yellow Splash Rim | Hosta 'Yellow Splash Rim' | yellow-splash-rim | |
 | 20 | 울버린 | Wolverine | Hosta 'Wolverine' | wolverine | |
@@ -227,7 +227,7 @@ pipeline(품종목록,
 
 ## 8. 실행 로드맵 (승인 후 Phase 2+)
 
-1. **파일럿 3종**으로 스키마·워크플로우 end-to-end 검증: **준(국문 풍부) · 블루엔젤(중간+동명함정) · 프란시스 윌리엄스(국문 희박·해외 의존)** — 밀도 스펙트럼 양끝 커버.
+1. ✅ **(완료)** **파일럿 3종**으로 스키마·템플릿·워크플로우 end-to-end 검증: **준(국문 풍부) · 블루엔젤(중간+동명함정) · 프란시스 윌리엄스(국문 희박·해외 의존)** — 모두 verified, `data/hostas.json`에 수록, 카드 렌더 확인.
 2. 파일럿 확정 후 **Workflow 팬아웃으로 나머지 25종** 리서치 → `data/hostas.json`.
 3. **`template/` 빌드**: `index.html` + `render.js`(JSON 로드→카드 렌더) + `styles.css`. 기능: 한/영 토글, 이미지 2슬롯, 태그 필터, 인쇄용 레이아웃.
 4. 이미지: 안전버킷 링크 채우기 + 농원 자체 촬영분 순차 삽입.
