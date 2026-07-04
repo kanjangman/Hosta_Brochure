@@ -531,5 +531,857 @@ window.HOSTA_DATA = [
       }
     ],
     "research_status": "verified"
+  },
+  {
+    "id": "guacamole",
+    "name_ko": "과카몰리",
+    "name_en": "Guacamole",
+    "cultivar": "Hosta 'Guacamole'",
+    "aliases_ko": [
+      "과카몰",
+      "Hosta Guacamole",
+      "구아카몰리"
+    ],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "Bob Solberg (Green Hill Farm)",
+      "year_registered": 1994,
+      "year_discovered": null,
+      "parentage": "sport of Hosta 'Fragrant Bouquet'",
+      "registry_url": "http://www.hostaregistrar.org/detail.php?id=196"
+    },
+    "size": {
+      "class": "large",
+      "height_cm": [
+        40,
+        50
+      ],
+      "spread_cm": [
+        90,
+        130
+      ],
+      "registered_size_note": "AHS 등록상 '대형(large)'. 월터스 가든 기준 성숙 잎더미 높이 약 45cm, 폭 최대 127cm, 화경 약 90cm."
+    },
+    "leaf": {
+      "color_ko": "황록색(연두)~황금빛 중앙에 진녹색 가장자리",
+      "color_en": "chartreuse-gold center with dark blue-green margins",
+      "variegation": "medio-variegated (밝은 중앙무늬 + 진녹 가장자리)",
+      "substance": "thick"
+    },
+    "flower": {
+      "color_ko": "흰색~연보라",
+      "color_en": "near-white to pale lavender",
+      "bloom_season": "mid-late",
+      "fragrant": true
+    },
+    "culture": {
+      "light_ko": "반음지에서 잘 자라며 볕이 잘 드는 곳도 견딤(햇빛이 잎색을 진하게 함)",
+      "light_en": "part shade; unusually sun-tolerant, morning sun intensifies color",
+      "growth_rate": "fast",
+      "hardiness": "USDA 3-9",
+      "slug_resistance": "medium"
+    },
+    "awards": [
+      "AHGA 올해의 호스타 2002 (Hosta of the Year 2002)",
+      "RHS 정원공로상 (Award of Garden Merit, 2012)"
+    ],
+    "description_ko": "'프래그런트 부케'에서 나온 아조변이(sport) 대형 호스타. 연둣빛 황금 중앙에 진녹색 가장자리가 대비되며, 늦여름에 향기로운 흰~연보라 꽃이 핀다. 성장이 빠르고 햇빛을 잘 견디는 인기 수상 품종이다.",
+    "description_en": "A large, fast-growing sport of Hosta 'Fragrant Bouquet' with chartreuse-gold centers and dark blue-green margins, bearing fragrant near-white flowers in late summer. Notably sun-tolerant; AHGA Hosta of the Year 2002 and RHS AGM.",
+    "retail_copy": {
+      "warm": {
+        "headline_ko": "향기로 채우는 정원의 여름",
+        "body_ko": "연둣빛 황금 잎 한가운데에 진초록 테두리가 어우러진 대형 호스타예요. 여름이면 흰 꽃이 은은한 향기를 퍼뜨려 정원에 앉아 있는 시간이 더 즐거워집니다. 해가 살짝 드는 그늘에서 편안하게 자라요.",
+        "selling_points_ko": [
+          "향기 나는 흰 꽃으로 다른 호스타와 차별화 소구",
+          "대형종이라 단독 식재만으로도 화단이 풍성하게 채워짐"
+        ],
+        "recommend_for_ko": "정원에서 은은한 꽃향기를 즐기고 싶은 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "practical": {
+        "headline_ko": "초보도 쉬운 튼튼한 대형 호스타",
+        "body_ko": "추위에 강하고 성장이 빨라 심어두면 알아서 쑥쑥 자라요. 해가 살짝 드는 그늘부터 볕이 잘 드는 곳까지 두루 잘 견뎌 자리 잡기가 쉽습니다. 처음 호스타를 들이는 분께도 부담이 없어요.",
+        "selling_points_ko": [
+          "내한성 우수·빠른 성장으로 초보 고객 안심 소구",
+          "양지까지 견뎌 식재 위치 제약이 적음"
+        ],
+        "recommend_for_ko": "관리가 쉬운 첫 정원 식물을 찾는 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "premium": {
+        "headline_ko": "2002 올해의 호스타, 과카몰리",
+        "body_ko": "미국호스타재배자협회가 뽑은 '2002 올해의 호스타'이자 영국왕립원예협회 정원공로상(AGM)을 받은 명품 품종입니다. '프래그런트 부케'에서 태어난 아조변이로, 도톰한 잎과 향기로운 꽃이 품격을 더해줍니다.",
+        "selling_points_ko": [
+          "HOTY 2002·RHS AGM 수상 이력으로 프리미엄 포지셔닝",
+          "향기 나는 꽃과 뚜렷한 계보로 스토리텔링 가능"
+        ],
+        "recommend_for_ko": "검증된 수상 품종을 원하는 분",
+        "headline_en": null,
+        "body_en": null
+      }
+    },
+    "tags": [
+      "대형",
+      "양지견딤",
+      "황금무늬",
+      "가장자리무늬",
+      "향기",
+      "올해의호스타",
+      "RHS-AGM",
+      "포컬포인트"
+    ],
+    "images": {
+      "farm_photo": {
+        "src": null,
+        "placeholder": "assets/placeholder.svg",
+        "credit": "목향농원"
+      },
+      "reference_image": {
+        "url": null,
+        "credit": null,
+        "license": null,
+        "source_bucket": null
+      }
+    },
+    "references": [
+      {
+        "field": "identity",
+        "source": "ahs_registry",
+        "url": "http://www.hostaregistrar.org/detail.php?id=196"
+      },
+      {
+        "field": "provenance",
+        "source": "ahs_registry",
+        "url": "http://www.hostaregistrar.org/detail.php?id=196"
+      },
+      {
+        "field": "provenance",
+        "source": "plantdelights",
+        "url": "https://www.plantdelights.com/products/hosta-guacamole"
+      },
+      {
+        "field": "size",
+        "source": "walters",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSGUA"
+      },
+      {
+        "field": "size",
+        "source": "mbg",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=247553"
+      },
+      {
+        "field": "leaf",
+        "source": "mbg",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=247553"
+      },
+      {
+        "field": "leaf",
+        "source": "walters",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSGUA"
+      },
+      {
+        "field": "flower",
+        "source": "walters",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSGUA"
+      },
+      {
+        "field": "flower",
+        "source": "ahs_registry",
+        "url": "http://www.hostaregistrar.org/detail.php?id=196"
+      },
+      {
+        "field": "culture",
+        "source": "plantaddicts",
+        "url": "https://plantaddicts.com/guacamole-hosta"
+      },
+      {
+        "field": "culture",
+        "source": "mbg",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=247553"
+      },
+      {
+        "field": "awards",
+        "source": "ahga_hoty",
+        "url": "https://www.hostalists.org/hosta_list_hoty.php"
+      },
+      {
+        "field": "awards",
+        "source": "ballyrobert",
+        "url": "https://www.ballyrobertgardens.com/products/hosta-guacamole-v"
+      },
+      {
+        "field": "identity",
+        "source": "shops_kr",
+        "url": "https://blog.naver.com/decogardening/224172764561"
+      }
+    ],
+    "research_status": "verified"
+  },
+  {
+    "id": "halcyon",
+    "name_ko": "할시온",
+    "name_en": "Halcyon",
+    "cultivar": "Hosta 'Halcyon'",
+    "aliases_ko": [
+      "호스타 할시온",
+      "할시온 호스타",
+      "타디아나 할시온"
+    ],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "Eric Smith (Tardiana Group), England",
+      "year_registered": 1988,
+      "year_discovered": 1961,
+      "parentage": "Hosta 'Tardiflora' × Hosta sieboldiana var. elegans (Tardiana Group)",
+      "registry_url": "https://myhostas.be/db/hostas/Halcyon"
+    },
+    "size": {
+      "class": "medium",
+      "height_cm": [
+        40,
+        50
+      ],
+      "spread_cm": [
+        70,
+        105
+      ],
+      "registered_size_note": "성숙 시 둥근 마운드형으로 높이 약 45cm, 폭 약 100cm. 잎 길이 약 20cm의 소~중형 청색종."
+    },
+    "leaf": {
+      "color_ko": "서리 낀 듯한 청회색(블루)",
+      "color_en": "frosty blue-grey / blue-green",
+      "variegation": "none",
+      "substance": "thick"
+    },
+    "flower": {
+      "color_ko": "연보라(라벤더)",
+      "color_en": "pale blue-violet / lavender",
+      "bloom_season": "mid",
+      "fragrant": false
+    },
+    "culture": {
+      "light_ko": "반음지~음지 (청색 발현에는 반그늘이 유리)",
+      "light_en": "part shade to full shade",
+      "growth_rate": "slow",
+      "hardiness": "USDA 3-9 / RHS H7",
+      "slug_resistance": "high"
+    },
+    "awards": [
+      "AHS 올해의 호스타 2026 (Hosta of the Year 2026)",
+      "RHS 정원공로상 (Award of Garden Merit, 1993)",
+      "미국호스타협회 공로상 (Distinguished Merit Hosta, 1987)"
+    ],
+    "description_ko": "호스타 '할시온'은 영국의 명육종가 에릭 스미스가 만든 타디아나 그룹의 대표 청색 소~중형 품종이다. H. 'Tardiflora'와 H. sieboldiana var. elegans의 교배로 태어났으며, 서리가 낀 듯한 청회색의 두껍고 왁스질 잎이 특징이다. 한여름에 연보라색 꽃이 피고, 잎이 단단해 민달팽이 저항이 높다. 반음지에서 청색이 가장 잘 발현되며, RHS 정원공로상과 2026년 미국호스타협회 '올해의 호스타'로 선정된 고전 명품종이다.",
+    "description_en": "Hosta 'Halcyon' is a classic blue small-to-medium cultivar from Eric Smith's Tardiana Group, bred from H. 'Tardiflora' × H. sieboldiana var. elegans. It is prized for its thick, waxy, frosty blue-grey pointed leaves, pale lavender midsummer flowers, and strong slug resistance. Its best blue color develops in part shade. It holds the RHS Award of Garden Merit and was named the American Hosta Society's 2026 Hosta of the Year.",
+    "retail_copy": {
+      "warm": {
+        "headline_ko": "정원의 푸른 보석, 할시온",
+        "body_ko": "서리가 내린 듯 은은한 청회색 잎이 반그늘 정원을 시원하게 밝혀 줍니다. 잎이 두툼하고 단단해서 민달팽이 피해도 적고, 한여름엔 연보라 꽃까지 피워 두고두고 곁에 두기 좋은 친구예요.",
+        "selling_points_ko": [
+          "서리 낀 청회색 잎",
+          "두꺼운 잎으로 민달팽이 걱정 적음",
+          "한여름 연보라 꽃"
+        ],
+        "recommend_for_ko": "반그늘 정원을 시원한 청색으로 채우고 싶은 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "practical": {
+        "headline_ko": "튼튼한 청색 호스타, 할시온",
+        "body_ko": "잎이 두껍고 단단해 민달팽이 피해가 적고 손이 덜 가는 품종이에요. 반음지에서 청회색이 또렷하게 나타나며 추위에도 강해 노지 월동이 됩니다. 자람은 다소 느린 편이니 자리를 잡을 시간을 넉넉히 주세요.",
+        "selling_points_ko": [
+          "민달팽이 저항 높음",
+          "반음지 노지 월동 가능",
+          "관리 부담이 적음"
+        ],
+        "recommend_for_ko": "손이 덜 가는 튼튼한 그늘 식물을 찾는 초보 정원사",
+        "headline_en": null,
+        "body_en": null
+      },
+      "premium": {
+        "headline_ko": "명가 타디아나의 청색, 할시온",
+        "body_ko": "영국의 명육종가 에릭 스미스의 타디아나 계보에서 태어난 고전 명품종입니다. 2026년 미국호스타협회 '올해의 호스타'로 선정되었고 RHS 정원공로상(AGM)까지 받은 검증된 청색 호스타예요. 서리 낀 청회색 잎이 품격 있는 그늘 정원을 완성합니다.",
+        "selling_points_ko": [
+          "에릭 스미스 타디아나 명가 계보",
+          "2026 올해의 호스타·RHS AGM 수상",
+          "서리 낀 청회색 두꺼운 잎"
+        ],
+        "recommend_for_ko": "검증된 고전 명품종으로 그늘 정원을 격상하려는 분",
+        "headline_en": null,
+        "body_en": null
+      }
+    },
+    "tags": [
+      "중형",
+      "청색",
+      "반음지",
+      "민달팽이저항",
+      "고전품종",
+      "RHS-AGM",
+      "올해의호스타"
+    ],
+    "images": {
+      "farm_photo": {
+        "src": null,
+        "placeholder": "assets/placeholder.svg",
+        "credit": "목향농원"
+      },
+      "reference_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Hosta_%27Halcyon%27_Funkia_2019-05-26_02.jpg",
+        "credit": "Agnes Monkelbaan, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "source_bucket": "wikimedia"
+      }
+    },
+    "references": [
+      {
+        "field": "provenance",
+        "source": "hortmag",
+        "url": "https://www.hortmag.com/halcyon-hosta"
+      },
+      {
+        "field": "provenance",
+        "source": "rhs",
+        "url": "https://www.rhs.org.uk/plants/91303/hosta-(tardiana-group)-halcyon/details"
+      },
+      {
+        "field": "size",
+        "source": "walters",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSHAL"
+      },
+      {
+        "field": "leaf",
+        "source": "walters",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSHAL"
+      },
+      {
+        "field": "culture",
+        "source": "rhs",
+        "url": "https://www.rhs.org.uk/plants/91303/hosta-(tardiana-group)-halcyon/details"
+      },
+      {
+        "field": "awards",
+        "source": "hortmag(HOTY 2026)",
+        "url": "https://www.hortmag.com/halcyon-hosta"
+      },
+      {
+        "field": "awards",
+        "source": "thehostafarm(HOTY list)",
+        "url": "https://thehostafarm.com/hosta-of-the-year/"
+      },
+      {
+        "field": "image",
+        "source": "wikimedia",
+        "url": "https://commons.wikimedia.org/wiki/File:Hosta_'Halcyon'_Funkia_2019-05-26_02.jpg"
+      },
+      {
+        "field": "identity",
+        "source": "simpol",
+        "url": "https://www.simpol.co.kr/front/productdetail.php?productcode=005017000000073394"
+      }
+    ],
+    "research_status": "verified"
+  },
+  {
+    "id": "liberty",
+    "name_ko": "리버티",
+    "name_en": "Liberty",
+    "cultivar": "Hosta 'Liberty'",
+    "aliases_ko": [
+      "리버티 호스타",
+      "황금테 비비추",
+      "리버티 옥잠화"
+    ],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "John Machen Jr.",
+      "year_registered": 2000,
+      "year_discovered": 1996,
+      "parentage": "Hosta 'Sagae'의 아조변이(sport); 사배체(tetraploid)",
+      "registry_url": "https://myhostas.be/db/hostas/Liberty"
+    },
+    "size": {
+      "class": "large",
+      "height_cm": [
+        51,
+        66
+      ],
+      "spread_cm": [
+        76,
+        99
+      ],
+      "registered_size_note": "반직립형 대형종. 자료마다 성숙 크기 편차가 있어 높이 약 51~66cm(20~26in), 폭 76~99cm(30~39in) 범위로 보고됨. 오래 자라면 더 웅장해짐."
+    },
+    "leaf": {
+      "color_ko": "청록색 잎 중앙에 매우 넓은 황금빛 노랑~크림색 가장자리 무늬",
+      "color_en": "blue-green center with a very wide golden-yellow to cream margin",
+      "variegation": "marginal",
+      "substance": "thick"
+    },
+    "flower": {
+      "color_ko": "연보라색(라벤더)",
+      "color_en": "lavender",
+      "bloom_season": "early-mid",
+      "fragrant": false
+    },
+    "culture": {
+      "light_ko": "반그늘~그늘",
+      "light_en": "partial to full shade",
+      "growth_rate": "slow",
+      "hardiness": "USDA 3-9",
+      "slug_resistance": "high"
+    },
+    "awards": [
+      "AHGA 올해의 호스타 2012 (Hosta of the Year 2012)"
+    ],
+    "description_ko": "호스타 '리버티'는 명품 대형종 '사계(Sagae)'에서 나온 아조변이 품종으로, 청록색 잎 가장자리를 두르는 매우 넓은 황금빛 노랑~크림색 무늬가 특징입니다. 잎이 도톰하고 단단해 벌레 피해가 적으며, 여름이면 연보라색 꽃을 피웁니다. 반그늘에서 잘 자라고 추위에 강해 노지월동이 가능하며, 2012년 '올해의 호스타'로 선정된 인기 정원 품종입니다.",
+    "description_en": "Hosta 'Liberty' is a large, tetraploid sport of Hosta 'Sagae' distinguished by an exceptionally wide golden-yellow to cream margin surrounding blue-green leaf centers. Its thick, heavy-substance leaves resist slug damage, and lavender flowers appear in early to midsummer. It was named Hosta of the Year in 2012.",
+    "retail_copy": {
+      "warm": {
+        "headline_ko": "정원에 번지는 시원한 금테",
+        "body_ko": "청록빛 잎을 넉넉하게 두른 황금빛 테두리가 그늘진 마당을 환하게 밝혀줍니다. 여름이면 연보라색 꽃까지 살포시 올라와 계절의 정취를 더해드려요. 오래 키울수록 웅장해지는 대형 호스타랍니다.",
+        "selling_points_ko": [
+          "넓고 시원한 황금 금테 무늬",
+          "여름 연보라 꽃"
+        ],
+        "recommend_for_ko": "그늘진 마당을 화사하게 꾸미고 싶은 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "practical": {
+        "headline_ko": "손 덜 가는 튼튼한 그늘식물",
+        "body_ko": "잎이 도톰하고 단단해 벌레 걱정이 적어 관리가 수월합니다. 추위에도 강해 노지월동이 되니 한 번 심으면 해마다 돌아와 자리를 채워드려요. 해가 살짝 드는 그늘에서 특히 잘 자랍니다.",
+        "selling_points_ko": [
+          "도톰한 잎으로 벌레 걱정 적어요",
+          "추위에 강해 노지월동",
+          "반그늘에서도 잘 자람"
+        ],
+        "recommend_for_ko": "관리가 편한 다년생 그늘식물을 찾는 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "premium": {
+        "headline_ko": "2012 올해의 호스타, 명품 대형종",
+        "body_ko": "명품 품종 '사계'에서 태어난 리버티는 넓은 황금 테두리로 품격을 자랑하는 대형 호스타입니다. 미국호스타협회가 뽑은 2012년 '올해의 호스타'로, 정원의 중심을 채워줄 존재감을 지녔습니다. 도톰한 잎이 오래도록 단정한 자태를 지켜드립니다.",
+        "selling_points_ko": [
+          "2012 올해의 호스타 수상",
+          "명품 '사계' 계통 대형종",
+          "존재감 있는 넓은 황금 무늬"
+        ],
+        "recommend_for_ko": "정원의 주인공이 될 품격 있는 대형 품종을 원하는 분",
+        "headline_en": null,
+        "body_en": null
+      }
+    },
+    "tags": [
+      "대형",
+      "가장자리무늬",
+      "황금무늬",
+      "반음지",
+      "민달팽이저항"
+    ],
+    "images": {
+      "farm_photo": {
+        "src": null,
+        "placeholder": "assets/placeholder.svg",
+        "credit": "목향농원"
+      },
+      "reference_image": {
+        "url": null,
+        "credit": null,
+        "license": null,
+        "source_bucket": null
+      }
+    },
+    "references": [
+      {
+        "field": "provenance",
+        "source": "USPTO Plant Patent PP12531",
+        "url": "https://www.freepatentsonline.com/PP12531.html"
+      },
+      {
+        "field": "provenance",
+        "source": "nhhostas",
+        "url": "https://nhhostas.com/products/liberty-pp12531-hosta"
+      },
+      {
+        "field": "provenance",
+        "source": "plantdelights",
+        "url": "https://www.plantdelights.com/products/hosta-liberty"
+      },
+      {
+        "field": "size",
+        "source": "walters",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSLIY"
+      },
+      {
+        "field": "leaf",
+        "source": "nhhostas",
+        "url": "https://nhhostas.com/products/liberty-pp12531-hosta"
+      },
+      {
+        "field": "leaf",
+        "source": "walters",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSLIY"
+      },
+      {
+        "field": "flower",
+        "source": "walters",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSLIY"
+      },
+      {
+        "field": "culture",
+        "source": "walters",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSLIY"
+      },
+      {
+        "field": "awards",
+        "source": "ilovehostas(HOTY 2012)",
+        "url": "http://www.ilovehostas.net/liberty---pp.html"
+      },
+      {
+        "field": "identity",
+        "source": "shops_kr",
+        "url": "https://blog.naver.com/decogardening/223694687370"
+      }
+    ],
+    "research_status": "verified"
+  },
+  {
+    "id": "patriot",
+    "name_ko": "패트리어트",
+    "name_en": "Patriot",
+    "cultivar": "Hosta 'Patriot'",
+    "aliases_ko": [
+      "패트리엇",
+      "무늬비비추",
+      "흰무늬호스타",
+      "패트리어트 비비추"
+    ],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "John Machen Jr. (Mobjack Nurseries, Virginia, USA)",
+      "year_registered": 1991,
+      "year_discovered": null,
+      "parentage": "Hosta 'Francee'의 아조변이(sport). 'Francee'는 Hosta 'Fortunei Albomarginata' 계열이며, 'Patriot'은 최초로 인정된 4배체(tetraploid) 호스타 변이로 기록됨.",
+      "registry_url": "https://myhostas.be/db/hostas/Patriot"
+    },
+    "size": {
+      "class": "medium",
+      "height_cm": [
+        30,
+        55
+      ],
+      "spread_cm": [
+        60,
+        80
+      ],
+      "registered_size_note": "자료별 편차: 잎무리 높이 약 30~55cm, 폭 약 60~80cm의 중형종."
+    },
+    "leaf": {
+      "color_ko": "짙은 녹색 바탕에 넓고 깨끗한 흰색 가장자리 무늬",
+      "color_en": "dark green center with a wide, crisp white margin",
+      "variegation": "marginal",
+      "substance": "medium"
+    },
+    "flower": {
+      "color_ko": "연보라색",
+      "color_en": "lavender",
+      "bloom_season": "mid",
+      "fragrant": false
+    },
+    "culture": {
+      "light_ko": "반음지~음지 (다른 호스타보다 볕을 조금 더 견딤)",
+      "light_en": "part shade to full shade; tolerates a bit more sun than most hostas",
+      "growth_rate": "medium",
+      "hardiness": "USDA 3-9",
+      "slug_resistance": "low"
+    },
+    "awards": [
+      "AHGA 올해의 호스타 1997 (Hosta of the Year 1997)",
+      "RHS 정원공로상 (Award of Garden Merit, 2012)"
+    ],
+    "description_ko": "'패트리어트'는 인기 품종 'Francee'의 아조변이로, 짙은 녹색 잎에 넓고 또렷한 흰색 테두리 무늬가 강렬한 대비를 이루는 중형 호스타입니다. 1991년 등록되었으며 1997년 미국호스타재배자협회 '올해의 호스타'로 선정되어 흰테 무늬 호스타의 대표 품종으로 자리 잡았습니다. 반음지~음지에서 잘 자라고 추위에 강하며, 여름에 연보라색 꽃이 잎무리 위로 올라옵니다.",
+    "description_en": "Hosta 'Patriot' is a sport of the popular 'Francee', a medium hosta whose dark green leaves are boldly edged with a wide, crisp white margin. Registered in 1991 and named the American Hosta Growers Association Hosta of the Year in 1997, it became the benchmark white-margined hosta. It grows well in part to full shade, is very cold-hardy, and sends up lavender flowers above the mound in summer.",
+    "retail_copy": {
+      "warm": {
+        "headline_ko": "그늘을 밝히는 또렷한 흰 테두리",
+        "body_ko": "짙은 초록 잎에 새하얀 테두리가 또렷하게 둘러진 패트리어트예요. 해가 살짝 드는 그늘진 자리에 두면 어두운 구석까지 환하게 밝혀 준답니다. 여름엔 연보라 꽃까지 올라와 정원에 잔잔한 운치를 더해요.",
+        "selling_points_ko": [
+          "짙은 초록에 또렷한 흰 테두리 대비",
+          "그늘진 구석을 밝혀 주는 잎색",
+          "여름 연보라 꽃"
+        ],
+        "recommend_for_ko": "그늘진 정원을 화사하게 밝히고 싶은 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "practical": {
+        "headline_ko": "추위에 강한 튼튼한 그늘 식물",
+        "body_ko": "해가 살짝 드는 그늘에서도 잘 자라는 튼튼한 숙근초라 관리가 어렵지 않아요. 추위에 강해 노지에서 겨울을 나고 이듬해 다시 올라온답니다. 자라는 속도도 빠른 편이라 금세 풍성한 잎무리를 이뤄요.",
+        "selling_points_ko": [
+          "추위에 강해 노지월동 가능",
+          "반음지에서도 잘 자람",
+          "비교적 빠른 성장으로 금세 풍성"
+        ],
+        "recommend_for_ko": "손이 덜 가는 튼튼한 그늘 식물을 찾는 초보 가드너",
+        "headline_en": null,
+        "body_en": null
+      },
+      "premium": {
+        "headline_ko": "올해의 호스타가 증명한 품격",
+        "body_ko": "1997년 미국호스타재배자협회 '올해의 호스타'로 선정된 검증된 명품 품종입니다. 넓고 깨끗한 흰 테두리와 짙은 녹색의 선명한 대비가 정원에 단정한 품격을 더해 줍니다. 흰테 무늬 호스타의 기준이 된 대표 품종이에요.",
+        "selling_points_ko": [
+          "1997 올해의 호스타 수상",
+          "넓고 깨끗한 흰테의 선명한 대비",
+          "흰테 무늬 호스타의 대표 품종"
+        ],
+        "recommend_for_ko": "검증된 명품 품종으로 정원의 품격을 높이려는 분",
+        "headline_en": null,
+        "body_en": null
+      }
+    },
+    "tags": [
+      "중형",
+      "가장자리무늬",
+      "흰무늬",
+      "반음지",
+      "올해의호스타"
+    ],
+    "images": {
+      "farm_photo": {
+        "src": null,
+        "placeholder": "assets/placeholder.svg",
+        "credit": "목향농원"
+      },
+      "reference_image": {
+        "url": null,
+        "credit": null,
+        "license": null,
+        "source_bucket": null
+      }
+    },
+    "references": [
+      {
+        "field": "provenance",
+        "source": "belmontrooster",
+        "url": "https://thebelmontrooster.com/families-of-familiar-plants/asparagaceae-family/hosta/hosta-patriot/"
+      },
+      {
+        "field": "provenance",
+        "source": "plantdelights",
+        "url": "https://www.plantdelights.com/products/hosta-patriot"
+      },
+      {
+        "field": "provenance",
+        "source": "myhostas",
+        "url": "https://myhostas.be/db/hostas/Patriot"
+      },
+      {
+        "field": "size",
+        "source": "mbg",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=255958"
+      },
+      {
+        "field": "size",
+        "source": "walters",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSPAT"
+      },
+      {
+        "field": "leaf",
+        "source": "walters",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSPAT"
+      },
+      {
+        "field": "flower",
+        "source": "mbg",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=255958"
+      },
+      {
+        "field": "culture",
+        "source": "walters",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSPAT"
+      },
+      {
+        "field": "awards",
+        "source": "ahga_hoty",
+        "url": "https://americanhostasociety.org/wp-content/uploads/2025/11/Hosta-of-the-Year-booklet-3rd-Ed.pdf"
+      },
+      {
+        "field": "awards",
+        "source": "mbg",
+        "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=255958"
+      }
+    ],
+    "research_status": "verified"
+  },
+  {
+    "id": "stained-glass",
+    "name_ko": "스테인드 글라스",
+    "name_en": "Stained Glass",
+    "cultivar": "Hosta 'Stained Glass'",
+    "aliases_ko": [
+      "스테인드글라스",
+      "호스타 스테인드 글라스",
+      "스테인드 글라스 비비추",
+      "무늬비비추"
+    ],
+    "genus_ko": "비비추",
+    "provenance": {
+      "hybridizer": "한스 한센 / Hans Hansen (Shady Oaks Nursery)",
+      "year_registered": 2004,
+      "year_discovered": 1999,
+      "parentage": "'과카몰리'(Guacamole)의 아조변이(sport). 1999년경 조직배양 중 선발·도입, AHS 등록은 2004년.",
+      "registry_url": "https://myhostas.be/db/hostas/Stained_Glass"
+    },
+    "size": {
+      "class": "large",
+      "height_cm": [
+        38,
+        46
+      ],
+      "spread_cm": [
+        60,
+        120
+      ],
+      "registered_size_note": "성숙 시 폭 약 90~120cm의 큰 포기를 형성. 잎무리 높이 약 38~46cm, 잎 길이 약 27cm, 꽃대는 약 75cm까지 올라옴."
+    },
+    "leaf": {
+      "color_ko": "잎 중앙은 밝은 황금빛(샤르트뢰즈), 넓은 가장자리는 진녹색",
+      "color_en": "brilliant gold to chartreuse center with a wide dark green margin",
+      "variegation": "medio(중앙 황금·가장자리 진녹)",
+      "substance": "thick"
+    },
+    "flower": {
+      "color_ko": "연보라~흰빛(향기 있음)",
+      "color_en": "pale lavender to near-white, fragrant",
+      "bloom_season": "mid-late",
+      "fragrant": true
+    },
+    "culture": {
+      "light_ko": "반음지~양지 (양지 잘 견딤)",
+      "light_en": "part shade to full sun (unusually sun-tolerant)",
+      "growth_rate": "fast",
+      "hardiness": "USDA 3-9",
+      "slug_resistance": "medium"
+    },
+    "awards": [
+      "AHGA 올해의 호스타 2006 (Hosta of the Year 2006)"
+    ],
+    "description_ko": "호스타 '스테인드 글라스'는 인기 품종 '과카몰리'의 아조변이(sport)로, 육종가 한스 한센(Shady Oaks)이 선발했습니다. 크고 도톰한 잎은 중앙이 밝은 황금빛, 넓은 가장자리가 진녹색이어서 햇빛이 비치면 잎이 스테인드글라스처럼 빛나 이런 이름이 붙었습니다. 늦여름에 향기 있는 연보라~흰빛 꽃을 피우고, 양지도 잘 견디는 중대형 품종으로 미국호스타협회 2006년 '올해의 호스타'로 선정되었습니다.",
+    "description_en": "Hosta 'Stained Glass' is a sport of the popular 'Guacamole', selected by hybridizer Hans Hansen (Shady Oaks). Its large, thick leaves have brilliant gold centers framed by wide dark green margins that glow like stained glass in sunlight. Vigorous and unusually sun-tolerant, it bears fragrant pale lavender to near-white flowers in late summer and was named the American Hosta Growers Association Hosta of the Year in 2006.",
+    "retail_copy": {
+      "warm": {
+        "headline_ko": "햇빛에 반짝이는 황금빛 잎",
+        "body_ko": "잎 한가운데가 밝은 황금빛으로 물들고 진녹색 테두리가 감싸 줘서, 해가 살짝 들면 잎이 스테인드글라스처럼 반짝여요. 늦여름엔 은은한 향기가 나는 연보라빛 꽃도 피워 정원에 화사함을 더해 준답니다.",
+        "selling_points_ko": [
+          "해가 드는 곳에서도 잘 자라요",
+          "늦여름 향기 나는 꽃이 피어요",
+          "잎이 도톰해 벌레 걱정이 적어요"
+        ],
+        "recommend_for_ko": "밝은 그늘부터 해가 드는 마당까지 화사한 잎을 원하는 분",
+        "headline_en": null,
+        "body_en": null
+      },
+      "practical": {
+        "headline_ko": "양지도 견디는 튼튼 대형 비비추",
+        "body_ko": "성장이 빠르고 포기가 크게 벌어지는 중대형 품종이라 넓은 화단을 채우기 좋아요. 추위에 강해 노지 월동이 되고, 잎이 도톰해서 벌레 피해도 적은 편이라 손이 많이 가지 않습니다.",
+        "selling_points_ko": [
+          "성장이 빨라 포기가 크게 벌어져요",
+          "추위에 강해 노지 월동돼요",
+          "도톰한 잎으로 관리가 수월해요"
+        ],
+        "recommend_for_ko": "손 많이 안 가는 튼튼한 지피식물을 찾는 초보 정원사",
+        "headline_en": null,
+        "body_en": null
+      },
+      "premium": {
+        "headline_ko": "2006 올해의 호스타, 명품 잎무늬",
+        "body_ko": "미국호스타협회가 2006년 '올해의 호스타'로 선정한 검증된 품종입니다. 황금빛 중앙과 진녹색 테두리의 선명한 무늬, 햇빛에 빛나는 큼직한 잎이 정원의 품격을 한층 높여 줍니다.",
+        "selling_points_ko": [
+          "2006 올해의 호스타 수상 품종",
+          "선명한 황금빛 중앙 무늬",
+          "향기 나는 우아한 꽃"
+        ],
+        "recommend_for_ko": "정원의 중심이 될 검증된 명품 품종을 원하는 분",
+        "headline_en": null,
+        "body_en": null
+      }
+    },
+    "tags": [
+      "대형",
+      "양지견딤",
+      "황금무늬",
+      "향기",
+      "올해의호스타"
+    ],
+    "images": {
+      "farm_photo": {
+        "src": null,
+        "placeholder": "assets/placeholder.svg",
+        "credit": "목향농원"
+      },
+      "reference_image": {
+        "url": null,
+        "credit": null,
+        "license": null,
+        "source_bucket": null
+      }
+    },
+    "references": [
+      {
+        "field": "provenance",
+        "source": "walters",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSSTG"
+      },
+      {
+        "field": "provenance",
+        "source": "plantdelights",
+        "url": "https://www.plantdelights.com/products/hosta-stained-glass"
+      },
+      {
+        "field": "provenance",
+        "source": "myhostas",
+        "url": "https://myhostas.be/db/hostas/Stained_Glass"
+      },
+      {
+        "field": "size",
+        "source": "walters",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSSTG"
+      },
+      {
+        "field": "size",
+        "source": "chicagobotanic",
+        "url": "https://www.chicagobotanic.org/plant-information/plant-finder/hosta-stained-glass-stained-glass-hosta"
+      },
+      {
+        "field": "leaf",
+        "source": "walters",
+        "url": "https://www.waltersgardens.com/variety.php?ID=HSSTG"
+      },
+      {
+        "field": "flower",
+        "source": "gardenia",
+        "url": "https://www.gardenia.net/plant/hosta-stained-glass-plantain-lily"
+      },
+      {
+        "field": "culture",
+        "source": "chicagobotanic",
+        "url": "https://www.chicagobotanic.org/plant-information/plant-finder/hosta-stained-glass-stained-glass-hosta"
+      },
+      {
+        "field": "awards",
+        "source": "ahga_hoty",
+        "url": "https://americanhostasociety.org/wp-content/uploads/2025/11/Hosta-of-the-Year-booklet-3rd-Ed.pdf"
+      },
+      {
+        "field": "identity",
+        "source": "shops_kr",
+        "url": "https://blog.naver.com/sm3328641/224328950208"
+      }
+    ],
+    "research_status": "verified"
   }
 ];
