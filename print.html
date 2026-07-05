@@ -6,72 +6,88 @@
   <title>출력 · 목향농원 호스타</title>
   <link rel="icon" href="assets/placeholder.svg">
   <style>
-    /* A4 세로 1장에 절반 카드(210 x 148.5mm) — 고객 배부용 */
-    @page { size: A4 portrait; margin: 0; }
+    /* ============================================================
+       고객 배부용 카드 — 잡지/브로셔 스타일 (좌측 히어로 사진형)
+       PDF 페이지 = 카드 실물 크기 210 x 148.5mm (A5 가로).
+       A4 세로 용지에 "한 면에 2페이지(2-up)"로 뽑으면 비율이 같아
+       축소 없이 100% 실물 크기 두 장이 나온다.
+       ============================================================ */
+    @page { size: 210mm 148.5mm; margin: 0; }
     :root{
-      --green-900:#26361f;--green-800:#33472a;--green-700:#456138;--green-600:#5f8a52;
-      --green-300:#a9c79a;--green-100:#e9f1e3;--gold:#c69a2e;--gold-soft:#f3e6bf;
-      --ink:#2b2b28;--muted:#6b7566;--line:#d9e2d2;
+      --green-900:#1f2d19;--green-800:#33472a;--green-700:#456138;--green-600:#5f8a52;
+      --green-300:#a9c79a;--green-100:#eaf1e4;--gold:#b8912e;--gold-soft:#f3e6bf;
+      --ink:#26281f;--muted:#77806f;--line:#dfe6d8;--paper:#fdfdfb;
+      --serif:'Noto Serif KR','Nanum Myeongjo','AppleMyungjo',Batang,'Times New Roman',serif;
+      --sans:system-ui,-apple-system,'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif;
     }
     *{box-sizing:border-box;}
     html,body{margin:0;}
-    body{
-      font-family:system-ui,-apple-system,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
-      color:var(--ink); background:#e6ebe2;
-    }
-    .toolbar{ max-width:210mm; margin:0 auto; padding:10px 4px; display:flex; gap:10px; align-items:center; }
+    body{ font-family:var(--sans); color:var(--ink); background:#e3e8de; }
+
+    .toolbar{ max-width:210mm; margin:0 auto; padding:10px 4px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
     .toolbar button{ border:0; background:var(--green-700); color:#fff; padding:8px 16px; border-radius:8px; font:inherit; font-weight:700; cursor:pointer; }
-    .toolbar .hint{ color:var(--muted); font-size:13px; }
+    .toolbar .hint{ color:#5d665a; font-size:12.5px; line-height:1.5; }
 
-    /* 카드 = A4 세로의 절반 */
+    /* ---- 카드(=PDF 1페이지, 실물 210x148.5mm) ---- */
     .sheet{
-      width:210mm; height:148.5mm; margin:0 auto; background:#fff; overflow:hidden;
-      display:grid; grid-template-rows:auto 1fr;
-      border:1px solid var(--line);
+      width:210mm; height:148.5mm; margin:0 auto; background:var(--paper); overflow:hidden;
+      display:grid; grid-template-columns:88mm 1fr; position:relative;
     }
-    /* 상단 타이틀 밴드 */
-    .head{ padding:6mm 8mm 4mm; border-bottom:2px solid var(--green-700); display:flex; align-items:baseline; gap:3mm; flex-wrap:wrap; }
-    .head .ko{ font-size:24pt; font-weight:800; letter-spacing:-.02em; color:var(--green-900); line-height:1; }
-    .head .en{ font-size:12.5pt; color:var(--muted); font-weight:700; }
-    .head .sci{ font-size:10.5pt; font-style:italic; color:var(--green-700); }
-    .head .badges{ margin-left:auto; display:flex; gap:4px; align-items:center; }
-    .badge{ font-size:8.5pt; font-weight:800; padding:2px 8px; border-radius:999px; background:var(--green-100); color:var(--green-800); white-space:nowrap; }
-    .badge.gold{ background:var(--gold-soft); color:#836417; }
 
-    /* 3단: 사진 · 특징 · 긴 설명 */
-    .body{ display:grid; grid-template-columns:80mm 56mm 1fr; min-height:0; }
-    .col{ min-width:0; overflow:hidden; }
-    .photo{ position:relative; background:var(--green-100); }
-    .photo img{ width:100%; height:100%; object-fit:cover; display:block; }
-    .photo .cap{ position:absolute; left:0; right:0; bottom:0; font-size:8pt; color:#fff;
-      background:linear-gradient(transparent,rgba(0,0,0,.5)); padding:8mm 3mm 2mm; }
+    /* 좌: full-bleed 히어로 사진 */
+    .hero{ position:relative; overflow:hidden; background:var(--green-100); }
+    .hero img{ width:100%; height:100%; object-fit:cover; display:block; }
+    .hero .shade{ position:absolute; inset:auto 0 0 0; height:38mm;
+      background:linear-gradient(transparent,rgba(20,28,16,.62)); }
+    .hero .kicker-img{ position:absolute; left:7mm; right:6mm; bottom:6mm; color:#fff; }
+    .hero .kicker-img .genus{ font-size:7.5pt; letter-spacing:.28em; text-transform:uppercase; opacity:.85; margin-bottom:1mm; }
+    .hero .kicker-img .sci{ font-family:var(--serif); font-style:italic; font-size:12pt; }
+    .hero .credit{ position:absolute; right:2.5mm; top:2.5mm; font-size:6.2pt; color:#fff; background:rgba(20,28,16,.42);
+      padding:.6mm 1.6mm; border-radius:2px; max-width:70%; text-align:right; }
 
-    .features{ padding:5mm 6mm; border-left:1px solid var(--line); }
-    .features h3, .desc h3{ margin:0 0 3mm; font-size:10.5pt; color:var(--green-700); letter-spacing:.02em; border-bottom:1px dashed var(--green-300); padding-bottom:1.5mm; }
-    .features dl{ margin:0; display:grid; grid-template-columns:auto 1fr; gap:2mm 3mm; font-size:9pt; line-height:1.35; }
-    .features dt{ color:var(--muted); font-weight:700; white-space:nowrap; }
-    .features dd{ margin:0; color:var(--ink); }
+    /* 우: 편집 텍스트 컬럼 */
+    .editorial{ padding:11mm 12mm 8.5mm 11mm; display:flex; flex-direction:column; min-width:0; }
+    .kicker{ font-size:8pt; font-weight:800; letter-spacing:.3em; color:var(--gold); text-transform:uppercase; margin:0 0 3.5mm; }
+    .kicker .rule{ display:inline-block; width:9mm; height:1.4px; background:var(--gold); vertical-align:middle; margin-right:2.5mm; }
+    h1.title{ font-family:var(--serif); font-weight:800; font-size:27pt; line-height:1.05; letter-spacing:-.01em;
+      color:var(--green-900); margin:0 0 1.5mm; }
+    .title-en{ font-size:10pt; color:var(--muted); letter-spacing:.14em; text-transform:uppercase; margin:0 0 3.5mm; }
 
-    .desc{ padding:5mm 6mm; border-left:1px solid var(--line); display:flex; flex-direction:column; }
-    .desc .lead{ font-size:12.5pt; font-weight:800; color:var(--green-800); margin:0 0 2mm; line-height:1.35; }
-    .desc .para{ font-size:10pt; line-height:1.6; color:#33372f; margin:0 0 2.5mm; }
-    .desc .rec{ font-size:9.5pt; font-style:italic; color:var(--muted); margin:0; }
-    .desc .foot{ margin-top:auto; border-top:1px solid var(--line); padding-top:2mm; font-size:8.5pt; color:var(--muted); display:flex; justify-content:space-between; }
+    .awards{ display:flex; flex-wrap:wrap; gap:1.6mm 2.4mm; margin:0 0 3.5mm; }
+    .awards span{ font-size:7.6pt; font-weight:700; color:#83641a; background:var(--gold-soft);
+      padding:.9mm 2.6mm; border-radius:999px; white-space:nowrap; }
 
-    .empty{ padding:20mm; text-align:center; color:var(--muted); }
+    .lead{ font-family:var(--serif); font-size:13pt; line-height:1.45; color:var(--green-700); margin:0 0 3.5mm; }
+    .lead::before{ content:"“"; color:var(--gold); } .lead::after{ content:"”"; color:var(--gold); }
 
-    @media screen{ body{ padding:6mm 0 14mm; } .sheet{ box-shadow:0 6px 26px rgba(38,54,31,.18); } }
-    @media print{
-      body{ background:#fff; padding:0; }
-      .toolbar{ display:none; }
-      .sheet{ box-shadow:none; border:none; }
-    }
+    .para{ font-size:9.3pt; line-height:1.7; color:#3a3d33; margin:0; text-align:justify; }
+    .para::first-letter{ font-family:var(--serif); font-size:21pt; font-weight:800; color:var(--green-800);
+      float:left; line-height:.9; padding:1px 4px 0 0; }
+    .rec{ font-size:8.6pt; font-style:italic; color:var(--muted); margin:2.6mm 0 0; }
+
+    /* 데이터 스트립 (at a glance) */
+    .glance{ margin-top:auto; border-top:1.6px solid var(--green-900); padding-top:2.8mm; }
+    .glance .gl-title{ font-size:7pt; font-weight:800; letter-spacing:.26em; color:var(--green-800); text-transform:uppercase; margin:0 0 2mm; }
+    .glance .grid{ display:flex; flex-wrap:wrap; gap:1.8mm 5mm; font-size:8.4pt; line-height:1.35; }
+    .glance .item{ display:flex; gap:1.8mm; align-items:baseline; }
+    .glance .k{ color:var(--gold); font-weight:800; white-space:nowrap; font-size:7.6pt; letter-spacing:.05em; }
+    .glance .k::before{ content:"◆ "; font-size:5.5pt; vertical-align:1px; }
+    .glance .v{ color:var(--ink); }
+
+    .foot{ display:flex; justify-content:space-between; align-items:baseline; margin-top:2.8mm; padding-top:1.8mm; border-top:1px solid var(--line); }
+    .foot .brand{ font-size:7.5pt; letter-spacing:.22em; color:var(--green-700); font-weight:800; text-transform:uppercase; }
+    .foot .place{ font-size:7.5pt; color:var(--muted); }
+
+    .empty{ padding:20mm; text-align:center; color:var(--muted); grid-column:1/-1; align-self:center; }
+
+    @media screen{ body{ padding:6mm 0 14mm; } .sheet{ box-shadow:0 8px 30px rgba(31,45,25,.22); } }
+    @media print{ body{ background:#fff; padding:0; } .toolbar{ display:none; } .sheet{ box-shadow:none; } }
   </style>
 </head>
 <body>
   <div class="toolbar">
     <button onclick="window.print()">🖨 인쇄 / PDF 저장</button>
-    <span class="hint">A4 세로 1장의 절반 크기(210×148.5mm) · 고객 배부용 · 브라우저 인쇄에서 여백 '없음', 배경 그래픽 '켬' 권장</span>
+    <span class="hint">PDF 1페이지 = 카드 <b>실물 크기 210×148.5mm(A5 가로)</b> · A4 세로 용지에 <b>“한 면에 2페이지”</b>로 출력하면 축소 없이 실물 크기 2장이 나옵니다 (여백 ‘없음’·배경 그래픽 ‘켬’·배율 100%)</span>
   </div>
   <main class="sheet" id="sheet"><div class="empty">불러오는 중…</div></main>
 
@@ -80,13 +96,12 @@
   (function(){
     "use strict";
     var SIZE={mini:"미니",small:"소형",medium:"중형",large:"대형",giant:"초대형"};
-    var RATE={slow:"느림",medium:"보통",fast:"빠름"};
-    var RESIST={low:"낮음",medium:"보통",high:"높음"};
+    var RATE={slow:"느긋함",medium:"보통",fast:"빠름"};
+    var RESIST={low:"낮음",medium:"보통",high:"강함"};
     var BLOOM={"early":"초여름","early-mid":"초·중간","mid":"한여름","mid-late":"중·늦여름","late":"늦여름"};
 
     function el(t,a,txt){var n=document.createElement(t);if(a)for(var k in a){if(a[k]!=null)n.setAttribute(k,a[k]);}if(txt!=null)n.textContent=txt;return n;}
     function range(arr,u){if(!arr||arr.length!==2||arr[0]==null)return null;return arr[0]===arr[1]?arr[0]+u:arr[0]+"–"+arr[1]+u;}
-    function row(dl,label,val){ if(val==null||val==="")return; dl.appendChild(el("dt",null,label)); dl.appendChild(el("dd",null,val)); }
 
     function loadData(){
       if(window.HOSTA_DATA) return Promise.resolve(window.HOSTA_DATA);
@@ -98,78 +113,84 @@
       sheet.innerHTML="";
       document.title="출력 · "+h.name_ko+" "+h.name_en;
 
-      // 타이틀 밴드
-      var head=el("div",{class:"head"});
-      head.appendChild(el("span",{class:"ko"},h.name_ko));
-      head.appendChild(el("span",{class:"en"},h.name_en));
-      if(h.cultivar) head.appendChild(el("span",{class:"sci"},h.cultivar));
-      var badges=el("div",{class:"badges"});
-      if(h.size&&h.size.class) badges.appendChild(el("span",{class:"badge"},SIZE[h.size.class]));
-      (h.awards||[]).forEach(function(a){
-        if(/hosta of the year|올해의\s*호스타/i.test(a)){var y=(a.match(/(19|20)\d\d/)||[])[0]||"";badges.appendChild(el("span",{class:"badge gold"},"🏆 올해의 호스타 "+y));}
-        else if(/garden merit|\bagm\b/i.test(a)){badges.appendChild(el("span",{class:"badge gold"},"🏆 RHS AGM"));}
-      });
-      if(h.flower&&h.flower.fragrant) badges.appendChild(el("span",{class:"badge"},"향기"));
-      head.appendChild(badges);
-      sheet.appendChild(head);
-
-      var body=el("div",{class:"body"});
-
-      // 1) 사진
-      var photo=el("div",{class:"col photo"});
+      /* ---- 좌: 히어로 사진 ---- */
+      var hero=el("div",{class:"hero"});
       var src=(h.images&&h.images.farm_photo&&h.images.farm_photo.src) || (h.images&&h.images.reference_image&&h.images.reference_image.url) || (h.images&&h.images.farm_photo&&h.images.farm_photo.placeholder) || "assets/placeholder.svg";
-      var img=el("img",{src:src,alt:h.name_ko});
       var ph=(h.images&&h.images.farm_photo&&h.images.farm_photo.placeholder)||"assets/placeholder.svg";
-      photo.appendChild(img);
-      var ref=h.images&&h.images.reference_image;
-      var cap=null;
-      if(src && ref && ref.url && src===ref.url && ref.credit){ cap=el("div",{class:"cap"}, ref.credit+(ref.license?" · "+ref.license:"")); photo.appendChild(cap); }
+      var img=el("img",{src:src,alt:h.name_ko});
+      hero.appendChild(img);
+      hero.appendChild(el("div",{class:"shade"}));
+      var ki=el("div",{class:"kicker-img"});
+      ki.appendChild(el("div",{class:"genus"},"Mokhyang Hosta Collection"));
+      if(h.cultivar) ki.appendChild(el("div",{class:"sci"},h.cultivar));
+      hero.appendChild(ki);
+      var ref=h.images&&h.images.reference_image, cap=null;
+      if(src && ref && ref.url && src===ref.url && ref.credit){ cap=el("div",{class:"credit"},ref.credit+(ref.license?" · "+ref.license:"")); hero.appendChild(cap); }
       img.onerror=function(){ if(img.src.indexOf("placeholder")<0){img.src=ph;} if(cap)cap.style.display="none"; };
-      body.appendChild(photo);
+      sheet.appendChild(hero);
 
-      // 2) 특징
-      var feat=el("div",{class:"col features"});
-      feat.appendChild(el("h3",null,"특징 · Features"));
-      var dl=el("dl");
-      var sz=null;
-      if(h.size){var hh=range(h.size.height_cm,"cm"),sp=range(h.size.spread_cm,"cm"); if(hh||sp) sz=(hh?"높이 "+hh:"")+(hh&&sp?" × ":"")+(sp?"폭 "+sp:"");}
-      row(dl,"크기", sz);
-      var lt=h.culture&&h.culture.light_ko; if(lt) lt=lt.split(/[.\n]/)[0].trim();  // 첫 구절만(카드 공간 절약)
-      row(dl,"광량", lt);
-      row(dl,"잎", h.leaf&&h.leaf.color_ko);
-      if(h.flower){var b=h.flower.bloom_season;var fk=[h.flower.color_ko,b?BLOOM[b]+" 개화":null].filter(Boolean).join(" · ");row(dl,"꽃",fk||null);}
-      if(h.flower&&h.flower.fragrant) row(dl,"향기","있음 (향기꽃)");
-      row(dl,"내한성", h.culture&&h.culture.hardiness);
-      row(dl,"성장", h.culture&&h.culture.growth_rate?RATE[h.culture.growth_rate]:null);
-      row(dl,"민달팽이 저항", h.culture&&h.culture.slug_resistance?RESIST[h.culture.slug_resistance]:null);
-      feat.appendChild(dl);
-      body.appendChild(feat);
+      /* ---- 우: 편집 컬럼 ---- */
+      var ed=el("div",{class:"editorial"});
 
-      // 3) 긴 설명
-      var desc=el("div",{class:"col desc"});
-      desc.appendChild(el("h3",null,"설명 · About"));
+      var kickerBits=[];
+      if(h.size&&h.size.class) kickerBits.push(SIZE[h.size.class]+" HOSTA");
+      if(h.flower&&h.flower.fragrant) kickerBits.push("FRAGRANT");
+      var kick=el("p",{class:"kicker"});
+      kick.appendChild(el("span",{class:"rule"}));
+      kick.appendChild(document.createTextNode(kickerBits.join(" · ")||"HOSTA"));
+      ed.appendChild(kick);
+
+      ed.appendChild(el("h1",{class:"title"},h.name_ko));
+      ed.appendChild(el("p",{class:"title-en"},h.name_en));
+
+      var aw=el("div",{class:"awards"}); var hasAw=false;
+      (h.awards||[]).forEach(function(a){
+        if(/hosta of the year|올해의\s*호스타/i.test(a)){var y=(a.match(/(19|20)\d\d/)||[])[0]||"";aw.appendChild(el("span",null,"🏆 올해의 호스타 "+y));hasAw=true;}
+        else if(/garden merit|\bagm\b/i.test(a)){aw.appendChild(el("span",null,"🏆 RHS 정원공로상"));hasAw=true;}
+      });
+      if(hasAw) ed.appendChild(aw);
+
       var rc=h.retail_copy&&h.retail_copy.warm;
-      if(rc&&rc.headline_ko) desc.appendChild(el("p",{class:"lead"},"“"+rc.headline_ko+"”"));
-      if(h.description_ko) desc.appendChild(el("p",{class:"para"},h.description_ko));
-      else if(rc&&rc.body_ko) desc.appendChild(el("p",{class:"para"},rc.body_ko));
-      if(rc&&rc.recommend_for_ko) desc.appendChild(el("p",{class:"rec"},"🌿 이런 분께 — "+rc.recommend_for_ko));
-      var foot=el("div",{class:"foot"});
-      foot.appendChild(el("span",null,"목향농원 · 용인 남사"));
-      foot.appendChild(el("span",null,"Mokhyang Nursery"));
-      desc.appendChild(foot);
-      body.appendChild(desc);
+      if(rc&&rc.headline_ko) ed.appendChild(el("p",{class:"lead"},rc.headline_ko));
+      if(h.description_ko) ed.appendChild(el("p",{class:"para"},h.description_ko));
+      else if(rc&&rc.body_ko) ed.appendChild(el("p",{class:"para"},rc.body_ko));
+      if(rc&&rc.recommend_for_ko) ed.appendChild(el("p",{class:"rec"},"— 이런 분께: "+rc.recommend_for_ko));
 
-      sheet.appendChild(body);
+      /* at a glance 데이터 스트립 */
+      var gl=el("div",{class:"glance"});
+      gl.appendChild(el("p",{class:"gl-title"},"At a Glance · 한눈에 보기"));
+      var grid=el("div",{class:"grid"});
+      function item(label,val){ if(val==null||val==="")return;
+        var w=el("div",{class:"item"}); w.appendChild(el("span",{class:"k"},label)); w.appendChild(el("span",{class:"v"},val)); grid.appendChild(w); }
+      var sz=null;
+      if(h.size){var hh=range(h.size.height_cm,"cm"),sp=range(h.size.spread_cm,"cm"); if(hh||sp) sz=(hh?"높이 "+hh:"")+(hh&&sp?" · ":"")+(sp?"폭 "+sp:"");}
+      item("크기",sz);
+      var lt=h.culture&&h.culture.light_ko; if(lt) lt=lt.split(/[.\n]/)[0].trim();
+      item("광량",lt);
+      if(h.flower){var b=h.flower.bloom_season; var fk=[h.flower.color_ko,b?BLOOM[b]+" 개화":null].filter(Boolean).join(" · "); item("꽃",fk||null);}
+      if(h.flower&&h.flower.fragrant) item("향기","있음");
+      item("내한성", h.culture&&h.culture.hardiness);
+      item("성장", h.culture&&h.culture.growth_rate?RATE[h.culture.growth_rate]:null);
+      item("민달팽이", h.culture&&h.culture.slug_resistance?RESIST[h.culture.slug_resistance]:null);
+      gl.appendChild(grid);
+      ed.appendChild(gl);
+
+      var foot=el("div",{class:"foot"});
+      foot.appendChild(el("span",{class:"brand"},"목향농원 Mokhyang Nursery"));
+      foot.appendChild(el("span",{class:"place"},"경기 용인 처인구 남사"));
+      ed.appendChild(foot);
+
+      sheet.appendChild(ed);
     }
 
     loadData().then(function(data){
       var arr=Array.isArray(data)?data:(data.hostas||[]);
-      var id=(location.hash||"").replace("#","")||(arr[0]&&arr[0].id);
-      var h=null; for(var i=0;i<arr.length;i++) if(arr[i].id===id){h=arr[i];break;}
-      if(!h) h=arr[0];
-      if(h) render(h); else document.getElementById("sheet").innerHTML='<div class="empty">데이터를 찾을 수 없습니다.</div>';
-      window.addEventListener("hashchange",function(){ var nid=(location.hash||"").replace("#","");for(var j=0;j<arr.length;j++)if(arr[j].id===nid){render(arr[j]);break;} });
-    }).catch(function(e){ document.getElementById("sheet").innerHTML='<div class="empty">데이터 로드 실패. 로컬 서버로 열거나 data/hostas.data.js 확인.</div>'; });
+      function show(id){ var h=null; for(var i=0;i<arr.length;i++) if(arr[i].id===id){h=arr[i];break;} if(!h)h=arr[0]; if(h)render(h); }
+      show((location.hash||"").replace("#","")||(arr[0]&&arr[0].id));
+      window.addEventListener("hashchange",function(){ show((location.hash||"").replace("#","")); });
+    }).catch(function(e){
+      document.getElementById("sheet").innerHTML='<div class="empty">데이터를 불러오지 못했습니다. 로컬 서버로 열거나 data/hostas.data.js를 확인하세요.</div>';
+    });
   })();
   </script>
 </body>
