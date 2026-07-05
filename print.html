@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>출력 · 목향농원 호스타</title>
+  <link rel="icon" href="assets/placeholder.svg">
+  <style>
+    /* A4 세로 1장에 절반 카드(210 x 148.5mm) — 고객 배부용 */
+    @page { size: A4 portrait; margin: 0; }
+    :root{
+      --green-900:#26361f;--green-800:#33472a;--green-700:#456138;--green-600:#5f8a52;
+      --green-300:#a9c79a;--green-100:#e9f1e3;--gold:#c69a2e;--gold-soft:#f3e6bf;
+      --ink:#2b2b28;--muted:#6b7566;--line:#d9e2d2;
+    }
+    *{box-sizing:border-box;}
+    html,body{margin:0;}
+    body{
+      font-family:system-ui,-apple-system,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+      color:var(--ink); background:#e6ebe2;
+    }
+    .toolbar{ max-width:210mm; margin:0 auto; padding:10px 4px; display:flex; gap:10px; align-items:center; }
+    .toolbar button{ border:0; background:var(--green-700); color:#fff; padding:8px 16px; border-radius:8px; font:inherit; font-weight:700; cursor:pointer; }
+    .toolbar .hint{ color:var(--muted); font-size:13px; }
+
+    /* 카드 = A4 세로의 절반 */
+    .sheet{
+      width:210mm; height:148.5mm; margin:0 auto; background:#fff; overflow:hidden;
+      display:grid; grid-template-rows:auto 1fr;
+      border:1px solid var(--line);
+    }
+    /* 상단 타이틀 밴드 */
+    .head{ padding:6mm 8mm 4mm; border-bottom:2px solid var(--green-700); display:flex; align-items:baseline; gap:3mm; flex-wrap:wrap; }
+    .head .ko{ font-size:24pt; font-weight:800; letter-spacing:-.02em; color:var(--green-900); line-height:1; }
+    .head .en{ font-size:12.5pt; color:var(--muted); font-weight:700; }
+    .head .sci{ font-size:10.5pt; font-style:italic; color:var(--green-700); }
+    .head .badges{ margin-left:auto; display:flex; gap:4px; align-items:center; }
+    .badge{ font-size:8.5pt; font-weight:800; padding:2px 8px; border-radius:999px; background:var(--green-100); color:var(--green-800); white-space:nowrap; }
+    .badge.gold{ background:var(--gold-soft); color:#836417; }
+
+    /* 3단: 사진 · 특징 · 긴 설명 */
+    .body{ display:grid; grid-template-columns:80mm 56mm 1fr; min-height:0; }
+    .col{ min-width:0; overflow:hidden; }
+    .photo{ position:relative; background:var(--green-100); }
+    .photo img{ width:100%; height:100%; object-fit:cover; display:block; }
+    .photo .cap{ position:absolute; left:0; right:0; bottom:0; font-size:8pt; color:#fff;
+      background:linear-gradient(transparent,rgba(0,0,0,.5)); padding:8mm 3mm 2mm; }
+
+    .features{ padding:5mm 6mm; border-left:1px solid var(--line); }
+    .features h3, .desc h3{ margin:0 0 3mm; font-size:10.5pt; color:var(--green-700); letter-spacing:.02em; border-bottom:1px dashed var(--green-300); padding-bottom:1.5mm; }
+    .features dl{ margin:0; display:grid; grid-template-columns:auto 1fr; gap:2mm 3mm; font-size:9pt; line-height:1.35; }
+    .features dt{ color:var(--muted); font-weight:700; white-space:nowrap; }
+    .features dd{ margin:0; color:var(--ink); }
+
+    .desc{ padding:5mm 6mm; border-left:1px solid var(--line); display:flex; flex-direction:column; }
+    .desc .lead{ font-size:12.5pt; font-weight:800; color:var(--green-800); margin:0 0 2mm; line-height:1.35; }
+    .desc .para{ font-size:10pt; line-height:1.6; color:#33372f; margin:0 0 2.5mm; }
+    .desc .rec{ font-size:9.5pt; font-style:italic; color:var(--muted); margin:0; }
+    .desc .foot{ margin-top:auto; border-top:1px solid var(--line); padding-top:2mm; font-size:8.5pt; color:var(--muted); display:flex; justify-content:space-between; }
+
+    .empty{ padding:20mm; text-align:center; color:var(--muted); }
+
+    @media screen{ body{ padding:6mm 0 14mm; } .sheet{ box-shadow:0 6px 26px rgba(38,54,31,.18); } }
+    @media print{
+      body{ background:#fff; padding:0; }
+      .toolbar{ display:none; }
+      .sheet{ box-shadow:none; border:none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button onclick="window.print()">🖨 인쇄 / PDF 저장</button>
+    <span class="hint">A4 세로 1장의 절반 크기(210×148.5mm) · 고객 배부용 · 브라우저 인쇄에서 여백 '없음', 배경 그래픽 '켬' 권장</span>
+  </div>
+  <main class="sheet" id="sheet"><div class="empty">불러오는 중…</div></main>
+
+  <script src="data/hostas.data.js"></script>
+  <script>
+  (function(){
+    "use strict";
+    var SIZE={mini:"미니",small:"소형",medium:"중형",large:"대형",giant:"초대형"};
+    var RATE={slow:"느림",medium:"보통",fast:"빠름"};
+    var RESIST={low:"낮음",medium:"보통",high:"높음"};
+    var BLOOM={"early":"초여름","early-mid":"초·중간","mid":"한여름","mid-late":"중·늦여름","late":"늦여름"};
+
+    function el(t,a,txt){var n=document.createElement(t);if(a)for(var k in a){if(a[k]!=null)n.setAttribute(k,a[k]);}if(txt!=null)n.textContent=txt;return n;}
+    function range(arr,u){if(!arr||arr.length!==2||arr[0]==null)return null;return arr[0]===arr[1]?arr[0]+u:arr[0]+"–"+arr[1]+u;}
+    function row(dl,label,val){ if(val==null||val==="")return; dl.appendChild(el("dt",null,label)); dl.appendChild(el("dd",null,val)); }
+
+    function loadData(){
+      if(window.HOSTA_DATA) return Promise.resolve(window.HOSTA_DATA);
+      return fetch("data/hostas.json").then(function(r){return r.json();});
+    }
+
+    function render(h){
+      var sheet=document.getElementById("sheet");
+      sheet.innerHTML="";
+      document.title="출력 · "+h.name_ko+" "+h.name_en;
+
+      // 타이틀 밴드
+      var head=el("div",{class:"head"});
+      head.appendChild(el("span",{class:"ko"},h.name_ko));
+      head.appendChild(el("span",{class:"en"},h.name_en));
+      if(h.cultivar) head.appendChild(el("span",{class:"sci"},h.cultivar));
+      var badges=el("div",{class:"badges"});
+      if(h.size&&h.size.class) badges.appendChild(el("span",{class:"badge"},SIZE[h.size.class]));
+      (h.awards||[]).forEach(function(a){
+        if(/hosta of the year|올해의\s*호스타/i.test(a)){var y=(a.match(/(19|20)\d\d/)||[])[0]||"";badges.appendChild(el("span",{class:"badge gold"},"🏆 올해의 호스타 "+y));}
+        else if(/garden merit|\bagm\b/i.test(a)){badges.appendChild(el("span",{class:"badge gold"},"🏆 RHS AGM"));}
+      });
+      if(h.flower&&h.flower.fragrant) badges.appendChild(el("span",{class:"badge"},"향기"));
+      head.appendChild(badges);
+      sheet.appendChild(head);
+
+      var body=el("div",{class:"body"});
+
+      // 1) 사진
+      var photo=el("div",{class:"col photo"});
+      var src=(h.images&&h.images.farm_photo&&h.images.farm_photo.src) || (h.images&&h.images.reference_image&&h.images.reference_image.url) || (h.images&&h.images.farm_photo&&h.images.farm_photo.placeholder) || "assets/placeholder.svg";
+      var img=el("img",{src:src,alt:h.name_ko});
+      var ph=(h.images&&h.images.farm_photo&&h.images.farm_photo.placeholder)||"assets/placeholder.svg";
+      photo.appendChild(img);
+      var ref=h.images&&h.images.reference_image;
+      var cap=null;
+      if(src && ref && ref.url && src===ref.url && ref.credit){ cap=el("div",{class:"cap"}, ref.credit+(ref.license?" · "+ref.license:"")); photo.appendChild(cap); }
+      img.onerror=function(){ if(img.src.indexOf("placeholder")<0){img.src=ph;} if(cap)cap.style.display="none"; };
+      body.appendChild(photo);
+
+      // 2) 특징
+      var feat=el("div",{class:"col features"});
+      feat.appendChild(el("h3",null,"특징 · Features"));
+      var dl=el("dl");
+      var sz=null;
+      if(h.size){var hh=range(h.size.height_cm,"cm"),sp=range(h.size.spread_cm,"cm"); if(hh||sp) sz=(hh?"높이 "+hh:"")+(hh&&sp?" × ":"")+(sp?"폭 "+sp:"");}
+      row(dl,"크기", sz);
+      var lt=h.culture&&h.culture.light_ko; if(lt) lt=lt.split(/[.\n]/)[0].trim();  // 첫 구절만(카드 공간 절약)
+      row(dl,"광량", lt);
+      row(dl,"잎", h.leaf&&h.leaf.color_ko);
+      if(h.flower){var b=h.flower.bloom_season;var fk=[h.flower.color_ko,b?BLOOM[b]+" 개화":null].filter(Boolean).join(" · ");row(dl,"꽃",fk||null);}
+      if(h.flower&&h.flower.fragrant) row(dl,"향기","있음 (향기꽃)");
+      row(dl,"내한성", h.culture&&h.culture.hardiness);
+      row(dl,"성장", h.culture&&h.culture.growth_rate?RATE[h.culture.growth_rate]:null);
+      row(dl,"민달팽이 저항", h.culture&&h.culture.slug_resistance?RESIST[h.culture.slug_resistance]:null);
+      feat.appendChild(dl);
+      body.appendChild(feat);
+
+      // 3) 긴 설명
+      var desc=el("div",{class:"col desc"});
+      desc.appendChild(el("h3",null,"설명 · About"));
+      var rc=h.retail_copy&&h.retail_copy.warm;
+      if(rc&&rc.headline_ko) desc.appendChild(el("p",{class:"lead"},"“"+rc.headline_ko+"”"));
+      if(h.description_ko) desc.appendChild(el("p",{class:"para"},h.description_ko));
+      else if(rc&&rc.body_ko) desc.appendChild(el("p",{class:"para"},rc.body_ko));
+      if(rc&&rc.recommend_for_ko) desc.appendChild(el("p",{class:"rec"},"🌿 이런 분께 — "+rc.recommend_for_ko));
+      var foot=el("div",{class:"foot"});
+      foot.appendChild(el("span",null,"목향농원 · 용인 남사"));
+      foot.appendChild(el("span",null,"Mokhyang Nursery"));
+      desc.appendChild(foot);
+      body.appendChild(desc);
+
+      sheet.appendChild(body);
+    }
+
+    loadData().then(function(data){
+      var arr=Array.isArray(data)?data:(data.hostas||[]);
+      var id=(location.hash||"").replace("#","")||(arr[0]&&arr[0].id);
+      var h=null; for(var i=0;i<arr.length;i++) if(arr[i].id===id){h=arr[i];break;}
+      if(!h) h=arr[0];
+      if(h) render(h); else document.getElementById("sheet").innerHTML='<div class="empty">데이터를 찾을 수 없습니다.</div>';
+      window.addEventListener("hashchange",function(){ var nid=(location.hash||"").replace("#","");for(var j=0;j<arr.length;j++)if(arr[j].id===nid){render(arr[j]);break;} });
+    }).catch(function(e){ document.getElementById("sheet").innerHTML='<div class="empty">데이터 로드 실패. 로컬 서버로 열거나 data/hostas.data.js 확인.</div>'; });
+  })();
+  </script>
+</body>
+</html>

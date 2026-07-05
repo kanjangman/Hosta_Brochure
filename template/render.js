@@ -225,6 +225,8 @@
     if (!h) return;
     currentId = id;
     renderDetail(h);
+    var pb = document.getElementById("printBtn");
+    if (pb) pb.setAttribute("href", "print.html#" + id);
     document.querySelectorAll(".plantlist button").forEach(function (b) {
       b.setAttribute("aria-current", b.dataset.id === id ? "true" : "false");
     });
