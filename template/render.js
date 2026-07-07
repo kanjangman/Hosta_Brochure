@@ -160,7 +160,18 @@
       var fen = [h.flower.color_en, b2 ? BLOOM_EN[b2] : null].filter(Boolean).join(", ");
       add(spec("꽃", "Flower", bi(fko, fen)));
     }
-    if (h.culture && h.culture.hardiness) add(spec("내한성", "Hardiness", h.culture.hardiness));
+    if (h.culture && h.culture.hardiness) {
+      var hz = h.culture.hardiness.match(/(\d+)\s*-\s*(\d+)/);
+      var hko = h.culture.hardiness, hen = h.culture.hardiness;
+      if (hz) {
+        var za = +hz[1], zb = +hz[2];
+        var cold = za <= 5 ? "매우 강함" : za === 6 ? "강함" : za === 7 ? "보통" : "다소 약함";
+        var region = (za <= 5 && zb >= 9) ? "전국 노지월동" : za <= 6 ? "중부·남부 노지월동" : za === 7 ? "남부지방 노지월동" : "남부·제주 위주 월동";
+        hko = "추위에 " + cold + "(" + region + ")";
+        hen = "USDA " + za + "-" + zb;
+      }
+      add(spec("내한성", "Hardiness", bi(hko, hen)));
+    }
     if (h.culture && h.culture.growth_rate) add(spec("성장", "Growth", bi(RATE_KO[h.culture.growth_rate], RATE_EN[h.culture.growth_rate])));
     if (h.culture && h.culture.slug_resistance) add(spec("민달팽이 저항", "Slug resist.", bi(RESIST_KO[h.culture.slug_resistance], RESIST_EN[h.culture.slug_resistance])));
     if (specs.children.length) body.appendChild(specs);

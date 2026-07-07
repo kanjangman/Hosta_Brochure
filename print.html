@@ -169,7 +169,13 @@
       item("광량",lt);
       if(h.flower){var b=h.flower.bloom_season; var fk=[h.flower.color_ko,b?BLOOM[b]+" 개화":null].filter(Boolean).join(" · "); item("꽃",fk||null);}
       if(h.flower&&h.flower.fragrant) item("향기","있음");
-      item("내한성", h.culture&&h.culture.hardiness);
+      var hardy=h.culture&&h.culture.hardiness||null;
+      if(hardy){var hz=hardy.match(/(\d+)\s*-\s*(\d+)/);
+        if(hz){var za=+hz[1],zb=+hz[2];
+          var cold=za<=5?"매우 강함":za===6?"강함":za===7?"보통":"다소 약함";
+          var region=(za<=5&&zb>=9)?"전국 노지월동":za<=6?"중부·남부 노지월동":za===7?"남부지방 노지월동":"남부·제주 위주 월동";
+          hardy="추위에 "+cold+"("+region+")";}}
+      item("내한성", hardy);
       item("성장", h.culture&&h.culture.growth_rate?RATE[h.culture.growth_rate]:null);
       item("민달팽이", h.culture&&h.culture.slug_resistance?RESIST[h.culture.slug_resistance]:null);
       gl.appendChild(grid);
