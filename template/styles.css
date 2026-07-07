@@ -42,24 +42,6 @@ body[data-tone="warm"] .retail-variant.tone-warm { display:flex; }
 body[data-tone="practical"] .retail-variant.tone-practical { display:flex; }
 body[data-tone="premium"] .retail-variant.tone-premium { display:flex; }
 
-/* 톤 버튼 설명 툴팁 — 마우스 오버(또는 키보드 포커스) 시 각 톤 설명 표시 */
-.toneswitch button { position:relative; }
-.toneswitch button[data-tip]:hover::after,
-.toneswitch button[data-tip]:focus-visible::after {
-  content:attr(data-tip);
-  position:absolute; top:calc(100% + 10px); left:50%; transform:translateX(-50%);
-  width:max-content; max-width:250px; white-space:normal; text-align:left;
-  background:var(--green-900); color:#fff; font-size:12px; font-weight:500; line-height:1.5;
-  padding:9px 12px; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,.28);
-  z-index:60; pointer-events:none;
-}
-.toneswitch button[data-tip]:hover::before,
-.toneswitch button[data-tip]:focus-visible::before {
-  content:""; position:absolute; top:calc(100% + 4px); left:50%; transform:translateX(-50%);
-  border:6px solid transparent; border-bottom-color:var(--green-900);
-  z-index:60; pointer-events:none;
-}
-
 /* ---- 헤더 ---- */
 .site-header {
   background:linear-gradient(135deg,var(--green-800),var(--green-600));
