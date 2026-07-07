@@ -3,16 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>출력 · 목향농원 호스타</title>
+  <title>출력모드 · 목향농원 호스타</title>
   <link rel="icon" href="assets/placeholder.svg">
   <style>
     /* ============================================================
-       고객 배부용 카드 — 잡지/브로셔 스타일 (좌측 히어로 사진형)
-       PDF 페이지 = 카드 실물 크기 210 x 148.5mm (A5 가로).
-       A4 세로 용지에 "한 면에 2페이지(2-up)"로 뽑으면 비율이 같아
-       축소 없이 100% 실물 크기 두 장이 나온다.
+       고객 배부용 출력모드 — 품종 선택 → A4 세로 1장에 2품종(상·하) 배치
+       각 카드 = 실물 210 x 148.5mm (A5 가로). A5 가로 2장 = A4 세로 1장(297mm).
+       인쇄/ PDF 저장 시 여백 '없음' · 배율 100% 로 뽑으면 실물 크기로 나온다.
        ============================================================ */
-    @page { size: 210mm 148.5mm; margin: 0; }
+    @page { size: 210mm 297mm; margin: 0; }
     :root{
       --green-900:#1f2d19;--green-800:#33472a;--green-700:#456138;--green-600:#5f8a52;
       --green-300:#a9c79a;--green-100:#eaf1e4;--gold:#b8912e;--gold-soft:#f3e6bf;
@@ -24,15 +23,50 @@
     html,body{margin:0;}
     body{ font-family:var(--sans); color:var(--ink); background:#e3e8de; }
 
-    .toolbar{ max-width:210mm; margin:0 auto; padding:10px 4px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
-    .toolbar button{ border:0; background:var(--green-700); color:#fff; padding:8px 16px; border-radius:8px; font:inherit; font-weight:700; cursor:pointer; }
-    .toolbar .hint{ color:#5d665a; font-size:12.5px; line-height:1.5; }
+    /* ---- 상단 툴바 ---- */
+    .topbar{ position:sticky; top:0; z-index:20; background:linear-gradient(135deg,#33472a,#5f8a52); color:#fff;
+      padding:12px 18px; display:flex; gap:14px; align-items:center; flex-wrap:wrap; box-shadow:0 2px 10px rgba(31,45,25,.18); }
+    .topbar .title{ font-size:16px; font-weight:800; letter-spacing:-.01em; }
+    .topbar button{ border:0; border-radius:8px; font:inherit; font-weight:700; cursor:pointer; padding:8px 15px; }
+    .topbar .print{ background:#fff; color:var(--green-800); }
+    .topbar .print:hover{ background:var(--gold-soft); }
+    .topbar .ghost{ background:rgba(255,255,255,.18); color:#fff; padding:7px 12px; font-weight:600; }
+    .topbar .ghost:hover{ background:rgba(255,255,255,.28); }
+    .topbar .count{ font-size:13px; color:#eef4ea; }
+    .topbar .back{ color:#eef4ea; text-decoration:none; font-size:13px; font-weight:600; }
+    .topbar .spacer{ flex:1; }
+    .hintbar{ background:#f4f8f1; color:#4c5748; font-size:12.5px; line-height:1.55; padding:9px 18px; border-bottom:1px solid var(--line); }
+    .hintbar b{ color:var(--green-800); }
 
-    /* ---- 카드(=PDF 1페이지, 실물 210x148.5mm) ---- */
+    /* ---- 앱 레이아웃: 좌 선택 + 우 미리보기 ---- */
+    .app{ display:flex; gap:0; align-items:flex-start; }
+    .picker{ width:250px; flex:none; position:sticky; top:96px; align-self:flex-start;
+      max-height:calc(100vh - 104px); overflow-y:auto; background:#fff; border-right:1px solid var(--line); padding:12px 10px; }
+    .picker .pk-tools{ display:flex; gap:6px; margin-bottom:8px; }
+    .picker .pk-tools button{ flex:1; border:1px solid var(--green-300); background:#fff; color:var(--green-700);
+      border-radius:8px; padding:6px 8px; font:inherit; font-size:12px; font-weight:700; cursor:pointer; }
+    .picker .pk-tools button:hover{ background:var(--green-100); }
+    .picker label{ display:flex; align-items:center; gap:8px; padding:7px 8px; border-radius:9px; cursor:pointer; }
+    .picker label:hover{ background:var(--green-100); }
+    .picker input{ width:16px; height:16px; accent-color:var(--green-700); flex:none; cursor:pointer; }
+    .picker .nm{ font-weight:700; font-size:13.5px; color:var(--ink); }
+    .picker .en{ font-size:11px; color:var(--muted); margin-left:auto; white-space:nowrap; }
+
+    .preview{ flex:1; min-width:0; padding:16px; display:flex; flex-direction:column; align-items:center; gap:16px; }
+    .noSel{ color:var(--muted); text-align:center; padding:70px 20px; font-size:14px; line-height:1.7; }
+
+    /* ---- A4 세로 페이지 = 카드 2장(상·하) ---- */
+    .page{ width:210mm; height:297mm; background:#fff; position:relative; overflow:hidden;
+      display:flex; flex-direction:column; }
+    .page .cutline{ position:absolute; left:0; right:0; top:148.5mm; border-top:1px dashed #c3ccb8; pointer-events:none; }
+
+    /* ---- 카드(=A5 가로 210x148.5mm) ---- */
     .sheet{
-      width:210mm; height:148.5mm; margin:0 auto; background:var(--paper); overflow:hidden;
+      width:210mm; height:148.5mm; background:var(--paper); overflow:hidden;
       display:grid; grid-template-columns:88mm 1fr; position:relative;
     }
+    .sheet.blank{ display:flex; align-items:center; justify-content:center; background:#fbfcfa; }
+    .sheet.blank .bmsg{ color:#b7c0ac; font-size:11pt; }
 
     /* 좌: full-bleed 히어로 사진 */
     .hero{ position:relative; overflow:hidden; background:var(--green-100); }
@@ -78,18 +112,46 @@
     .foot .brand{ font-size:7.5pt; letter-spacing:.22em; color:var(--green-700); font-weight:800; text-transform:uppercase; }
     .foot .place{ font-size:7.5pt; color:var(--muted); }
 
-    .empty{ padding:20mm; text-align:center; color:var(--muted); grid-column:1/-1; align-self:center; }
-
-    @media screen{ body{ padding:6mm 0 14mm; } .sheet{ box-shadow:0 8px 30px rgba(31,45,25,.22); } }
-    @media print{ body{ background:#fff; padding:0; } .toolbar{ display:none; } .sheet{ box-shadow:none; } }
+    @media screen{
+      .page{ box-shadow:0 10px 34px rgba(31,45,25,.24); }
+      .sheet:first-child{ border-bottom:0; }
+    }
+    @media print{
+      body{ background:#fff; }
+      .topbar,.hintbar,.picker{ display:none !important; }
+      .app{ display:block; }
+      .preview{ padding:0; gap:0; display:block; }
+      .page{ box-shadow:none; break-inside:avoid; }
+      .page:not(:first-child){ break-before:page; }
+      .sheet.blank{ background:#fff; } .sheet.blank .bmsg{ display:none; }
+    }
   </style>
 </head>
 <body>
-  <div class="toolbar">
-    <button onclick="window.print()">🖨 인쇄 / PDF 저장</button>
-    <span class="hint">PDF 1페이지 = 카드 <b>실물 크기 210×148.5mm(A5 가로)</b> · A4 세로 용지에 <b>“한 면에 2페이지”</b>로 출력하면 축소 없이 실물 크기 2장이 나옵니다 (여백 ‘없음’·배경 그래픽 ‘켬’·배율 100%)</span>
+  <div class="topbar">
+    <span class="title">🖨 출력모드</span>
+    <button class="print" onclick="window.print()">인쇄 / PDF 저장</button>
+    <button class="ghost" id="selAll">전체 선택</button>
+    <button class="ghost" id="selClear">선택 해제</button>
+    <span class="count" id="count">선택 0종</span>
+    <span class="spacer"></span>
+    <a class="back" href="index.html">← 도감으로</a>
   </div>
-  <main class="sheet" id="sheet"><div class="empty">불러오는 중…</div></main>
+  <div class="hintbar">
+    미리보기의 <b>각 장 = A4 세로 1장</b>이며 위·아래 칸이 각각 <b>실물 크기 A5 가로 카드(210×148.5mm)</b>입니다.
+    인쇄(또는 PDF 저장) 시 <b>여백 ‘없음’ · 배율 100% · 배경 그래픽 ‘켬’</b>으로 출력하고, 카드 사이 점선을 자르면 카드 2장이 됩니다.
+  </div>
+
+  <div class="app">
+    <aside class="picker">
+      <div class="pk-tools">
+        <button id="pkAll">전체</button>
+        <button id="pkNone">해제</button>
+      </div>
+      <div id="pklist"></div>
+    </aside>
+    <main class="preview" id="preview"><div class="noSel">왼쪽 목록에서 품종을 선택하면 여기에 출력 미리보기가 만들어집니다.</div></main>
+  </div>
 
   <script src="data/hostas.data.js"></script>
   <script>
@@ -99,21 +161,18 @@
     var RATE={slow:"느긋함",medium:"보통",fast:"빠름"};
     var RESIST={low:"낮음",medium:"보통",high:"강함"};
     var BLOOM={"early":"초여름","early-mid":"초·중간","mid":"한여름","mid-late":"중·늦여름","late":"늦여름"};
+    var STORE="hosta-print-sel";
 
     function el(t,a,txt){var n=document.createElement(t);if(a)for(var k in a){if(a[k]!=null)n.setAttribute(k,a[k]);}if(txt!=null)n.textContent=txt;return n;}
     function range(arr,u){if(!arr||arr.length!==2||arr[0]==null)return null;return arr[0]===arr[1]?arr[0]+u:arr[0]+"–"+arr[1]+u;}
+    function loadData(){ if(window.HOSTA_DATA) return Promise.resolve(window.HOSTA_DATA); return fetch("data/hostas.json").then(function(r){return r.json();}); }
+    function loadSel(){ try{ return new Set(JSON.parse(localStorage.getItem(STORE)||"[]")); }catch(e){ return new Set(); } }
+    function saveSel(set){ try{ localStorage.setItem(STORE, JSON.stringify(Array.from(set))); }catch(e){} }
 
-    function loadData(){
-      if(window.HOSTA_DATA) return Promise.resolve(window.HOSTA_DATA);
-      return fetch("data/hostas.json").then(function(r){return r.json();});
-    }
+    /* ---- 카드 1장(.sheet) 생성 ---- */
+    function buildCard(h){
+      var sheet=el("div",{class:"sheet"});
 
-    function render(h){
-      var sheet=document.getElementById("sheet");
-      sheet.innerHTML="";
-      document.title="출력 · "+h.name_ko+" "+h.name_en;
-
-      /* ---- 좌: 히어로 사진 ---- */
       var hero=el("div",{class:"hero"});
       var src=(h.images&&h.images.farm_photo&&h.images.farm_photo.src) || (h.images&&h.images.reference_image&&h.images.reference_image.url) || (h.images&&h.images.farm_photo&&h.images.farm_photo.placeholder) || "assets/placeholder.svg";
       var ph=(h.images&&h.images.farm_photo&&h.images.farm_photo.placeholder)||"assets/placeholder.svg";
@@ -129,9 +188,7 @@
       img.onerror=function(){ if(img.src.indexOf("placeholder")<0){img.src=ph;} if(cap)cap.style.display="none"; };
       sheet.appendChild(hero);
 
-      /* ---- 우: 편집 컬럼 ---- */
       var ed=el("div",{class:"editorial"});
-
       var kickerBits=[];
       if(h.size&&h.size.class) kickerBits.push(SIZE[h.size.class]+" HOSTA");
       if(h.flower&&h.flower.fragrant) kickerBits.push("FRAGRANT");
@@ -156,7 +213,6 @@
       else if(rc&&rc.body_ko) ed.appendChild(el("p",{class:"para"},rc.body_ko));
       if(rc&&rc.recommend_for_ko) ed.appendChild(el("p",{class:"rec"},"— 이런 분께: "+rc.recommend_for_ko));
 
-      /* at a glance 데이터 스트립 */
       var gl=el("div",{class:"glance"});
       gl.appendChild(el("p",{class:"gl-title"},"At a Glance · 한눈에 보기"));
       var grid=el("div",{class:"grid"});
@@ -187,15 +243,70 @@
       ed.appendChild(foot);
 
       sheet.appendChild(ed);
+      return sheet;
     }
 
     loadData().then(function(data){
       var arr=Array.isArray(data)?data:(data.hostas||[]);
-      function show(id){ var h=null; for(var i=0;i<arr.length;i++) if(arr[i].id===id){h=arr[i];break;} if(!h)h=arr[0]; if(h)render(h); }
-      show((location.hash||"").replace("#","")||(arr[0]&&arr[0].id));
-      window.addEventListener("hashchange",function(){ show((location.hash||"").replace("#","")); });
+      var selected=loadSel();
+      // 도감에서 특정 품종을 들고 오면(#id) 그 품종을 선택에 추가
+      var hashId=(location.hash||"").replace("#","");
+      if(hashId && arr.some(function(h){return h.id===hashId;})) selected.add(hashId);
+
+      var preview=document.getElementById("preview");
+      var pklist=document.getElementById("pklist");
+      var countEl=document.getElementById("count");
+
+      function updateCount(){
+        var n=selected.size, pages=Math.ceil(n/2);
+        countEl.textContent="선택 "+n+"종"+(n?(" · 총 "+pages+"장"):"");
+      }
+      function renderPages(){
+        preview.innerHTML="";
+        var sel=arr.filter(function(h){return selected.has(h.id);});
+        if(!sel.length){ preview.appendChild(el("div",{class:"noSel"},"왼쪽 목록에서 품종을 선택하면 여기에 출력 미리보기가 만들어집니다.")); updateCount(); return; }
+        for(var i=0;i<sel.length;i+=2){
+          var page=el("div",{class:"page"});
+          page.appendChild(buildCard(sel[i]));
+          if(sel[i+1]) page.appendChild(buildCard(sel[i+1]));
+          else { var blank=el("div",{class:"sheet blank"}); blank.appendChild(el("div",{class:"bmsg"},"빈 칸 · 품종을 하나 더 선택하면 채워집니다")); page.appendChild(blank); }
+          page.appendChild(el("div",{class:"cutline"}));
+          preview.appendChild(page);
+        }
+        updateCount();
+      }
+      function syncChecks(){
+        pklist.querySelectorAll("input").forEach(function(cb){ cb.checked=selected.has(cb.value); });
+      }
+
+      // 선택 목록(체크박스) 구성 — 도감 순서 유지
+      arr.forEach(function(h){
+        var lab=el("label");
+        var cb=el("input",{type:"checkbox",value:h.id});
+        cb.checked=selected.has(h.id);
+        cb.addEventListener("change",function(){
+          if(cb.checked) selected.add(h.id); else selected.delete(h.id);
+          saveSel(selected); renderPages();
+        });
+        lab.appendChild(cb);
+        lab.appendChild(el("span",{class:"nm"},h.name_ko));
+        lab.appendChild(el("span",{class:"en"},h.name_en));
+        pklist.appendChild(lab);
+      });
+
+      function setAll(on){
+        selected = on ? new Set(arr.map(function(h){return h.id;})) : new Set();
+        saveSel(selected); syncChecks(); renderPages();
+      }
+      document.getElementById("selAll").onclick=function(){setAll(true);};
+      document.getElementById("pkAll").onclick=function(){setAll(true);};
+      document.getElementById("selClear").onclick=function(){setAll(false);};
+      document.getElementById("pkNone").onclick=function(){setAll(false);};
+
+      saveSel(selected);
+      renderPages();
     }).catch(function(e){
-      document.getElementById("sheet").innerHTML='<div class="empty">데이터를 불러오지 못했습니다. 로컬 서버로 열거나 data/hostas.data.js를 확인하세요.</div>';
+      document.getElementById("preview").innerHTML='<div class="noSel">데이터를 불러오지 못했습니다. 로컬 서버로 열거나 data/hostas.data.js를 확인하세요.</div>';
     });
   })();
   </script>
