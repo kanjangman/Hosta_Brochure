@@ -1854,39 +1854,39 @@ window.HOSTA_DATA = [
     "retail_copy": {
       "warm": {
         "headline_ko": "그늘 정원의 주인공, 파란 거인",
-        "body_ko": "어른 손바닥보다 큰 청회색 잎이 겹겹이 쌓여 폭 1m가 넘는 웅장한 돔을 이룹니다. 한여름이면 흰빛 도는 꽃대가 잎 위로 시원하게 솟아올라요. 잎이 도톰하고 왁스질이라 벌레 걱정이 적고, 추위에 강해 마당에 심어두면 해가 갈수록 더 근사해집니다.",
+        "body_ko": "어른 손바닥보다 큰 청회색 잎이 겹겹이 쌓여 폭 1m가 훌쩍 넘는 웅장한 돔을 이룹니다. 한여름이면 흰빛 도는 꽃대가 잎 위로 시원하게 솟아올라요. 잎이 두껍고 왁스질이라 벌레 걱정이 적고, 용인 목향농원에서 국내 기후에 맞춰 길러 마당에 심어두면 해가 갈수록 더 근사해집니다.",
         "selling_points_ko": [
-          "영국 RHS 정원공로상(1993) 수상, 미국 호스타협회 인기투표 상위권의 대표 청색종 — 이름값이 있어요",
-          "두껍고 왁스질인 잎이라 민달팽이 피해가 적어 관리가 수월해요",
-          "폭 1.2~1.5m의 초대형종 — 마당·조경 현장의 '포인트 한 그루' 수요에 딱 맞아요"
+          "폭 1.2~1.5m의 초대형종이라 ‘마당에 시선을 끄는 한 그루’를 찾는 손님께 딱이에요",
+          "두껍고 왁스질인 잎이라 민달팽이 피해가 적어 관리 안내가 간단해요",
+          "해마다 포기가 커져 ‘작년보다 좋아졌다’는 재방문 만족으로 이어집니다"
         ],
         "recommend_for_ko": "마당 그늘 자리에 눈길을 사로잡는 큰 포기 하나를 들이고 싶은 분",
-        "headline_en": null,
-        "body_en": null
+        "headline_en": "The blue giant that owns the shade garden",
+        "body_en": "Leaves broader than an adult's hand stack into a majestic blue-gray dome well over a meter wide, with pale near-white scapes rising above the foliage in midsummer. The thick, waxy substance keeps slugs at bay, and—grown to suit the Korean climate at Mokhyang Nursery in Yongin—it only grows more magnificent with each passing year."
       },
       "practical": {
         "headline_ko": "크게 자라도 손은 안 가는 파란 잎",
-        "body_ko": "그늘진 마당에 심어두면 폭 1m가 넘게 자라 빈 자리를 든든히 채워줍니다. 두껍고 왁스질인 잎이라 벌레 걱정이 적고, 추위에 강해 노지월동도 무리 없어요. 자리만 넉넉히 잡아주면 3~5년에 걸쳐 해마다 알아서 커지는 품종입니다.",
+        "body_ko": "그늘진 마당에 심어두면 폭 1m가 넘게 자라 빈 자리를 든든히 채워줍니다. 두껍고 왁스질인 잎이라 벌레 걱정이 적고, 추위에도 강해(USDA 3~8) 중부지방 노지월동이 됩니다. 용인 목향농원에서 국내 기후에 맞춰 기른 포기라, 자리만 넉넉히 잡아주면 3~5년에 걸쳐 해마다 알아서 커집니다.",
         "selling_points_ko": [
-          "벌레·추위에 강해 관리 안내가 간단해요",
-          "폭 1.2~1.5m — 넓은 그늘 자리를 한 포기로 해결해요",
-          "해마다 포기가 커져 '작년보다 좋아졌다'는 손님 만족이 쌓여요"
+          "벌레·추위에 강해 관리 안내가 간단하고 겨울나기 걱정을 덜어드려요",
+          "폭 1.2~1.5m — 넓은 그늘 자리를 한 포기로 채울 수 있어요",
+          "보통 속도로 자라 옮겨심기·간격 잡기가 수월해요"
         ],
         "recommend_for_ko": "손 많이 가는 정원은 부담스럽지만 빈 그늘은 채우고 싶은 분",
-        "headline_en": null,
-        "body_en": null
+        "headline_en": "Big leaves, low upkeep",
+        "body_en": "Planted in a shady yard, 'Blue Angel' spreads past a meter to fill an empty corner with presence. Its thick, waxy leaves shrug off slugs, and it is cold-hardy (USDA 3-8), overwintering outdoors in Korea's central region. Raised for the local climate at Mokhyang Nursery in Yongin, it simply grows a little larger each year over three to five seasons, given room to settle."
       },
       "premium": {
-        "headline_ko": "청색 호스타의 대명사, RHS 수상작",
-        "body_ko": "미국 육종가 플로렌스 쇼가 남긴 품종으로, 영국 왕립원예협회 정원공로상(1993)을 받고 미국호스타협회 인기투표 상위권에 오르내리는 청색 호스타의 대명사입니다. 잎 하나가 40cm에 이르는 웅장한 스케일이 정원의 격을 높여줍니다.",
+        "headline_ko": "청색 호스타의 대명사, RHS 수상작을 국내에서 길렀습니다",
+        "body_ko": "미국 육종가 플로렌스 쇼가 남긴 품종으로, 영국 왕립원예협회 정원공로상(1993)을 받고 미국호스타협회 인기투표 상위권에 오르내리는 청색 호스타의 대명사입니다. 잎 하나가 40cm에 이르는 웅장한 스케일이 정원의 격을 높여줍니다. 이 검증된 명품을 용인 목향농원이 국내 기후에 순화시켜 길러낸 포기로 만나보세요.",
         "selling_points_ko": [
-          "영국 RHS 정원공로상(1993) — 유럽에서도 검증된 품종이에요",
-          "미국호스타협회 인기투표 상위권의 지명도 — 찾아오는 손님이 있어요",
-          "잎 40cm·폭 1.5m의 스케일 — 고급 조경의 포인트 수요에 맞아요"
+          "영국 RHS 정원공로상(1993) — 유럽에서도 검증된 품종이라는 확실한 명분이 있어요",
+          "미국호스타협회 인기투표 상위권의 지명도 — 이름을 알고 찾아오는 손님이 있어요",
+          "잎 40cm·폭 1.5m의 스케일에 국내 육묘 신뢰까지 더해 고급 조경 포인트로 제안하기 좋아요"
         ],
-        "recommend_for_ko": "정원에 격이 다른 주인공 한 그루를 들이고 싶은 분",
-        "headline_en": null,
-        "body_en": null
+        "recommend_for_ko": "정원에 격이 다른 주인공 한 그루를 들이고 싶은 분, 검증된 대형 청색종을 원하는 조경가",
+        "headline_en": "The definitive blue hosta, an RHS winner—grown in Korea",
+        "body_en": "A cultivar found by American breeder Florence Shaw, 'Blue Angel' won the RHS Award of Garden Merit (1993) and ranks among the American Hosta Society's popularity-poll favorites—the definitive large blue hosta. Single leaves reaching 40 cm bring commanding scale to a garden. Here it is offered as plants raised and acclimatized to the Korean climate at Mokhyang Nursery in Yongin."
       }
     },
     "tags": [
@@ -3113,40 +3113,40 @@ window.HOSTA_DATA = [
     "description_en": "Hosta 'June' is a world-favorite cultivar prized for its glowing gold center framed by an irregular blue-green margin, and it was named the 2001 AHGA Hosta of the Year. Its thick, heavy-substance leaves give strong slug resistance, and it tolerates 3-4 hours of sun that deepens the gold center, making it equally at home in part shade or brighter spots. Compact, dependable, and highly ornamental, it remains a steady best-seller for wholesale and landscape demand.",
     "retail_copy": {
       "warm": {
-        "headline_ko": "그늘을 금빛으로 밝히는 잎",
-        "body_ko": "청록색 테두리 안쪽으로 금빛이 차오르는 잎이 매력이에요. 해가 서너 시간 살짝 드는 자리면 금빛이 한층 더 깊어집니다. 잎이 도톰해서 벌레 걱정이 적고 추위에도 강해, 한 번 심으면 해마다 다시 올라오는 든든한 식구가 됩니다.",
+        "headline_ko": "그늘진 마당을 금빛으로 밝히는 잎",
+        "body_ko": "볕이 잘 안 드는 나무 밑이나 북향 화단도, 준을 심으면 금빛으로 환해집니다. 청록 테두리 안에서 차오르는 황금빛 중앙무늬가 하루 서너 시간 햇살만 받아도 색이 더 깊어져요. 용인 목향농원에서 한국 기후에 맞춰 직접 길러, 한 번 심으면 봄마다 다시 올라오는 든든한 포기입니다.",
         "selling_points_ko": [
-          "2001년 '올해의 호스타'·영국 RHS 정원공로상 수상 — 손님께 자신 있게 권할 수 있어요",
-          "도톰한 잎이라 민달팽이 피해가 적어 관리 문의·클레임 부담이 덜해요",
-          "높이 30cm대의 아담한 중형이라 화단 앞줄부터 화분까지 두루 제안하기 좋아요"
+          "그늘~반그늘 어디든 어울려 ‘우리 집 어두운 화단’을 고민하는 손님께 바로 권할 수 있어요",
+          "볕을 받을수록 금빛이 진해진다는 변화 포인트가 있어 이야깃거리가 됩니다",
+          "높이 30cm대 아담한 중형이라 화단 앞줄부터 화분·베란다까지 두루 제안하기 좋아요"
         ],
-        "recommend_for_ko": "해가 잘 안 드는 화단이나 나무 아래를 환하게 만들고 싶은 분",
-        "headline_en": null,
-        "body_en": null
+        "recommend_for_ko": "그늘진 화단이나 나무 아래, 베란다를 환하게 가꾸고 싶은 분",
+        "headline_en": "The leaf that lights up a shady corner in gold",
+        "body_en": "Even a north-facing bed or the shade under a tree turns luminous with 'June'—a golden center glowing inside a cool blue-green margin, deepening further with just three or four hours of sun. Grown and acclimatized to the Korean climate at Mokhyang Nursery in Yongin, it returns faithfully every spring once planted."
       },
       "practical": {
-        "headline_ko": "심어두면 알아서 크는 금빛 잎",
-        "body_ko": "그늘진 화단에서도 잘 자라고, 해는 하루 서너 시간이면 충분해요. 잎이 도톰해 민달팽이 피해가 적고 추위(USDA 3~9)에도 강한 다년초라, 한 번 심으면 해마다 다시 올라옵니다. 까다로운 관리 없이 시작하기 좋은 품종이에요.",
+        "headline_ko": "심어두면 알아서 크는 금빛 잎, 손이 안 가요",
+        "body_ko": "그늘진 화단에서도 잘 자라고 볕은 하루 서너 시간이면 충분해요. 잎이 도톰해 민달팽이 피해가 적고, 추위에도 강해(USDA 3~9) 경기 등 중부지방에서도 노지월동이 됩니다. 용인 목향농원에서 국내 기후에 맞춰 기른 포기라 자리만 잡아주면 까다로운 관리 없이 해마다 다시 올라와요.",
         "selling_points_ko": [
-          "그늘~반그늘 어디든 심을 수 있어 자리 제안이 쉬워요",
-          "민달팽이 저항이 높아 '벌레 먹었어요' 클레임이 적어요",
-          "내한성이 강해(USDA 3~9) 노지월동 부담이 적어요"
+          "그늘~반그늘 어디든 심을 수 있어 ‘어디 심어야 하냐’는 질문에 답하기 쉬워요",
+          "잎이 두꺼워 민달팽이 저항이 높아 ‘벌레 먹었다’는 클레임이 적어요",
+          "중부지방 노지월동이 가능해 겨울나기 부담을 덜어드릴 수 있어요"
         ],
-        "recommend_for_ko": "식물이 처음이라 관리 쉬운 것부터 찾으시는 분",
-        "headline_en": null,
-        "body_en": null
+        "recommend_for_ko": "식물이 처음이라 관리 쉬운 것부터 찾으시는 분, 자주 돌보기 어려운 분",
+        "headline_en": "Plant it and forget it—a low-care gold-centered hosta",
+        "body_en": "'June' thrives in shade and needs only three or four hours of sun. Its thick leaves resist slug damage, and it is cold-hardy (USDA 3-9), overwintering outdoors even in Korea's central region. Raised to suit the local climate at Mokhyang Nursery in Yongin, it comes back every year with almost no fuss once it settles in."
       },
       "premium": {
-        "headline_ko": "세계가 인정한 2001 올해의 호스타",
-        "body_ko": "미국호스타재배자협회가 2001년 '올해의 호스타'로 선정하고, 영국 왕립원예협회 정원공로상(AGM)까지 받은 검증된 품종입니다. 영국 네오플랜츠가 명품 청엽종 '할시온'에서 얻어낸 계보로, 청록 테두리와 금빛 중심의 대비가 정원에 품격을 더합니다.",
+        "headline_ko": "세계가 인정한 2001 올해의 호스타, 국내에서 직접 길렀습니다",
+        "body_ko": "미국호스타재배자협회가 2001년 ‘올해의 호스타’로 선정하고 영국 왕립원예협회 정원공로상(AGM)까지 받은 검증된 품종입니다. 영국 네오플랜츠가 명품 청엽종 ‘할시온(Halcyon)’에서 얻어낸 계보로, 청록 테두리와 황금빛 중심의 대비가 정원의 격을 높여줍니다. 이 수입 명품을 용인 목향농원이 국내 기후에 순화시켜 길러낸 포기로 만나보세요.",
         "selling_points_ko": [
-          "수상 2관왕(올해의 호스타 2001·RHS AGM) — 손님께 들려줄 스토리가 확실해요",
-          "명품 '할시온(Halcyon)' 혈통 — 계보를 아는 손님께 어필돼요",
-          "도매·조경 수요가 꾸준한 세계적 스테디셀러예요"
+          "수상 2관왕(올해의 호스타 2001·RHS AGM)이라 손님께 들려줄 스토리가 확실해요",
+          "명품 ‘할시온’ 혈통이라 계보를 아는 수집가·조경가에게 어필됩니다",
+          "국내에서 직접 기른 검증 포기라는 점이 수입 직송과 차별화되는 신뢰 포인트예요"
         ],
-        "recommend_for_ko": "정원 선물이나 의미 있는 한 포기를 찾으시는 분",
-        "headline_en": null,
-        "body_en": null
+        "recommend_for_ko": "정원 선물이나 의미 있는 한 포기를 찾으시는 분, 검증된 수상 품종을 원하는 수집가",
+        "headline_en": "The 2001 Hosta of the Year—grown right here in Korea",
+        "body_en": "Named 2001 Hosta of the Year by the American Hosta Growers Association and awarded the RHS Award of Garden Merit, 'June' is a proven classic. Bred by Neo Plants of the UK as a sport of the celebrated blue 'Halcyon,' its blue-green margin and glowing gold center lend real distinction to a garden—offered here as plants raised and acclimatized to the Korean climate at Mokhyang Nursery in Yongin."
       }
     },
     "tags": [
